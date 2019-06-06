@@ -9,8 +9,19 @@ body {
 }
 
 .main_hero {
-    background-image: url("img/Background1lg-shaddow.jpg");
-    background-size: cover;
+    background: #000 url("img/Background1lg-shaddow.jpg") center / cover;
+}
+
+@media only screen and (max-width: 769px) {
+    .main_hero {
+        background: #000 url("img/Background1md-shaddow.jpg") center / cover;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .main_hero {
+        background: #000 url("img/Background1sm-shaddow.jpg") center / cover;
+    }
 }
 
 a {
