@@ -13,21 +13,27 @@
 // $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
+@import "./node_modules/bulma/bulma.sass";
+
+$background: #FFF8DC;
 $family-sans-serif: "Raleway", sans-serif;
-// $grey-dark: $brown;
-// $grey-light: $beige-light;
-$primary: #000;
-$link: #000;
+
+$gap: 30px;
+$primary: $cyan;
+$success: $cyan;
+$link: $black-bis;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: #FFF8DC;
+$body-background-color: $background;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-@import "./node_modules/bulma/bulma.sass";
+$skill-level-1: #f4b942;
+$skill-level-2: #f49242;
+$skill-level-3: #f47442;
 
 html {
     scroll-behavior: smooth;
@@ -104,13 +110,13 @@ iframe {
 }
 
 .owl-nav .disabled {
-    border: 1px solid gray;
+    border: 1px solid $grey-lighter;
     background-color: #f9f9f9;
     cursor: not-allowed !important
 }
 
 .owl-nav .disabled:hover {
-    border: 1px solid #03b2e3
+    border: 1px solid $grey;
 }
 
 footer {
@@ -182,7 +188,6 @@ a:hover {
     color: #ffffff;
 }
 
-
 .is-gmail {
     color: #fff;
     background-color: #B23121;
@@ -197,7 +202,7 @@ a:hover {
 }
 
 .navbar-item {
-    color: white;
+    color: #000;
 }
 
 .title-hero {
@@ -205,15 +210,15 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 600%;
     font-weight: 600;
-    text-shadow: 3px 3px 25px #000;
+    text-shadow: 3px 3px 25px $black;
 }
 
 .title-hero-sub {
-    color: #FFF;
+    color: $white-ter;
     font-family: 'Roboto', sans-serif;
     font-size: 400%;
     font-weight: 400;
-    text-shadow: 3px 3px 25px #000;
+    text-shadow: 3px 3px 25px $grey-dark;
 }
 
 
@@ -244,19 +249,19 @@ a:hover {
 }
 
 .bar {
-    background-color: #EEE;
+    background-color: $white;
     padding: 2px;
     border-radius: 15px;
     margin-bottom: 5px;
     font-size: 14px;
-    color: #FFF;
+    color: $white;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .bar::before {
     content: attr(data-skill);
-    background-color: #f4b942;
+    background-color: $skill-level-1;
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -267,11 +272,11 @@ a:hover {
 }
 
 .bar.front::before {
-    background-color: #f47442;
+    background-color: $skill-level-3;
 }
 
 .bar.back::before {
-    background-color: #f49242;
+    background-color: $skill-level-2;
 }
 
 .bar.learning::before {
@@ -303,6 +308,10 @@ a:hover {
     margin-bottom: 0.2em;
 }
 
+.navbar-burger {
+    color: $white;
+}
+
 /* opacity */
 
 .opacity-title {
@@ -316,14 +325,18 @@ a:hover {
     /* Opera */
 }
 
+.tile.is-child.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* Grow */
-
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px $black;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;

@@ -185,7 +185,7 @@
                                             </p>
                                             <br>
                                             <br>
-                                            <a class="button is-primary"
+                                            <a class="button is-link"
                                                 href="https://docs.google.com/document/d/1i_CY7K3zurwM_MqIE1sVN10oH2jcFhQeHKpp1XJQKS0/edit?usp=sharing"
                                                 target="_blank">
                                                 <span class="icon">
@@ -571,9 +571,10 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="card hvr-grow">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-parent">
+                                <!-- parent Anouman -->
+                                <div class="tile is-child card">
                                     <!-- Card Anouman -->
                                     <div class="card-header">
                                         <div class="card-image">
@@ -607,7 +608,7 @@
                                         <br>
                                         <br>
                                         <br>
-                                        <a class="button is-primary" target="_blank"
+                                        <a class="button is-link" target="_blank"
                                             href="https://github.com/michzuerch/Anouman">
                                             <span class="icon">
                                                 <i class="fab fa-github-square"></i>
@@ -616,10 +617,11 @@
                                         </a>
                                     </div>
                                 </div><!-- Card Anouman -->
-                            </div><!-- Column -->
-                            <div class="column">
-                                <div class="card hvr-grow">
-                                    <!-- Card Anouman -->
+                            </div><!-- parent Anouman -->
+                            <div class="tile is-parent">
+                                <!-- parent TeachersAssistant -->
+                                <div class="tile is-child card">
+                                    <!-- Card TeachersAssistant -->
                                     <div class="card-header">
                                         <div class="card-image">
                                             <figure class="image">
@@ -630,7 +632,7 @@
                                     <div class="card-content">
                                         <h1 class="subtitle">TeachersAssistant</h1>
                                         <br>
-                                        <a class="button is-primary" target="_blank"
+                                        <a class="button is-link" target="_blank"
                                             href="https://github.com/michzuerch/TeachersAssistant">
                                             <span class="icon">
                                                 <i class="fab fa-github-square"></i>
@@ -638,11 +640,12 @@
                                             <span><strong>TeachersAssistant</strong> Source auf Github</span>
                                         </a>
                                     </div>
-                                </div><!-- Card Anouman -->
-                            </div> <!-- Column -->
-                            <div class="column">
-                                <div class="card hvr-grow">
-                                    <!-- Card Anouman -->
+                                </div><!-- Card TeachersAssistant -->
+                            </div><!-- parent TeachersAssistant -->
+                            <div class="tile is-parent">
+                                <!-- parent LocateIPAddress -->
+                                <div class="tile is-child card">
+                                    <!-- Card LocateIPAddress -->
                                     <div class="card-header">
                                         <div class="card-image">
                                             <figure class="image">
@@ -653,7 +656,7 @@
                                     <div class="card-content">
                                         <h1 class="subtitle">LocateIPAddress</h1>
                                         <br>
-                                        <a class="button is-primary" target="_black"
+                                        <a class="button is-link" target="_black"
                                             href="https://github.com/michzuerch/LocateIPAddress">
                                             <span class="icon">
                                                 <i class="fab fa-github-square"></i>
@@ -661,12 +664,13 @@
                                             <span><strong>LocateIPAddress</strong> Source auf Github</span>
                                         </a>
                                     </div>
-                                </div><!-- Card Anouman -->
-                            </div> <!-- Column -->
-                        </div> <!-- Columns -->
-                    </div> <!-- Card content -->
-                </div> <!-- Card Github -->
-            </div><!-- Container -->
+                                </div><!-- Card LocateIPAddress -->
+                            </div><!-- parent LocateIPAddress-->
+                        </div>
+                    </div>
+                </div> <!-- Card content -->
+            </div> <!-- Card Github -->
+        </div><!-- Container -->
         </div> <!-- hero-body -->
     </section>
     <!-- Gallery Section -->
@@ -738,43 +742,27 @@
     <!-- Footer Section -->
     <footer class="hero">
         <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="columns">
-                    <div class="column has-text-centered">
-                        Michael Zürcher
-                    </div>
-                    <div class="column has-text-centered">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="button is-gmail" href="#" target="_blank">
-                                    <span class="icon">
-                                        <i class="fas
+            <div class="container">
+                <div class="columns is-centered">
+                <a class="button is-gmail" href="#" target="_blank">
+                    <span class="icon">
+                        <i class="fas
                                                             fa-envelope"></i>
-                                    </span>
-                                    <span>&#109;&#105;&#099;&#104;&#122;&#117;&#101;&#114;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</span>
-                                </a>
-                            </p>
-                            <p class="control">
-                                <a class="button is-skype" href="#" target="_blank">
-                                    <span class="icon">
-                                        <i class="fab fa-skype"></i>
-                                    </span>
-                                    <span>michzuerch</span>
-                                </a>
-                            </p>
-
-                            <p class="control">
-                                <a class="button is-phone" href="tel:+49
-                                                    178 660 86 38">
-                                    <span class="icon">
-                                        <i class="fa fa-phone"></i>
-                                    </span>
-                                    <span>+49 178 660 86 38</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    </span>
+                    <span>&#109;&#105;&#099;&#104;&#122;&#117;&#101;&#114;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</span>
+                </a>
+                <a class="button is-skype" href="#" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-skype"></i>
+                    </span>
+                    <span>michzuerch</span>
+                </a>
+                <a class="button is-phone" href="#">
+                    <span class="icon">
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <span>+49 178 660 86 38</span>
+                </a>
             </div>
         </div>
         </div>
