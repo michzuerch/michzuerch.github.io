@@ -6609,6 +6609,10 @@ a:hover {
 .has-margin5em {
   margin: 5em; }
 
+.has1em {
+  margin-top: 1em;
+  margin-bottom: 0.2em; }
+
 /* opacity */
 .opacity-title {
   opacity: 0.6;
