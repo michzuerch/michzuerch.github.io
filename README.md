@@ -1,3 +1,5 @@
 # Personal webpage Michael Zuercher
 
-No Sass anymore, only css standalone.
+New Version with node-sass and bulma.
+
+npm run build
