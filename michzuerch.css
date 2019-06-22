@@ -7060,12 +7060,6 @@ footer {
   border-color: #bdbdbd;
   color: #ffffff; }
 
-a {
-  color: #fff; }
-
-a:hover {
-  color: #cdcdcd; }
-
 .is-skype {
   color: #fff;
   background-color: #3a589a; }
@@ -7087,14 +7081,8 @@ a:hover {
 .is-gmail:hover {
   color: #ffffff; }
 
-.navbar {
-  box-shadow: none; }
-
-.navbar-item {
-  color: #000; }
-
 .title-hero {
-  color: #FFF;
+  color: whitesmoke;
   font-family: 'Roboto', sans-serif;
   font-size: 600%;
   font-weight: 600;
@@ -7172,20 +7160,6 @@ a:hover {
 .has1em {
   margin-top: 1em;
   margin-bottom: 0.2em; }
-
-.navbar-burger {
-  color: white; }
-
-/* opacity */
-.opacity-title {
-  opacity: 0.6;
-  /* allgemein */
-  -moz-opacity: 0.6;
-  /* Mozilla */
-  -khtml-opacity: 0.6;
-  /* KTHML */
-  -opera-opacity: 0.6;
-  /* Opera */ }
 
 .tile.is-child.card {
   display: flex;

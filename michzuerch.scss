@@ -1,27 +1,20 @@
 @charset "utf-8";
 
 // Import a Google Font
-//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
-
-
-// Set your brand colors
-// $purple: #8A4D76;
-// $pink: #FA7C91;
-// $brown: #757763;
-// $beige-light: #D0D1CD;
-// $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
 @import "./node_modules/bulma/bulma.sass";
 
 $background: #FFF8DC;
-$family-sans-serif: "Raleway", sans-serif;
+$family-sans-serif: "Raleway",
+sans-serif;
 
 $gap: 30px;
-$primary: $cyan;
+$radius: 20px;
+$primary: $red;
 $success: $cyan;
-$link: $black-bis;
+$link: $red;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -162,14 +155,6 @@ footer {
     color: #ffffff;
 }
 
-a {
-    color: #fff;
-}
-
-a:hover {
-    color: #cdcdcd;
-}
-
 .is-skype {
     color: #fff;
     background-color: #3a589a;
@@ -197,16 +182,8 @@ a:hover {
     color: #ffffff;
 }
 
-.navbar {
-    box-shadow: none;
-}
-
-.navbar-item {
-    color: #000;
-}
-
 .title-hero {
-    color: #FFF;
+    color: $white-ter;
     font-family: 'Roboto', sans-serif;
     font-size: 600%;
     font-weight: 600;
@@ -306,23 +283,6 @@ a:hover {
 .has1em {
     margin-top: 1em;
     margin-bottom: 0.2em;
-}
-
-.navbar-burger {
-    color: $white;
-}
-
-/* opacity */
-
-.opacity-title {
-    opacity: 0.6;
-    /* allgemein */
-    -moz-opacity: 0.6;
-    /* Mozilla */
-    -khtml-opacity: 0.6;
-    /* KTHML */
-    -opera-opacity: 0.6;
-    /* Opera */
 }
 
 .tile.is-child.card {
