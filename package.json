@@ -2,23 +2,26 @@
   "name": "michzuerch.github.io",
   "version": "1.0.0",
   "description": "Personal webpage github",
-  "main": "index.html",
-  "scripts": {
-    "build": "node-sass michzuerch.scss michzuerch.css"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michzuerch/michzuerch.github.io.git"
   },
   "author": "Michael Zuercher",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/michzuerch/michzuerch.github.io/issues"
+  "main": "postcss.config.js",
+  "dependencies": {
+      "autoprefixer": "^9.6.0",
+      "postcss-cli": "^6.1.2",
+      "rimraf": "^2.6.3"
   },
-  "homepage": "https://github.com/michzuerch/michzuerch.github.io#readme",
   "devDependencies": {
-    "bulma": "^0.7.5",
-    "node-sass": "^4.12.0"
+      "@fullhuman/postcss-purgecss": "^1.2.0",
+      "cssnano": "^4.1.10",
+      "tailwindcss": "^1.0.4"
   },
-  "dependencies": {}
+  "scripts": {
+      "del:js": "rimraf tailwind.config.js",
+      "create:js": "./node_modules/.bin/tailwind init tailwind.config.js",
+      "dev:css": "./node_modules/.bin/tailwind build tailwind.config.css -c tailwind.config.js -o dist/css/tailwind.css",
+      "build:css": "postcss tailwind.config.css -o dist/css/tailwind.min.css"
+  }
 }
