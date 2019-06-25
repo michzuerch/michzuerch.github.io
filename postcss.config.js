@@ -1,38 +1,14 @@
-/**
- * Big thanks to the instructions here!
- * https://flaviocopes.com/tailwind-setup/
- */
- 
-const tailwindcss = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
-const cssnano = require('cssnano')
-const autoprefixer = require('autoprefixer')
-
-/**
- * Custom PurgeCSS Extractor
- * https://github.com/FullHuman/purgecss
- * https://github.com/FullHuman/purgecss-webpack-plugin
- */
-class TailwindExtractor {
-    static extract(content) {
-        return content.match(/[A-z0-9-:\/]+/g);
-    }
-}
-
-
-module.exports = {
+const purgecss = require('@fullhuman/postcss-purgecss')({
+    content: ['./public/**/*.html'],
+    defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+  })
+  
+  module.exports = {
     plugins: [
-        tailwindcss('tailwind.config.js'),
-        cssnano({
-            preset: 'default',
-        }),
-        purgecss({
-            content: ['dist/**/*.html','dist/**/*.php'],
-            extractors: [{
-                extractor: TailwindExtractor,
-                extensions: ["html", "js", "php", "vue"]
-            }]
-        }),
-        autoprefixer
+      require('tailwindcss'),
+      require('autoprefixer'),
+      ...process.env.NODE_ENV === 'production'
+        ? [purgecss, require('cssnano')]
+        : []
     ]
-}
+  }

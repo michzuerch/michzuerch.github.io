@@ -8,20 +8,23 @@
     },
     "author": "Michael Zuercher",
     "main": "postcss.config.js",
-    "dependencies": {
-        "autoprefixer": "^9.6.0",
-        "postcss-cli": "^6.1.2",
-        "rimraf": "^2.6.3"
-    },
-    "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^1.2.0",
-        "cssnano": "^4.1.10",
-        "tailwindcss": "^1.0.4"
-    },
+  
+  
     "scripts": {
-        "del:js": "rimraf tailwind.config.js",
-        "create:js": "./node_modules/.bin/tailwind init tailwind.config.js",
-        "dev:css": "./node_modules/.bin/tailwind build tailwind.config.css -c tailwind.config.js -o dist/css/tailwind.css",
-        "build:css": "postcss tailwind.config.css -o dist/css/tailwind.min.css"
-    }
+        "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+        "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
+        "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css"
+      },
+      "dependencies": {
+        "autoprefixer": "^9.6.0",
+        "tailwindcss": "^1.0.4"
+      },
+      "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^1.2.0",
+        "concurrently": "^4.1.0",
+        "cross-env": "^5.2.0",
+        "cssnano": "^4.1.10",
+        "live-server": "^1.2.1",
+        "postcss-cli": "^6.1.2"
+      }
 }
