@@ -1,5 +1,5 @@
 # Personal webpage Michael Zuercher
 
-New Version with node-sass and bulma.
+Umstellung von Bulma auf Tailwind.
 
-npm run build
+npm run production um das CSS-File zu erstellen.
