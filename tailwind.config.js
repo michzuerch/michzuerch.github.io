@@ -2,23 +2,30 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
-    // Some useful comment
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    fontFamily: {
+      display: ['Raleway', 'sans-serif'],
+      body: ['Raleway', 'sans-serif'],
+    },
+    borderWidth: {
+      default: '1px',
+      '0': '0',
+      '2': '2px',
+      '4': '4px',
+    },
     extend: {
       colors: {
-        'primary': '#3b7977',
-        'secondary': '#57a99a',
+        cyan: '#9cdbff',
       },
-      height: {
-        '128': '20rem',
-        'half': '50vh',
-        '3/4': '75vh'
-      },
-    },
-    variants: {
-      // Some useful comment
-    },
-    plugins: [
-      // Some useful comment
-    ]
+      spacing: {
+        '96': '24rem',
+        '128': '32rem',
+      }
+    }
   }
 }
