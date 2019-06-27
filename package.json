@@ -2,6 +2,8 @@
   "name": "michzuerch.github.io",
   "version": "1.0.0",
   "description": "Personal webpage github",
+  "private": true,
+  "homepage": "https://michzuerch.github.io/michzuerch.github.io/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michzuerch/michzuerch.github.io.git"
@@ -11,7 +13,8 @@
   "scripts": {
     "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
     "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
-    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css"
+    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^9.6.0",
@@ -19,6 +22,7 @@
     "tailwindcss-typography": "^2.1.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "concurrently": "^4.1.1",
     "cross-env": "^5.2.0",
