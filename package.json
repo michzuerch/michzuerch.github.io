@@ -1,0 +1,31 @@
+{
+  "name": "michzuerch.github.io",
+  "version": "1.0.0",
+  "description": "Personal webpage github",
+  "private": true,
+  "homepage": "https://michzuerch.github.io/michzuerch.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michzuerch/michzuerch.github.io.git"
+  },
+  "author": "Michael Zuercher",
+  "main": "postcss.config.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss tailwind.css -o michzuerch.css --watch\"  \"live-server ./\"",
+    "development": "cross-env NODE_ENV=development postcss tailwind.css -o michzuerch.css",
+    "production": "cross-env NODE_ENV=production postcss tailwind.css -o michzuerch.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "tailwindcss": "^1.0.4",
+    "tailwindcss-typography": "^2.1.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "concurrently": "^4.1.1",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^6.1.2"
+  }
+}
