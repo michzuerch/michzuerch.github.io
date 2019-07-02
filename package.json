@@ -11,9 +11,9 @@
   "author": "Michael Zuercher",
   "main": "postcss.config.js",
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"postcss tailwind.css -o michzuerch.css --watch\"  \"live-server ./\"",
-    "development": "cross-env NODE_ENV=development postcss tailwind.css -o michzuerch.css",
-    "production": "cross-env NODE_ENV=production postcss tailwind.css -o michzuerch.css"
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss source.css -o dist.css --watch\"  \"live-server ./\"",
+    "development": "cross-env NODE_ENV=development postcss source.css -o dist.css",
+    "production": "cross-env NODE_ENV=production postcss source.css -o dist.css"
   },
   "dependencies": {
     "autoprefixer": "^9.6.0",
