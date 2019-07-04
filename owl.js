@@ -22,6 +22,8 @@ $(document).ready(function () {
             }
         }
     });
+
+    /* mouse wheel navigation */
     owl.on('mousewheel', '.owl-stage', function (e) {
         if (e.deltaY > 0) {
             owl.trigger('next.owl');
@@ -29,5 +31,16 @@ $(document).ready(function () {
             owl.trigger('prev.owl');
         }
         e.preventDefault();
+    });
+
+    /*keyboard navigation*/
+    $(document.documentElement).keyup(function (event) {
+        if (event.keyCode == 37) {
+            /*left key*/
+            owl.trigger('prev.owl.carousel', [700]);
+        } else if (event.keyCode == 39) {
+            /*right key*/
+            owl.trigger('next.owl.carousel', [700]);
+        }
     });
 });
