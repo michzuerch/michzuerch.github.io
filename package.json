@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "autoprefixer": "^9.6.0",
-    "tailwindcss": "^1.0.4",
-    "tailwindcss-typography": "^2.1.1"
+    "owl.carousel": "^2.3.4",
+    "tailwindcss": "^1.0.4"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
