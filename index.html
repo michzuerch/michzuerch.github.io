@@ -34,12 +34,11 @@
       <div class="slider-content animated zoomIn container max-w-4xl mx-auto
         pt-64 md:pt-64 text-center break-normal">
         <!--Title-->
-        <p class="text-white font-extrabold text-6xl md:text-6xl"
-          style="text-shadow: 3px 3px 25px #000;">
+        <p class="text-white font-extrabold text-6xl md:text-6xl text-shadow">
           Michael Zürcher
         </p>
-        <p class="text-5xl md:text-5xl text-white" style="text-shadow: 3px 3px
-          25px #000;">IT-Experte und Programmierer</p>
+        <p class="text-5xl md:text-5xl text-white text-shadow">IT-Experte und
+          Programmierer</p>
       </div>
     </div>
 
@@ -578,31 +577,38 @@
       </div>
 
       <!-- Gallery -->
-      <div id="owl" class="owl-carousel owl-theme">
-        <div class="item">
-          <img src="img/gallery/Portrait1-cut.jpg" alt="Portrait1">
+      <div class="container">
+        <div class="bg-paper text-center py-4 lg:px-4">
+          <div class="p-6 bg-orange-400 items-center text-white
+            leading-none lg:rounded-full flex lg:inline-flex shadow-lg
+            text-shadow text-4xl" role="alert">
+            Image gallery
+          </div>
         </div>
-        <div class="item">
-          <img src="img/gallery/Portrait2-cut.jpg" alt="Portrait2">
-        </div>
-        <div class="item">
-          <img src="img/gallery/Portrait3-cut.jpg" alt="Portrait3">
-        </div>
-        <div class="item">
-          <img src="img/gallery/Car1-cut.jpg" alt="Car1">
-        </div>
-        <div class="item">
-          <img src="img/gallery/Car2-cut.jpg" alt="Car2">
-        </div>
-        <div class="item">
-          <img src="img/gallery/Car3-cut.jpg" alt="Car3">
-        </div>
-        <div class="item">
-          <img src="img/gallery/Wolf-cut.jpg" alt="Wolf">
+        <div id="owl" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/gallery/Portrait1-cut.jpg" alt="Portrait1">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Portrait2-cut.jpg" alt="Portrait2">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Portrait3-cut.jpg" alt="Portrait3">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Car1-cut.jpg" alt="Car1">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Car2-cut.jpg" alt="Car2">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Car3-cut.jpg" alt="Car3">
+          </div>
+          <div class="item">
+            <img src="img/gallery/Wolf-cut.jpg" alt="Wolf">
+          </div>
         </div>
       </div>
-
-
 
       <footer class="bg-orange-200">
         <div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
@@ -618,7 +624,8 @@
                 </p>
               </div>
             </div>
-            <div class="flex w-full pt-2 content-center justify-between md:w-1/2
+            <div class="flex w-full pt-2 content-center justify-between
+              md:w-1/2
               md:justify-end">
               <ul class="list-reset flex justify-center flex-1 md:flex-none
                 items-center">
@@ -668,9 +675,9 @@
         integrity="sha256-VSluyclkkEBBFNZ6S8I2Okq/R6W0InHkqdukNreEYOY="crossorigin="anonymous"></script>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="owl.js"></script>
       <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
       <script src="https://unpkg.com/tippy.js@4"></script>
-      <script src="owl.js"></script>
       <script>
         //Init tooltips
         tippy('.avatar')

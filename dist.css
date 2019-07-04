@@ -7660,6 +7660,12 @@ video {
   width: calc(100% - 10px);
 }
 
+/* Text shadow */
+
+.text-shadow {
+  text-shadow: 3px 3px 25px #000;
+}
+
 /* Carousel */
 
 #owl .item img {
