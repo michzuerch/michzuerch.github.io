@@ -4,6 +4,8 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         autoHeight: true,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
         margin: 10,
         responsive: {
             0: {
