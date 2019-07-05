@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~animate.css/source/_base.css";
+@import "~animate.css/source/attention_seekers/bounce.css";
+@import "~animate.css/source/sliding_exits/slideOutDown.css";
+@import "~animate.css/source/zooming_entrances/zoomIn.css";
+@import "~animate.css/source/flippers/flipInX.css";
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 .bg-paper {
     background-color: #FFF8DC;
