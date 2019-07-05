@@ -1,7 +1,7 @@
 {
   "name": "michzuerch.github.io",
   "version": "1.0.0",
-  "description": "Personal webpage github",
+  "description": "Personal webpage github (Webpack Version)",
   "private": true,
   "homepage": "https://michzuerch.github.io/michzuerch.github.io/",
   "repository": {
@@ -9,40 +9,22 @@
     "url": "git+https://github.com/michzuerch/michzuerch.github.io.git"
   },
   "author": "Michael Zuercher",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --mode=development --hot"
-  },
-  "peerDependencies": {
-    "stylelint": "^10.1.0",
-    "webpack": "^4.35.2"
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
-    "autoprefixer": "^9.6.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.12.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "stylelint-config-recommended": "^2.2.0",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2",
-    "webpack-md5-hash": "^0.0.6",
-    "yarn": "^1.16.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "stylelint": "^10.1.0"
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
   }
 }
