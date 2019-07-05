@@ -32,13 +32,5 @@ module.exports = {
             }
         ],
         'prettier/prettier': 'error'
-    },
-    "eslint.options": {
-        "env": {
-            "es6": true
-        },
-        "parserOptions": {
-            "ecmaVersion": 6 // or 7,8,9
-        }
     }
 };
