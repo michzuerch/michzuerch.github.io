@@ -30,7 +30,6 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.35.2",
@@ -38,5 +37,9 @@
     "webpack-dev-server": "^3.7.2",
     "webpack-md5-hash": "^0.0.6",
     "yarn": "^1.16.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0"
   }
 }
