@@ -26,6 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      title: "Michael Zürcher",
       template: "./src/index.html",
       filename: "./index.html"
     })
