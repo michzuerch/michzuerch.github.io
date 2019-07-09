@@ -3,6 +3,11 @@
 @tailwind utilities;
 @import "~animate.css/source/_base.css";
 @import "~animate.css/source/attention_seekers/bounce.css";
+@import "~animate.css/source/attention_seekers/flash.css";
+@import "~animate.css/source/attention_seekers/headShake.css";
+@import "~animate.css/source/attention_seekers/swing.css";
+@import "~animate.css/source/attention_seekers/tada.css";
+@import "~animate.css/source/attention_seekers/wobble.css";
 @import "~animate.css/source/sliding_exits/slideOutDown.css";
 @import "~animate.css/source/zooming_entrances/zoomIn.css";
 @import "~animate.css/source/flippers/flipInX.css";
