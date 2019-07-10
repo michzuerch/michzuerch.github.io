@@ -10,6 +10,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.pug$/,
+        use: ['html-loader?attrs=false', 'pug-html-loader']
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -25,8 +29,9 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       title: "Michael Zürcher",
-      template: "./src/index.html",
-      filename: "./index.html"
+      template: "./src/index.pug",
+      filename: "./index.html",
+      inject: false
     })
   ]
 };
