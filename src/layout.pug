@@ -1,10 +1,9 @@
 //- layout.pug
 doctype html
-html
-  head
-    title I'm a title
+html(lang="de")
+  include _head
   body
     block header
     block content
     block footer
-  script(src="somescript.js")
+    script(src="bundle.js")
