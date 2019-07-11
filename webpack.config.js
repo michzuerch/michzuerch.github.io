@@ -34,7 +34,7 @@ module.exports = {
       title: "Michael Zürcher",
       template: "./src/index.pug",
       filename: "./index.html",
-      inject: false
+      inject: true
     })
   ]
 };
