@@ -12,6 +12,13 @@
 @import "~animate.css/source/zooming_entrances/zoomIn.css";
 @import "~animate.css/source/flippers/flipInX.css";
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+
+.title-bg {
+    background-image: url('img/Background1lg.jpg'); 
+    height: 75vh; 
+    max-height:750px;
+}
+
 .bg-paper {
     background-color: #FFF8DC;
 }

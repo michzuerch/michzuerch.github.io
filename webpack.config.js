@@ -26,15 +26,26 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|gif|jpe?g)$/,
+        use: [
+          {
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/"
+            },
+            loader: "file-loader"
+          }
+        ]
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: "Michael Zürcher",
       template: "./src/index.pug",
       filename: "./index.html",
-      inject: true
+      inject: false
     })
   ]
 };

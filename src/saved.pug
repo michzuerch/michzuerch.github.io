@@ -1,0 +1,578 @@
+//- index.pug
+//- extends layout
+//- block about
+//-   h1 About
+//- block network
+//-   h3 Network
+//- block footer
+//-   h2 Footer
+
+doctype html
+html(lang='de')
+      .slider-content.animated.zoomIn.container.max-w-4xl.mx-auto.pt-64.text-center.break-normal(class='md:pt-64')
+        // Title
+        .text-white.font-extrabold.text-6xl.text-shadow(class='md:text-6xl')
+          | Michael Z&uuml;rcher
+        |           
+        .text-5xl.text-white.text-shadow(class='md:text-5xl')
+          | IT-Experte
+          | und
+          | Programmierer
+    // Container
+    .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
+      .mx-0(class='sm:mx-6')
+        .bg-paper.w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
+          // Lead Card About
+          section#about
+            .slider-content.animated.headShake.flex.h-full.bg-white.rounded.overflow-hidden.shadow-lg
+              .flex.flex-wrap.no-underline(class='hover:no-underline')
+                div
+                  img.w-full(src='img/Avatar2018.jpg')
+                |                   
+                .w-full.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                  .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                    .w-full.text-gray-600.text-xs.pt-6.px-6(class='md:text-sm')
+                      | &Uuml;ber
+                      | mich...
+                    |                       
+                    .w-full.font-bold.text-xl.text-gray-900.px-6
+                      | Hallo
+                      | mein Name ist Michael Z&uuml;rcher
+                    |                       
+                    .text-gray-800.font-serif.text-base.px-6.mb-5
+                      | Als 
+                      strong Java
+                      | -Programmierer habe ich mehr
+                      |                         als
+                      |                         10
+                      |                         Jahren Erfahrung mit der
+                      |                         Entwicklung von Internet-L&ouml;sungen mit Java.
+                      br
+                      |                         Meistens mit 
+                      strong Linux
+                      |  und 
+                      strong Java EE
+                      | ,
+                      |                         neuerdings auch mit
+                      |                         
+                      strong Spring-Boot
+                      |                         und 
+                      strong Docker
+                      | .
+                      |                         In den letzten Jahren hatte ich es mit verschiedenen
+                      |                         Java-Frameworks zur
+                      |                         Webprogrammierung zu tun:
+                      br
+                      |                         Zuerst JSP (Java Server Pages), dann Apache Struts, Java
+                      |                         Server Faces
+                      |                         und zuletzt 
+                      strong Vaadin
+                      | .
+                      br
+                      |                         Weiterhin arbeite ich nun vermehrt mit
+                      |                         Virtualisierungstechniken: 
+                      strong Docker, Openshift
+                      |                         und
+                      |                         
+                      strong Kubernetes.
+                    |                       
+                    .pl-8
+                      a.bg-orange-500.text-white.py-2.px-4.m-2.rounded.inline-flex.items-center(class='hover:bg-orange-600', href='https://docs.google.com/document/d/1i_CY7K3zurwM_MqIE1sVN10oH2jcFhQeHKpp1XJQKS0/edit?usp=sharing', target='_blank')
+                        span CV herunterladen
+                        |                           
+                        i.pl-2.fab.fa-1x.fa-google-drive &nbsp;
+                  |                     
+                  .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                    .flex.items-center.justify-between
+                      img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                      |                         
+                      .text-gray-600.text-sm.font-medium
+                        | Michael
+                        | Z&uuml;rcher
+                      |                         
+                      .text-gray-800.text-xs.font-medium
+                        | 27. Juni
+                        | 2019
+          // /Lead Card
+          // Content
+          .flex.flex-wrap.justify-between.pt-12.-mx-6
+            // Netzwerke
+            section#networks
+              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                  img.h-64.w-full.rounded-t.pb-6(src='img/network.jpg')
+                  |                     
+                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Netzwerke
+                  |                     
+                  .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                    | Installation,
+                    | Administration und Fehlersuche
+                  |                     
+                  .text-gray-800.font-serif.text-base.px-6.mb-5
+                    | Unterhalt
+                    | und Wartung moderner Netzwerkumgebungen.
+                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                      li Switches
+                      |                         
+                      li Router
+                      |                         
+                      li VPN
+                      |                         
+                      li Firewalls
+                      |                         
+                      li Loadbalancer
+                      |                         
+                      li NAS
+                  |                     
+                  .text-sm.text-gray-600.px-6.mb-5
+                    | Skill level
+                    .bar.front.expert(data-skill='Switches/Router')
+                    |                       
+                    .bar.back.advanced(data-skill='Firewalls/Paketfilter')
+                    |                       
+                    .bar.back.advanced(data-skill='Loadbalancer')
+                |                   
+                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                  .flex.items-center.justify-between
+                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                    |                       
+                    .text-gray-600.text-sm.font-medium
+                      | Michael
+                      | Z&uuml;rcher
+                    |                       
+                    .text-gray-800.text-xs.font-medium
+                      | 27. Juni
+                      | 2019
+            // Internet
+            section#internet
+              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                  img.h-64.w-full.rounded-t.pb-6(src='img/internet.jpg')
+                  |                     
+                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Internet
+                  |                     
+                  .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                    | Hosting
+                    | von Websites
+                  |                     
+                  .text-gray-800.font-serif.text-base.px-6.mb-5
+                    | Betreiben
+                    | von Websites (CMS, Joomla, Wordpress)
+                    | und Email-Servern
+                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                      li Webhosting
+                      |                         
+                      li Joomla
+                      |                         
+                      li Wordpress
+                      |                         
+                      li SMTP, IMAP, POP
+                      |                         
+                      li SSL/TLS Lets&apos; encrypt
+                  |                     
+                  .text-sm.text-gray-600.px-6.mb-5
+                    | Skill level
+                    .bar.front.expert(data-skill='Joomla')
+                    |                       
+                    .bar.back.advanced(data-skill='Wordpress')
+                    |                       
+                    .bar.back.advanced(data-skill='Email')
+                    |                       
+                    .bar.back.intermediate(data-skill='SSL/TLS')
+                |                   
+                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                  .flex.items-center.justify-between
+                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                    |                       
+                    .text-gray-600.text-sm.font-medium
+                      | Michael
+                      | Z&uuml;rcher
+                    |                       
+                    .text-gray-800.text-xs.font-medium
+                      | 27. Juni
+                      | 2019
+            // Support
+            section#support
+              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                  img.h-64.w-full.rounded-t.pb-6(src='img/support.jpg')
+                  |                     
+                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Support
+                  |                     
+                  .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                    | Enduser-Support
+                    | und Hardware
+                  |                     
+                  .text-gray-800.font-serif.text-base.px-6.mb-5
+                    | Online-Support
+                    | von Endusern &uuml;ber Teamviewer
+                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                      li Microsoft Office
+                      |                         
+                      li Windows, Linux, Mac
+                      |                         
+                      li PC-Peripherie, Drucker, etc.
+                      |                         
+                      li PC-Hardware Reparatur
+                      |                         
+                      li RAID-Controller
+                      |                         
+                      li Windows Server, Exchange-Server
+                  |                     
+                  .text-sm.text-gray-600.px-6.mb-5
+                    | Skill level
+                    .bar.front.expert(data-skill='Microsoft Office')
+                    |                       
+                    .bar.front.expert(data-skill='Windows Server')
+                    |                       
+                    .bar.front.expert(data-skill='Linux Server')
+                    |                       
+                    .bar.back.advanced(data-skill='PC-Hardware')
+                |                   
+                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                  .flex.items-center.justify-between
+                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                    |                       
+                    .text-gray-600.text-sm.font-medium
+                      | Michael
+                      | Z&uuml;rcher
+                    |                       
+                    .text-gray-800.text-xs.font-medium
+                      | 27. Juni
+                      | 2019
+            // Programming Backend
+            section#programming-backend
+              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/2')
+                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                  img.h-64.w-full.rounded-t.pb-6(src='img/programming.jpg')
+                  |                     
+                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2
+                    | Programmierung
+                    | Backend
+                  |                     
+                  .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                    | Installation,
+                    | Administration und Fehlersuche
+                  |                     
+                  .text-gray-800.font-serif.text-base.px-6.mb-5
+                    | Konzeption,
+                    | Wartung und Fehlersuche in Netzwerken.
+                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                      li Switch
+                      |                         
+                      li Router
+                      |                         
+                      li VPN
+                      |                         
+                      li Firewall
+                      |                         
+                      li Loadbalancer
+                      |                         
+                      li NAS
+                  |                     
+                  .text-sm.text-gray-600.px-6.mb-5
+                    | Skill level
+                    .bar.front.expert(data-skill='J2EE Applikationsserver')
+                    |                       
+                    .bar.back.advanced(data-skill='Webserver')
+                    |                       
+                    .bar.back.advanced(data-skill='Email')
+                    |                       
+                    .bar.back.intermediate(data-skill='CMS')
+                    |                       
+                    .bar.back.intermediate(data-skill='SSL/TLS')
+                |                   
+                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                  .flex.items-center.justify-between
+                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                    |                       
+                    .text-gray-600.text-sm.font-medium
+                      | Michael
+                      | Z&uuml;rcher
+                    |                       
+                    .text-gray-800.text-xs.font-medium
+                      | 27. Juni
+                      | 2019
+            // Programming Frontend
+            section#programming-frontend
+              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/2')
+                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                  img.h-64.w-full.rounded-t.pb-6(src='img/network.jpg')
+                  |                     
+                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2
+                    | Programmierung
+                    | Frontend
+                  |                     
+                  .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                    | Installation,
+                    | Administration und Fehlersuche
+                  |                     
+                  .text-gray-800.font-serif.text-base.px-6.mb-5
+                    | Konzeption,
+                    | Wartung und Fehlersuche in Netzwerken.
+                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                      li Switch
+                      |                         
+                      li Router
+                      |                         
+                      li VPN
+                      |                         
+                      li Firewall
+                      |                         
+                      li Loadbalancer
+                      |                         
+                      li NAS
+                  |                     
+                  .text-sm.text-gray-600.px-6.mb-5
+                    | Skill level
+                    .bar.front.expert(data-skill='J2EE Applikationsserver')
+                    |                       
+                    .bar.back.advanced(data-skill='Webserver')
+                    |                       
+                    .bar.back.advanced(data-skill='Email')
+                    |                       
+                    .bar.back.intermediate(data-skill='CMS')
+                    |                       
+                    .bar.back.intermediate(data-skill='SSL/TLS')
+                |                   
+                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                  .flex.items-center.justify-between
+                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                    |                       
+                    .text-gray-600.text-sm.font-medium
+                      | Michael
+                      | Z&uuml;rcher
+                    |                       
+                    .text-gray-800.text-xs.font-medium
+                      | 27. Juni
+                      | 2019
+            // Codesamples Github
+            section#codesamples
+              .container
+                .bg-paper.text-center.py-4(class='lg:px-4')
+                  .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
+                    | Sourcecode auf Github 
+                    i.pl-2.fab.fa-github &nbsp;
+                |                   
+                .flex.flex-row
+                  // Github Anouman
+                  article#Anouman
+                    .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                      .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                        img.h-64.w-full.rounded-t.pb-6(src='img/Anouman.png')
+                        |                           
+                        .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Anouman
+                        |                           
+                        .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                          | Installation,
+                          | Administration und Fehlersuche
+                        |                           
+                        .text-gray-800.font-serif.text-base.px-6.mb-5
+                          | Konzeption,
+                          | Wartung und Fehlersuche in Netzwerken.
+                          ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                            li Switch
+                            |                               
+                            li Router
+                            |                               
+                            li VPN
+                            |                               
+                            li Firewall
+                            |                               
+                            li Loadbalancer
+                            |                               
+                            li NAS
+                        |                           
+                        .text-sm.text-gray-600.px-6.mb-5
+                          | Skill level
+                          .bar.front.expert(data-skill='J2EE Applikationsserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Webserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Email')
+                          |                             
+                          .bar.back.intermediate(data-skill='CMS')
+                          |                             
+                          .bar.back.intermediate(data-skill='SSL/TLS')
+                      |                         
+                      .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                        .flex.items-center.justify-between
+                          img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                          |                             
+                          .text-gray-600.text-sm.font-medium
+                            | Michael
+                            | Z&uuml;rcher
+                          |                             
+                          .text-gray-800.text-xs.font-medium
+                            | 27.
+                            | Juni
+                            | 2019
+                  // Github TeachersAssistant
+                  article#TeachersAssistant
+                    .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                      .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                        img.h-64.w-full.rounded-t.pb-6(src='img/TeachersAssistant.png')
+                        |                           
+                        .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 TeachersAssistant
+                        |                           
+                        .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                          | Installation,
+                          | Administration und Fehlersuche
+                        |                           
+                        .text-gray-800.font-serif.text-base.px-6.mb-5
+                          | Konzeption,
+                          | Wartung und Fehlersuche in Netzwerken.
+                          ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                            li Switch
+                            |                               
+                            li Router
+                            |                               
+                            li VPN
+                            |                               
+                            li Firewall
+                            |                               
+                            li Loadbalancer
+                            |                               
+                            li NAS
+                        |                           
+                        .text-sm.text-gray-600.px-6.mb-5
+                          | Skill level
+                          .bar.front.expert(data-skill='J2EE Applikationsserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Webserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Email')
+                          |                             
+                          .bar.back.intermediate(data-skill='CMS')
+                          |                             
+                          .bar.back.intermediate(data-skill='SSL/TLS')
+                      |                         
+                      .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                        .flex.items-center.justify-between
+                          img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                          |                             
+                          .text-gray-600.text-sm.font-medium
+                            | Michael
+                            | Z&uuml;rcher
+                          |                             
+                          .text-gray-800.text-xs.font-medium
+                            | 27.
+                            | Juni
+                            | 2019
+                  // Github LocateIPAddress
+                  article#LocateIPAddress
+                    .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+                      .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+                        img.h-64.w-full.rounded-t.pb-6(src='img/LocateIPAddress.png')
+                        |                           
+                        .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 LocateIPAddress
+                        |                           
+                        .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+                          | Installation,
+                          | Administration und Fehlersuche
+                        |                           
+                        .text-gray-800.font-serif.text-base.px-6.mb-5
+                          | Konzeption,
+                          | Wartung und Fehlersuche in Netzwerken.
+                          ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+                            li Switch
+                            |                               
+                            li Router
+                            |                               
+                            li VPN
+                            |                               
+                            li Firewall
+                            |                               
+                            li Loadbalancer
+                            |                               
+                            li NAS
+                        |                           
+                        .text-sm.text-gray-600.px-6.mb-5
+                          | Skill level
+                          .bar.front.expert(data-skill='J2EE Applikationsserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Webserver')
+                          |                             
+                          .bar.back.advanced(data-skill='Email')
+                          |                             
+                          .bar.back.intermediate(data-skill='CMS')
+                          |                             
+                          .bar.back.intermediate(data-skill='SSL/TLS')
+                      |                         
+                      .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
+                        .flex.items-center.justify-between
+                          img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher', src='img/Avatar2018.jpg', alt='Button')
+                          |                             
+                          .text-gray-600.text-sm.font-medium
+                            | Michael
+                            | Z&uuml;rcher
+                          |                             
+                          .text-gray-800.text-xs.font-medium
+                            | 27.
+                            | Juni
+                            | 2019
+          // Content
+          // Gallery
+          section#gallery
+            .container
+              .bg-paper.text-center.py-4(class='lg:px-4')
+                .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
+                  | Image gallery
+              |               
+              #owl.owl-carousel.owl-theme
+                .item
+                  img(src='img/gallery/Portrait1-cut.jpg', alt='Portrait1')
+                |                 
+                .item
+                  img(src='img/gallery/Portrait2-cut.jpg', alt='Portrait2')
+                |                 
+                .item
+                  img(src='img/gallery/Portrait3-cut.jpg', alt='Portrait3')
+                |                 
+                .item
+                  img(src='img/gallery/Car1-cut.jpg', alt='Car1')
+                |                 
+                .item
+                  img(src='img/gallery/Car2-cut.jpg', alt='Car2')
+                |                 
+                .item
+                  img(src='img/gallery/Car3-cut.jpg', alt='Car3')
+                |                 
+                .item
+                  img(src='img/gallery/Wolf-cut.jpg', alt='Wolf')
+          |           
+          footer.bg-orange-200
+            .container.max-w-6xl.mx-auto.flex.items-center.px-2.py-8
+              .w-full.mx-auto.flex.flex-wrap.items-center
+                .flex.w-full.justify-center(class='md:w-1/2')
+                  .shadow-lg.bg-white.rounded
+                    .m-2.text-lg.text-gray-600.font-medium
+                      span.text-base.font-normal.underline Postadresse:
+                      br
+                      |                       Grenzpaket / Fitness Store
+                      br
+                      |                       Michael Z&uuml;rcher (93771)
+                      br
+                      |                       Hegaustr. 6
+                      br
+                      |                       D-78224 Singen (Hohentwiel)
+                |                 
+                .flex.w-full.pt-2.content-center.justify-between(class='md:w-1/2 md:justify-end')
+                  ul.list-reset.flex.justify-center.flex-1.items-center(class='md:flex-none')
+                    li.mr-2
+                      a.bg-red-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-red-500', href='#', target='_blank')
+                        .justify-center
+                          | michzuerch@gmail.com
+                          i.fas.fa-1x.fa-envelope &nbsp;
+                    |                     
+                    li.mr-2
+                      a.bg-blue-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-blue-400', href='#', target='_blank')
+                        .justify-center
+                          | michzuerch
+                          i.fab.fa-1x.fa-skype &nbsp;
+                    |                     
+                    li.mr-2
+                      a.inline-block.bg-green-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-green-500', href='#', target='_blank')
+                        .justify-center
+                          | +49 178 660 86 38
+                          i.fa.fa-1x.fa-phone &nbsp;
