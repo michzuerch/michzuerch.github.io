@@ -18,6 +18,8 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "autoprefixer": "^9.6.1",
+    "jstransformer-coffee-script": "^1.1.1",
+    "jstransformer-markdown-it": "^2.1.0",
     "tailwindcss": "^1.0.4"
   },
   "devDependencies": {
