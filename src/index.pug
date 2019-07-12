@@ -1,10 +1,18 @@
 //- index.pug
 extends layout
 block title
-  include title
+  include includes/title
 block about
-  include about
+  include includes/about
 block network
-  h3 Network
+  include includes/network
+block support
+  include includes/support
+block programming
+  include includes/programming
+block github
+  include includes/github
+block gallery
+  include includes/gallery
 block footer
-  include footer
+  include includes/footer
