@@ -1,1 +1,24 @@
 section#network
+.w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
+.flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
+    img.h-64.w-full.rounded-t.pb-6(src='img/network.jpg')
+    .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Netzwerke
+    .w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
+    | Installation,
+    | Administration und Fehlersuche
+    .text-gray-800.font-serif.text-base.px-6.mb-5
+    | Unterhalt
+    | und Wartung moderner Netzwerkumgebungen.
+    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
+        li Switches
+        li Router
+        li VPN
+        li Firewalls
+        li Loadbalancer
+        li NAS
+    .text-sm.text-gray-600.px-6.mb-5
+    |Skill level
+    .bar.front.expert(data-skill='Switches/Router')
+    .bar.back.advanced(data-skill='Firewalls/Paketfilter')
+    .bar.back.advanced(data-skill='Loadbalancer')
+    +cardfooter("13. July 2019")
