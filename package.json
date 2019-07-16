@@ -11,6 +11,7 @@
   "author": "Michael Zuercher",
   "main": "index.js",
   "scripts": {
+    "pug": "pug old-working.pug",
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development",
     "start:dev": "webpack-dev-server --mode=development --open"
