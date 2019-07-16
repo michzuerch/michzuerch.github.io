@@ -1,21 +1,39 @@
 //- index.pug
-extends layout
-block title
-  include includes/title
-block about
-  include includes/about
-  .flex.flex-wrap.justify-between.pt-12.-mx-6
-  block network
-    include includes/network
-  block support
-    include includes/support
-  block internet
-    include includes/internet
-  block programming
-    include includes/programming
-  block github
-    include includes/github
-  block gallery
-    include includes/gallery
-block footer
-  include includes/footer
+//- include mixins/image.pug
+//- include mixins/icon.pug
+//- include mixins/section.pug
+include mixins/article.pug
+include mixins/pet.pug
+include mixins/card.pug
+include mixins/cardfooter.pug
+
+doctype html
+html(lang="de")
+  include includes/_head
+  body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal 
+    block title
+      include includes/title
+  .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
+    .mx-0(class='sm:mx-6')
+      block about
+        include includes/about
+      block network
+        include includes/network
+      block support
+        include includes/support
+      block internet
+        include includes/internet
+      block programming
+        include includes/programming
+      block github
+        include includes/github
+      block gallery
+        include includes/gallery
+  block footer
+    include includes/footer
+script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+script(src='https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+script(src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js')
+script(src='https://unpkg.com/tippy.js@4')
+script(src="bundle.js")

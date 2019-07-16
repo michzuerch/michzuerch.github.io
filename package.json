@@ -17,8 +17,6 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "autoprefixer": "^9.6.1",
-    "jstransformer-markdown-it": "^2.1.0",
     "tailwindcss": "^1.0.5"
   },
   "devDependencies": {
@@ -39,8 +37,9 @@
     "url-loader": "^2.0.1",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
+    "jstransformer-markdown-it": "^2.1.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
+    "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   }
 }
