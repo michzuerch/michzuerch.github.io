@@ -1,4 +1,17 @@
 @tailwind base;
+
+h1 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}
+
 @tailwind components;
 @tailwind utilities;
 @import "~animate.css/source/_base.css";
@@ -14,9 +27,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 
 .title-bg {
-    background-image: url('img/Background1lg.jpg'); 
-    height: 75vh; 
-    max-height:750px;
+    background-image: url('img/Background1lg.jpg');
+    height: 75vh;
+    max-height: 750px;
 }
 
 .bg-paper {
