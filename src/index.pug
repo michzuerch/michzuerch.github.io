@@ -12,12 +12,13 @@ html(lang="de")
     .mx-0(class='sm:mx-6')
       block about
         include includes/about
-      block network
-        include includes/network
-      block support
-        include includes/support
-      block internet
-        include includes/internet
+      .flex.flex-wrap.justify-between
+        block network
+          include includes/network
+        block support
+          include includes/support
+        block internet
+          include includes/internet
       block programming
         include includes/programming
       block github
