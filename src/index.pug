@@ -1,20 +1,12 @@
+include mixins/card.pug
+include mixins/cardfooter.pug
+
 doctype html
+html(lang="de")
 
 head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  meta(name='google-site-verification' content='A-u8rFKOS1V5b4UqTTwG73-naPGP6UaumbUyMLRMF-A')
-  meta(name='author' content='Michael Zuercher')
-  meta(name='description' content='IT Experte und Programmer')
-  meta(name='keywords' content='IT Programming Coder Java Vaadin Fullstack')
-  title Old Sample
-  link(rel='shortcut icon' type='image/x-icon' href='img/favicon.ico')
-  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' rel='stylesheet')
-  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' crossorigin='anonymous')
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
-  link(href='dist.css' rel='stylesheet')
+  include includes/_head
+body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal 
 // Header
 .w-full.m-0.p-0.bg-cover.bg-bottom(style="background-image:url('img/Background1lg.jpg'); height: 75vh;\
 max-height:750px;")
@@ -28,7 +20,7 @@ max-height:750px;")
 // Container
 .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
   .mx-0(class='sm:mx-6')
-    .bg-paper.w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
+    .w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
       // Lead Card About
       .flex.h-full.bg-white.rounded.overflow-hidden.shadow-lg
         .flex.flex-wrap.no-underline(class='hover:no-underline')
@@ -386,7 +378,7 @@ max-height:750px;")
                   .justify-center
                     | +49 178 660 86 38
                     i.fa.fa-1x.fa-phone
-    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+script(src='https://code.jquery.com/jquery-3.4.1.min.js')
 script(src='https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.js')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
 script(src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js')
