@@ -17,8 +17,6 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
         // Lead Card About
         block about
           include includes/about
-
-
         // /Lead Card
         // Content
         .flex.flex-wrap.justify-between.pt-12.-mx-6
@@ -29,167 +27,23 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
             include includes/internet
           block support
             include includes/support
-          // Programming Backend
-          .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/2')
-            .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-              img.h-64.w-full.rounded-t.pb-6(src='img/programming.jpg')
-              .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2
-                | Programmierung
-                | Backend
-              p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                | Installation,
-                | Administration und Fehlersuche
-              p.text-gray-800.font-serif.text-base.px-6.mb-5
-                | Konzeption,
-                | Wartung und Fehlersuche in Netzwerken.
-                ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                  li Switch
-                  li Router
-                  li VPN
-                  li Firewall
-                  li Loadbalancer
-                  li NAS
-              .text-sm.text-gray-600.px-6.mb-5
-                | Skill level
-                .bar.front.expert(data-skill='J2EE Applikationsserver')
-                .bar.back.advanced(data-skill='Webserver')
-                .bar.back.advanced(data-skill='Email')
-                .bar.back.intermediate(data-skill='CMS')
-                .bar.back.intermediate(data-skill='SSL/TLS')
-            .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-              .flex.items-center.justify-between
-                img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                p.text-gray-800.text-xs.font-medium 27. Juni 2019
-          // Programming Frontend
-          .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/2')
-            .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-              img.h-64.w-full.rounded-t.pb-6(src='img/network.jpg')
-              .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2
-                | Programmierung
-                | Frontend
-              p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                | Installation,
-                | Administration und Fehlersuche
-              p.text-gray-800.font-serif.text-base.px-6.mb-5
-                | Konzeption,
-                | Wartung und Fehlersuche in Netzwerken.
-                ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                  li Switch
-                  li Router
-                  li VPN
-                  li Firewall
-                  li Loadbalancer
-                  li NAS
-              .text-sm.text-gray-600.px-6.mb-5
-                | Skill level
-                .bar.front.expert(data-skill='J2EE Applikationsserver')
-                .bar.back.advanced(data-skill='Webserver')
-                .bar.back.advanced(data-skill='Email')
-                .bar.back.intermediate(data-skill='CMS')
-                .bar.back.intermediate(data-skill='SSL/TLS')
-            .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-              .flex.items-center.justify-between
-                img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                p.text-gray-800.text-xs.font-medium 27. Juni 2019
+          block backend
+            include includes/backend
+          block frontend
+            include includes/frontend
+
           .container
             .bg-paper.text-center.py-4(class='lg:px-4')
               .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
                 | Sourcecode auf Github 
                 i.pl-2.fab.fa-github
             .flex.flex-row
-              // Github Anouman
-              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
-                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-                  img.h-64.w-full.rounded-t.pb-6(src='img/Anouman.png')
-                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Anouman
-                  p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                    | Installation,
-                    | Administration und Fehlersuche
-                  p.text-gray-800.font-serif.text-base.px-6.mb-5
-                    | Konzeption,
-                    | Wartung und Fehlersuche in Netzwerken.
-                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                      li Switch
-                      li Router
-                      li VPN
-                      li Firewall
-                      li Loadbalancer
-                      li NAS
-                  .text-sm.text-gray-600.px-6.mb-5
-                    | Skill level
-                    .bar.front.expert(data-skill='J2EE Applikationsserver')
-                    .bar.back.advanced(data-skill='Webserver')
-                    .bar.back.advanced(data-skill='Email')
-                    .bar.back.intermediate(data-skill='CMS')
-                    .bar.back.intermediate(data-skill='SSL/TLS')
-                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-                  .flex.items-center.justify-between
-                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                    p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                    p.text-gray-800.text-xs.font-medium 27. Juni 2019
-              // Github TeachersAssistant
-              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
-                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-                  img.h-64.w-full.rounded-t.pb-6(src='img/TeachersAssistant.png')
-                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 TeachersAssistant
-                  p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                    | Installation,
-                    | Administration und Fehlersuche
-                  p.text-gray-800.font-serif.text-base.px-6.mb-5
-                    | Konzeption,
-                    | Wartung und Fehlersuche in Netzwerken.
-                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                      li Switch
-                      li Router
-                      li VPN
-                      li Firewall
-                      li Loadbalancer
-                      li NAS
-                  .text-sm.text-gray-600.px-6.mb-5
-                    | Skill level
-                    .bar.front.expert(data-skill='J2EE Applikationsserver')
-                    .bar.back.advanced(data-skill='Webserver')
-                    .bar.back.advanced(data-skill='Email')
-                    .bar.back.intermediate(data-skill='CMS')
-                    .bar.back.intermediate(data-skill='SSL/TLS')
-                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-                  .flex.items-center.justify-between
-                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                    p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                    p.text-gray-800.text-xs.font-medium 27. Juni 2019
-              // Github LocateIPAddress
-              .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
-                .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-                  img.h-64.w-full.rounded-t.pb-6(src='img/LocateIPAddress.png')
-                  .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 LocateIPAddress
-                  p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                    | Installation,
-                    | Administration und Fehlersuche
-                  p.text-gray-800.font-serif.text-base.px-6.mb-5
-                    | Konzeption,
-                    | Wartung und Fehlersuche in Netzwerken.
-                    ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                      li Switch
-                      li Router
-                      li VPN
-                      li Firewall
-                      li Loadbalancer
-                      li NAS
-                  .text-sm.text-gray-600.px-6.mb-5
-                    | Skill level
-                    .bar.front.expert(data-skill='J2EE Applikationsserver')
-                    .bar.back.advanced(data-skill='Webserver')
-                    .bar.back.advanced(data-skill='Email')
-                    .bar.back.intermediate(data-skill='CMS')
-                    .bar.back.intermediate(data-skill='SSL/TLS')
-                .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-                  .flex.items-center.justify-between
-                    img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                    p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                    p.text-gray-800.text-xs.font-medium 27. Juni 2019
-        // Content
+              block anouman
+                include includes/anouman            
+              block teachersassistant
+                include includes/teachersassistant
+              block locateipaddress
+                include includes/locateipaddress            
       // Gallery
       .container
         .bg-paper.text-center.py-4(class='lg:px-4')
