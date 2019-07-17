@@ -35,7 +35,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
         .container
           .bg-paper.text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
-              | Sourcecode auf Github 
+              h1 Sourcecode auf Github 
               i.pl-2.fab.fa-github
           .flex.flex-row
             block anouman
@@ -44,45 +44,11 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
               include includes/teachersassistant
             block locateipaddress
               include includes/locateipaddress            
-        // Gallery
-        .container
-          .bg-paper.text-center.py-4(class='lg:px-4')
-            .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
-              | Image gallery
           block gallery
             include includes/gallery
-      footer.bg-orange-200
-        .container.max-w-6xl.mx-auto.flex.items-center.px-2.py-8
-          .w-full.mx-auto.flex.flex-wrap.items-center
-            .flex.w-full.justify-center(class='md:w-1/2')
-              .shadow-lg.bg-white.rounded
-                p.m-2.text-lg.text-gray-600.font-medium
-                  span.text-base.font-normal.underline Postadresse:
-                  br
-                  |                   Grenzpaket / Fitness Store
-                  br
-                  |                   Michael Z&uuml;rcher (93771)
-                  br
-                  |                   Hegaustr. 6
-                  br
-                  |                   D-78224 Singen (Hohentwiel)
-            .flex.w-full.pt-2.content-center.justify-between(class='md:w-1/2 md:justify-end')
-              ul.list-reset.flex.justify-center.flex-1.items-center(class='md:flex-none')
-                li.mr-2
-                  button.bg-red-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-red-500' href='#' target='_blank')
-                    .justify-center
-                      | michzuerch@gmail.com
-                      i.fas.fa-1x.fa-envelope
-                li.mr-2
-                  button.bg-blue-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-blue-400' href='#' target='_blank')
-                    .justify-center
-                      | michzuerch
-                      i.fab.fa-1x.fa-skype
-                li.mr-2
-                  button.inline-block.bg-green-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-green-500' href='#' target='_blank')
-                    .justify-center
-                      | +49 178 660 86 38
-                      i.fa.fa-1x.fa-phone
+        block footer
+          include includes/footer
+          
 script(src='https://code.jquery.com/jquery-3.4.1.min.js')
 script(src='https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.js')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
