@@ -24,64 +24,10 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
           // Netzwerke
           block network
             include includes/network
-          // Internet
-          .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
-            .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-              img.h-64.w-full.rounded-t.pb-6(src='img/internet.jpg')
-              .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Internet
-              p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                | Hosting
-                | von Websites
-              p.text-gray-800.font-serif.text-base.px-6.mb-5
-                | Betreiben
-                | von Websites (CMS, Joomla, Wordpress)
-                | und Email-Servern
-                ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                  li Webhosting
-                  li Joomla
-                  li Wordpress
-                  li SMTP, IMAP, POP
-                  li SSL/TLS Lets&apos; encrypt
-              .text-sm.text-gray-600.px-6.mb-5
-                | Skill level
-                .bar.front.expert(data-skill='Joomla')
-                .bar.back.advanced(data-skill='Wordpress')
-                .bar.back.advanced(data-skill='Email')
-                .bar.back.intermediate(data-skill='SSL/TLS')
-            .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-              .flex.items-center.justify-between
-                img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                p.text-gray-800.text-xs.font-medium 27. Juni 2019
-          // Support
-          .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/3')
-            .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
-              img.h-64.w-full.rounded-t.pb-6(src='img/support.jpg')
-              .w-full.font-bold.text-xl.text-gray-900.px-6.mb-2 Support
-              p.w-full.text-gray-600.text-xs.px-6.mb-1(class='md:text-sm')
-                | Enduser-Support
-                | und Hardware
-              p.text-gray-800.font-serif.text-base.px-6.mb-5
-                | Online-Support
-                | von Endusern &uuml;ber Teamviewer
-                ul.text-gray-800.list-disc.font-serif.text-base.px-8.mb-5.list-inside
-                  li Microsoft Office
-                  li Windows, Linux, Mac
-                  li PC-Peripherie, Drucker, etc.
-                  li PC-Hardware Reparatur
-                  li RAID-Controller
-                  li Windows Server, Exchange-Server
-              .text-sm.text-gray-600.px-6.mb-5
-                | Skill level
-                .bar.front.expert(data-skill='Microsoft Office')
-                .bar.front.expert(data-skill='Windows Server')
-                .bar.front.expert(data-skill='Linux Server')
-                .bar.back.advanced(data-skill='PC-Hardware')
-            .flex-none.mt-auto.bg-white.rounded-b.rounded-t-none.overflow-hidden.shadow-lg.p-6
-              .flex.items-center.justify-between
-                img.w-8.h-8.rounded-full.mr-4.avatar(data-tippy-content='Author: Michael Zürcher' src='img/Avatar2018.jpg' alt='Button')
-                p.text-gray-600.text-sm.font-medium Michael Z&uuml;rcher
-                p.text-gray-800.text-xs.font-medium 27. Juni 2019
+          block internet
+            include includes/internet
+          block support
+            include includes/support
           // Programming Backend
           .w-full.p-6.flex.flex-col.flex-grow.flex-shrink(class='md:w-1/2')
             .flex-1.bg-white.rounded-t.rounded-b-none.overflow-hidden.shadow-lg
