@@ -32,38 +32,25 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
           block frontend
             include includes/frontend
 
-          .container
-            .bg-paper.text-center.py-4(class='lg:px-4')
-              .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
-                | Sourcecode auf Github 
-                i.pl-2.fab.fa-github
-            .flex.flex-row
-              block anouman
-                include includes/anouman            
-              block teachersassistant
-                include includes/teachersassistant
-              block locateipaddress
-                include includes/locateipaddress            
-      // Gallery
-      .container
-        .bg-paper.text-center.py-4(class='lg:px-4')
-          .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
-            | Image gallery
-        #owl.owl-carousel.owl-theme
-          .item
-            img(src='img/gallery/Portrait1-cut.jpg' alt='Portrait1')
-          .item
-            img(src='img/gallery/Portrait2-cut.jpg' alt='Portrait2')
-          .item
-            img(src='img/gallery/Portrait3-cut.jpg' alt='Portrait3')
-          .item
-            img(src='img/gallery/Car1-cut.jpg' alt='Car1')
-          .item
-            img(src='img/gallery/Car2-cut.jpg' alt='Car2')
-          .item
-            img(src='img/gallery/Car3-cut.jpg' alt='Car3')
-          .item
-            img(src='img/gallery/Wolf-cut.jpg' alt='Wolf')
+        .container
+          .bg-paper.text-center.py-4(class='lg:px-4')
+            .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
+              | Sourcecode auf Github 
+              i.pl-2.fab.fa-github
+          .flex.flex-row
+            block anouman
+              include includes/anouman            
+            block teachersassistant
+              include includes/teachersassistant
+            block locateipaddress
+              include includes/locateipaddress            
+        // Gallery
+        .container
+          .bg-paper.text-center.py-4(class='lg:px-4')
+            .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
+              | Image gallery
+          block gallery
+            include includes/gallery
       footer.bg-orange-200
         .container.max-w-6xl.mx-auto.flex.items-center.px-2.py-8
           .w-full.mx-auto.flex.flex-wrap.items-center
