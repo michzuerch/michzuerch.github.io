@@ -1,41 +1,19 @@
 footer.bg-orange-200
-    .container.max-w-6xl.mx-auto.flex.items-center.px-2.py-8
-        .w-full.mx-auto.flex.flex-wrap.items-center
-            .shadow-lg.bg-white.text-base.p-3.rounded
-                include:markdown-it markdown/postadresse.md
-            .flex.flex-col.mx-auto.items-center.text-white.text-base
-                button.p-2.m-1.shadow-lg.bg-red-600.rounded(class='hover:bg-red-500' href='#' target='_blank').justify-center
-                    | Email: michzuerch@gmail.com
-                    i.pl-2.fa-2x.fas.fa-envelope
-                button.p-2.m-1.shadow-lg.bg-blue-600.rounded(class='hover:bg-blue-400' href='#' target='_blank').justify-center
-                    | Skype: michzuerch
-                    i.pl-2.fa-2x.fab.fa-skype
-                button.p-2.m-1.shadow-lg.bg-green-600.rounded.hvr-grow(class='hover:bg-green-500' href='#' target='_blank').justify-center
-                    | Mobile: +49 178 660 86 38
-                    i.pl-2.fa-2x.fa.fa-phone
+  .container
+    .w-full.flex.p-10
+        .shadow-lg.bg-white.text-base.p-3.rounded
+            .flex-shrink-0
+                img.h-12.w-12(src="img/button.svg")
+                .ml-6.pt-1
+                    include:markdown-it markdown/postadresse.md
+        .flex.flex-col.w-full.mx-auto
 
-
-//- footer.bg-orange-200
-//-     .container.max-w-6xl.mx-auto.flex.items-center.px-2.py-8
-//-     .w-full.mx-auto.flex.flex-wrap.items-center
-//-         .flex.w-full.justify-center(class='md:w-1/2')
-//-         .shadow-lg.bg-white.rounded
-//-             .m-2.text-lg.text-gray-600.font-medium
-//-                     include:markdown-it markdown/postadresse.md
-//-         .flex.w-full.pt-2.content-center.justify-between(class='md:w-1/2 md:justify-end')
-//-         ul.list-reset.flex.justify-center.flex-1.items-center(class='md:flex-none')
-//-             li.mr-2
-//-             a.bg-red-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-red-500', href='#', target='_blank')
-//-                 .justify-center
-//-                 |michzuerch@gmail.com
-//-                 i.fas.fa-1x.fa-envelope &nbsp;
-//-             li.mr-2
-//-             a.bg-blue-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-blue-400', href='#', target='_blank')
-//-                 .justify-center
-//-                 |michzuerch
-//-                 i.fab.fa-1x.fa-skype &nbsp;
-//-             li.mr-2
-//-             a.inline-block.bg-green-600.text-white.py-2.px-4.rounded.inline-flex.items-center(class='hover:bg-green-500', href='#', target='_blank')
-//-                 .justify-center
-//-                 |+49 178 660 86 38
-//-                 i.fa.fa-1x.fa-phone &nbsp;
+            ul.list-reset.flex.justify-end.flex-1.items-center
+            li
+                a.inline-block.py-2.px-3.text-white.no-underline(href='#') Active
+            li
+                a.inline-block.text-grey-dark.no-underline.py-2.px-3(class='hover:text-grey-lighter hover:text-underline', href='#') link
+            li
+                a.inline-block.text-grey-dark.no-underline.py-2.px-3(class='hover:text-grey-lighter hover:text-underline', href='#') link
+            li
+                a.inline-block.text-grey-dark.no-underline.py-2.px-3(class='hover:text-grey-lighter hover:text-underline', href='#') link
