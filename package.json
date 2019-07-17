@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "autoprefixer": "^9.6.1",
     "tailwindcss": "^1.0.5"
   },
   "devDependencies": {
@@ -32,7 +31,7 @@
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
+    "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   }
 }
