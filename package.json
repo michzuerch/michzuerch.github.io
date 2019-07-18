@@ -13,7 +13,6 @@
   "pugLintConfig": {
     "disallowHtmlText": true,
     "disallowDuplicateAttributes": true,
-    "disallowClassAttributeWithStaticValue": true,
     "disallowIdAttributeWithStaticValue": true,
     "requireLowerCaseAttributes": true
   },
