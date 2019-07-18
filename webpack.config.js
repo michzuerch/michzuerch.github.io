@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -24,6 +25,10 @@ module.exports = {
         }
       },
       {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader", "postcss-loader"]
       },
@@ -46,6 +51,7 @@ module.exports = {
       template: "./src/index.pug",
       filename: "./index.html",
       inject: false
-    })
+    }),
+    new VueLoaderPlugin()
   ]
 };
