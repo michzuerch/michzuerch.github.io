@@ -1,9 +1,9 @@
-.border-b.border-gray-600.bg-transparent.py-4.px-2
+bg-transparent.py-4.px-2
   .container.mx-auto
     nav.flex.items-center.justify-between.flex-wrap
-      .flex.items-center.flex-no-shrink.text-gray-600.mr-6
+      .flex.items-center.flex-no-shrink.text-gray-600.pl-4.mr-6
         img.h-8.w-8(src="img/button.svg")
-        span.font-bold.text-xl.tracking-tight.pl-3 Michael Zürcher
+        span.font-bold.text-lg.tracking-tight.align-middle.pl-3 Michael Zürcher
       .block(class='sm:hidden')
         button.navbar-burger.flex.items-center.px-3.py-2.border.rounded.text-gray-600.border-grey-600(class='hover:text-grey-800 hover:border-grey-600')
           svg.fill-current.h-3.w-3(viewbox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
@@ -11,9 +11,18 @@
             path(d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z')
       #main-nav.w-full.flex-grow.items-center.hidden(class='sm:flex sm:w-auto')
         .text-sm(class='sm:flex-grow').text-gray-600
-          a.no-underline.font-bold.block.mt-4.mr-4(href='#', class='sm:inline-block sm:mt-0 hover:text-grey-light')
-            | Link One
-          a.no-underline.font-bold.block.mt-4.mr-4(href='#', class='sm:inline-block sm:mt-0 hover:text-grey-light')
-            | Link Two
+          a.no-underline.font-semibold.block.m-4.hvr-bounce-in(href='#skills', class='sm:inline-block sm:mt-0 hover:text-grey-light')
+            | Skills
+            i.m-4.align-middle.fa-2x.fas.fa-laptop-code
+          a.no-underline.font-semibold.block.m-4.hvr-bounce-in(href='#programming', class='sm:inline-block sm:mt-0 hover:text-grey-light')
+            | Programmierung
+            i.m-4.align-middle.fa-2x.fas.fa-code
+          a.no-underline.font-semibold.block.m-4.hvr-bounce-in(href='#github', class='sm:inline-block sm:mt-0 hover:text-grey-light')
+            | Github
+            i.m-4.align-middle.fa-2x.fab.fa-github
+          a.no-underline.font-semibold.block.m-4.hvr-bounce-in(href='#gallery', class='sm:inline-block sm:mt-0')
+            | Gallery
+            i.m-4.align-middle.fa-2x.far.fa-images
+
         //- div
         //-   a.no-underline.inline-block.text-sm.px-4.py-2.leading-none.border.rounded.text-white.border-white(href='#', class='hover:border-transparent hover:text-teal hover:bg-white lg:mt-0') Download
