@@ -7,7 +7,23 @@ import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 import "hover.css/css/hover-min.css";
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the "main-nav" element
+        var $target = document.getElementById('main-nav');
+
+        // Toggle the class on "main-nav"
+        $target.classList.toggle('hidden');
+      });
+    });
+  }
   var owl = $(".owl-carousel");
   owl.owlCarousel({
     loop: true,
@@ -33,7 +49,7 @@ $(document).ready(function() {
   });
 
   /* mouse wheel navigation */
-  owl.on("mousewheel", ".owl-stage", function(e) {
+  owl.on("mousewheel", ".owl-stage", function (e) {
     if (e.deltaY > 0) {
       owl.trigger("next.owl");
     } else {
@@ -43,7 +59,7 @@ $(document).ready(function() {
   });
 
   /*keyboard navigation*/
-  $(document.documentElement).keyup(function(event) {
+  $(document.documentElement).keyup(function (event) {
     if (event.keyCode == 37) {
       /*left key*/
       owl.trigger("prev.owl.carousel", [700]);
@@ -52,4 +68,5 @@ $(document).ready(function() {
       owl.trigger("next.owl.carousel", [700]);
     }
   });
+
 });

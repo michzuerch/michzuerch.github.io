@@ -16,25 +16,25 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
   .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
     .mx-0(class='sm:mx-6')
       .w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
-        // Lead Card About
+        // About
         block about
           include includes/about
-        // /Lead Card
-        // Content
+        // /About
+        // Skills
         .container#skills
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
               h1 Skills
               i.pl-2.fab.fa-github
         .flex.flex-wrap.justify-between.pt-12.-mx-6
-          // Netzwerke
           block network
             include includes/network
           block internet
             include includes/internet
           block support
             include includes/support
-
+        // /Skills
+        // Programming
         .container#programming
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
@@ -45,7 +45,9 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
             include includes/backend
           block frontend
             include includes/frontend
+        // /Programming
 
+        // Github
         .container#github
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
@@ -58,6 +60,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
             include includes/teachersassistant
           block locateipaddress
             include includes/locateipaddress            
+        // /Github
         .container#gallery              
           block gallery
             include includes/gallery
