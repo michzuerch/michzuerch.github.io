@@ -1,8 +1,5 @@
 "use strict";
 
-import Vue from 'vue'
-import App from './App.vue'
-
 import "./styles.css";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -70,11 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
       /*right key*/
       owl.trigger("next.owl.carousel", [700]);
     }
-  });
-
-  new Vue({
-    el: '#app',
-    render: h => h(App)
   });
 
 });
