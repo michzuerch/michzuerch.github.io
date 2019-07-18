@@ -1,18 +1,18 @@
 footer.bg-orange-200
   .container
-    .w-full.flex.p-10
-        .shadow-lg.bg-white.text-base.p-3.rounded
-            .flex-initial
-                img.h-12.w-12(src="img/button.svg")
-                .ml-6.pt-1
-                    include:markdown-it markdown/postadresse.md
-        .flex.flex-col.w-full.mx-auto.p-10.text-white.shadow-lg
-            button.p-2.m-1.shadow-lg.bg-red-600.rounded.hvr-grow(class='hover:bg-red-500' href='#' target='_blank').justify-center
-                | Email: michzuerch@gmail.com
-                i.pl-2.fa-2x.fas.fa-envelope
-            button.p-2.m-1.shadow-lg.bg-blue-600.rounded.hvr-grow(class='hover:bg-blue-400' href='#' target='_blank').justify-center
-                | Skype: michzuerch
-                i.pl-2.fa-2x.fab.fa-skype
-            button.p-2.m-1.shadow-lg.bg-green-600.rounded.hvr-grow(class='hover:bg-green-500' href='#' target='_blank').justify-center
-                | Mobile: +49 178 660 86 38
-                i.pl-2.fa-2x.fa.fa-phone
+    .w-full.flex.flex-wrap.items-stretch.p-10
+      .shadow-lg.bg-white.text-base.p-1.mx-auto.rounded(class='md:w-1/2')
+        .flex
+          img.h-12.w-12(src="img/button.svg")
+          .m-1
+            include:markdown-it markdown/postadresse.md
+      .flex.flex-col.mx-auto.p-1.text-white
+        button.p-1.m-1.shadow-lg.bg-red-600.rounded.text-base.hvr-grow(class='hover:bg-red-500' href='#' target='_blank').justify-center
+          | Email: michzuerch@gmail.com
+          i.pl-2.fa-2x.fas.fa-envelope
+        button.p-1.m-1.shadow-lg.bg-blue-600.rounded.text-base.hvr-grow(class='hover:bg-blue-400' href='#' target='_blank').justify-center
+          | Skype: michzuerch
+          i.pl-2.fa-2x.fab.fa-skype
+        button.p-1.m-1.shadow-lg.bg-green-600.rounded.text-base.hvr-grow(class='hover:bg-green-500' href='#' target='_blank').justify-center
+          | Mobile: +49 178 660 86 38
+          i.pl-2.fa-2x.fa.fa-phone
