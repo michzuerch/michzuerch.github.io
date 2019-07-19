@@ -18,7 +18,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
           include includes/about
         // /About
         // Skills
-        .container#skills
+        #skills
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
               h1 Skills
@@ -32,7 +32,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
               include includes/support
         // /Skills
         // Programming
-        .container#programming
+        #programming
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
               h1 Programmierung
@@ -45,7 +45,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
         // /Programming
 
         // Github
-        .container#github
+        #github
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
               h1 Sourcecode auf Github 
@@ -58,7 +58,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
             block locateipaddress
               include includes/locateipaddress            
         // /Github
-        .container#gallery              
+        #gallery              
           .text-center.py-4(class='lg:px-4')
             .mt-4.p-6.bg-orange-500.items-center.text-white.leading-none.flex.shadow-lg.text-4xl(class='lg:rounded-full lg:inline-flex')
               h1 Gallery
@@ -66,7 +66,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
           .flex.flex-wrap.justify-between
             block gallery
               include includes/gallery
-        .container#app
+        #app
           .flex
             .text-xl 
               input(type="text" class="form-control" placeholder="Event Name" v-model="eventname" v-bind:value="Home")
