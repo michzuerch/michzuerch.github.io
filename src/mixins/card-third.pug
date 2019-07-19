@@ -6,11 +6,8 @@ mixin card-third(title, subtitle, date, image)
         h1= title
       .w-full.text-gray-600.text-xs.font-light.px-6.mb-4(class='md:text-sm') 
         h2= subtitle
-      if block
-        .text-gray-800.font-serif.text-base.px-6.mb-5                
+        .text-gray-800.font-serif.text-base.mt-2.mb-5
           block
-      else
-        p Kein Block!
     +cardfooter(date)
 
 
