@@ -47,7 +47,6 @@ module.exports = {
       template: "./src/index.pug",
       filename: "./index.html",
       inject: false
-    }),
-    new VueLoaderPlugin()
+    })
   ]
 };
