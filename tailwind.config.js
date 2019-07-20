@@ -1,13 +1,13 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'display': ['Raleway', 'sans-serif'],
-      'body': ['Raleway', 'sans-serif'],
+      display: ['Raleway', 'sans-serif'],
+      body: ['Raleway', 'sans-serif']
     },
     container: {
-      center: true,
+      center: true
     }
   },
   variants: {},
-  plugins: [],
-};
+  plugins: []
+}
