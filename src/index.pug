@@ -4,6 +4,7 @@ include mixins/card-third.pug
 include mixins/cardfooter.pug
 include mixins/titletext.pug
 include mixins/skilllevel.pug
+include mixins/button.pug
 
 doctype html
 include includes/_head
@@ -59,6 +60,12 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
             block locateipaddress
               include includes/locateipaddress            
         // /Github
+        #fulltest
+          +titletext
+            h1 Playground Flexbox
+          .flex.flex-wrap.justify-between.mt-4
+            block fulltest
+              include includes/fulltest
         #gallery              
           +titletext
             h1 Gallery
