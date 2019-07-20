@@ -3,6 +3,9 @@ module.exports = {
     fontFamily: {
       'display': ['Raleway', 'sans-serif'],
       'body': ['Raleway', 'sans-serif'],
+    },
+    container: {
+      center: true,
     }
   },
   variants: {},
