@@ -8,11 +8,11 @@ include mixins/button.pug
 
 doctype html
 include includes/_head
-body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal 
+body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
   block navigation
     include includes/navigation
   block title
-    include includes/title  
+    include includes/title
   // Container
   .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
     .mx-0(class='sm:mx-6')
@@ -50,15 +50,15 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
         // Github
         #github
           +titletext
-            h1 Sourcecode auf Github 
+            h1 Sourcecode auf Github
             i.pl-2.fab.fa-github
           .flex.flew-wrap.justify-between
             block anouman
-              include includes/anouman            
+              include includes/anouman
             block teachersassistant
               include includes/teachersassistant
             block locateipaddress
-              include includes/locateipaddress            
+              include includes/locateipaddress
         // /Github
         #fulltest
           +titletext
@@ -66,7 +66,7 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
           .flex.flex-wrap.justify-between.mt-4
             block fulltest
               include includes/fulltest
-        #gallery              
+        #gallery
           +titletext
             h1 Gallery
             i.pl-2.fas.fa-images
