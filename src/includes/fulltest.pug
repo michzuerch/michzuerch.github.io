@@ -8,6 +8,15 @@
       li Firewalls
       li Loadbalancer
       li NAS
+
+    .form
+      vaadin-text-field#firstName(label='First Name')  
+      vaadin-text-field#lastName(label='Last Name')  
+      vaadin-button#addButton  Add 
+    vaadin-grid#grid
+      vaadin-grid-column(path='firstName', header='First name')
+      vaadin-grid-column(path='lastName', header='Last name')
+
     .flex.inline-flex
       +button
         | First

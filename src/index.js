@@ -7,6 +7,10 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import 'hover.css/css/hover-min.css'
 
+import '@vaadin/vaadin-button'
+import '@vaadin/vaadin-grid'
+import '@vaadin/vaadin-text-field'
+
 document.addEventListener('DOMContentLoaded', function () {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
@@ -59,10 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* keyboard navigation */
   $(document.documentElement).keyup(function (event) {
-    if (event.keyCode == 37) {
+    if (event.keyCode === 37) {
       /* left key */
       owl.trigger('prev.owl.carousel', [700])
-    } else if (event.keyCode == 39) {
+    } else if (event.keyCode === 39) {
       /* right key */
       owl.trigger('next.owl.carousel', [700])
     }

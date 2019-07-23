@@ -1,15 +1,18 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require('path')
+const webpack = require('webpack')
+// const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, ".")
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, '.')
   },
   devServer: {
-    port: 3000,
+    port: 3000
   },
   module: {
     rules: [
@@ -21,32 +24,33 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"]
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(png|svg|jpg|gif|jpe?g)$/,
         use: [
           {
             options: {
-              name: "[name].[ext]",
-              outputPath: "images/"
+              name: '[name].[ext]',
+              outputPath: 'images/'
             },
-            loader: "file-loader"
+            loader: 'file-loader'
           }
         ]
       }
     ]
   },
   plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.pug",
-      filename: "./index.html",
+    new HtmlWebpackPlugin({
+      template: './src/index.pug',
+      filename: './index.html',
       inject: false
-    })
+    }),
+    new webpack.ProgressPlugin()
   ]
-};
+}
