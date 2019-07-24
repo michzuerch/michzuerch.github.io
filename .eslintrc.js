@@ -4,8 +4,7 @@ module.exports = {
     'es6': true,
   },
   'extends': [
-    'plugin:vue/essential',
-    'google',
+    'airbnb', 'prettier',
   ],
   'globals': {
     'Atomics': 'readonly',
@@ -16,8 +15,9 @@ module.exports = {
     'sourceType': 'module',
   },
   'plugins': [
-    'vue',
+    'prettier',
   ],
   'rules': {
+    "prettier/prettier": ["error"],
   },
 };

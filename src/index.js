@@ -1,5 +1,7 @@
-'use strict';
-
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable func-names */
+/* eslint-disable import/no-extraneous-dependencies */
 import './styles.css';
 
 // import Anouman from 'img/Anouman.jpg';
@@ -17,18 +19,9 @@ import '@vaadin/vaadin-grid';
 import '@vaadin/vaadin-text-field';
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Images
-  // const imgAnouman = new Image();
-  // const imgAvatar2018 = new Image();
-
-  console.log(_.VERSION);
-
-  // imgAnouman.src = Anouman;
-
-  // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
-      document.querySelectorAll('.navbar-burger'),
-      0
+    document.querySelectorAll('.navbar-burger'),
+    0,
   );
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
