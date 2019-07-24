@@ -1,5 +1,5 @@
 +card-full("FullTest","Playground for Flexbox","20. July 2019", "img/network.jpg")
-  p 
+  p
     | Playground
     ul.text-gray-800.list-disc.font-serif.text-base.list-inside
       li Switches
@@ -10,14 +10,14 @@
       li NAS
 
     .form
-      vaadin-text-field#firstName(label='First Name')  
-      vaadin-text-field#lastName(label='Last Name')  
-      vaadin-button#addButton  Add 
+      vaadin-text-field#firstName(label='First Name')
+      vaadin-text-field#lastName(label='Last Name')
+      vaadin-button#addButton  Add
     vaadin-grid#grid
       vaadin-grid-column(path='firstName', header='First name')
       vaadin-grid-column(path='lastName', header='Last name')
 
-    .flex.inline-flex
+    .flex.flex-wrap.inline-flex
       +button
         | First
         i.pl-2.fab.fa-java
@@ -26,7 +26,7 @@
         i.pl-2.fas.fa-code
       +button
         | Third
-        i.pl-2(src='img/icon-spring-boot.svg')
+        i.pl-2.fas.fa-calculator
       +button
         | Fourth
         i.pl-2.fas.fa-code
