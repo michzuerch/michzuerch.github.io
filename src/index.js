@@ -1,6 +1,11 @@
 'use strict';
 
 import './styles.css';
+
+// import Anouman from 'img/Anouman.jpg';
+// import Avatar2018 from 'img/Avatar2018.jpg';
+
+import * as _ from 'lodash';
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
@@ -12,10 +17,18 @@ import '@vaadin/vaadin-grid';
 import '@vaadin/vaadin-text-field';
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Images
+  // const imgAnouman = new Image();
+  // const imgAvatar2018 = new Image();
+
+  console.log(_.VERSION);
+
+  // imgAnouman.src = Anouman;
+
   // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll('.navbar-burger'),
-    0
+  const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll('.navbar-burger'),
+      0
   );
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -23,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
     $navbarBurgers.forEach(function($el) {
       $el.addEventListener('click', function() {
         // Get the "main-nav" element
-        var $target = document.getElementById('main-nav');
+        const $target = document.getElementById('main-nav');
 
         // Toggle the class on "main-nav"
         $target.classList.toggle('hidden');
       });
     });
   }
-  var owl = $('.owl-carousel');
+  const owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,
     nav: true,
