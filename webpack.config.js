@@ -1,12 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
 // const VueLoaderPlugin = require('vue-loader/lib/plugin')
+// eslint-disable-next-line max-len
+const WebpackBundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const Visualizer = require('webpack-visualizer-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '.'),
@@ -53,5 +56,11 @@ module.exports = {
       inject: false,
     }),
     new webpack.ProgressPlugin(),
+    new WebpackBundleAnalyzer({
+      analyzerMode: 'static',
+      reportFilename: './report.html',
+      openAnalyzer: false,
+    }),
+    new Visualizer(),
   ],
 };
