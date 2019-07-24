@@ -21,60 +21,61 @@ body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
         block about
           include includes/about
         // /About
-        // Skills
-        #skills
-          +titletext
-            h1 Skills
-            i.pl-2.fas.fa-laptop-code
-          .flex.flex-wrap.justify-between
-            block network
-              include includes/network
-            block internet
-              include includes/internet
-            block support
-              include includes/support
-        // /Skills
 
-        // Programming
-        #programming
-          +titletext
-            h1 Programmierung
-            i.pl-2.fas.fa-code
-          .flex.flew-wrap.justify-between
-            block backend
-              include includes/frontend
-            block frontend
-              include includes/backend
-        // /Programming
+    // Programming
+    #programming
+      +titletext
+        h1 Programmierung
+        i.pl-2.fas.fa-laptop-code
+      .flex.flex-wrap.justify-between
+        block network
+          include includes/frontend
+        block internet
+          include includes/backend
+    // /Programming
 
-        // Github
-        #github
-          +titletext
-            h1 Sourcecode auf Github
-            i.pl-2.fab.fa-github
-          .flex.flew-wrap.justify-between
-            block anouman
-              include includes/anouman
-            block teachersassistant
-              include includes/teachersassistant
-            block locateipaddress
-              include includes/locateipaddress
-        // /Github
-        #fulltest
-          +titletext
-            h1 Playground Flexbox
-          .flex.flex-wrap.justify-between.mt-4
-            block fulltest
-              include includes/fulltest
-        #gallery
-          +titletext
-            h1 Gallery
-            i.pl-2.fas.fa-images
-          .flex.flex-wrap.justify-between.mt-4
-            block gallery
-              include includes/gallery
-        block footer
-          include includes/footer
+    // Skills
+    #skills
+      +titletext
+        h1 Skills
+        i.pl-2.fas.fa-laptop-code
+      .flex.flex-wrap.justify-between
+        block network
+          include includes/network
+        block internet
+          include includes/internet
+        block support
+          include includes/support
+    // /Skills
+
+    // Github
+    //- #github
+    //-   +titletext
+    //-     h1 Sourcecode auf Github
+    //-     i.pl-2.fab.fa-github
+    //-   .flex.flew-wrap.justify-between
+    //-     block anouman
+    //-       include includes/anouman
+    //-     block teachersassistant
+    //-       include includes/teachersassistant
+    //-     block locateipaddress
+    //-       include includes/locateipaddress
+    // /Github
+    //- #fulltest
+    //-   +titletext
+    //-     h1 Playground Flexbox
+    //-   .flex.flex-wrap.justify-between.mt-4
+    //-     block fulltest
+    //-       include includes/fulltest
+    //- #gallery
+    //-   +titletext
+    //-     h1 Gallery
+    //-     i.pl-2.fas.fa-images
+    //-   .flex.flex-wrap.justify-between.mt-4
+    //-     block gallery
+    //-       include includes/gallery
+    block footer
+      include includes/footer
 
 script(src='https://code.jquery.com/jquery-3.4.1.min.js')
 script(src='https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.js')
