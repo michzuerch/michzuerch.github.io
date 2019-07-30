@@ -1,83 +1,12 @@
-include mixins/card-full.pug
-include mixins/card-half.pug
-include mixins/card-third.pug
-include mixins/cardfooter.pug
-include mixins/titletext.pug
-include mixins/skilllevel.pug
-include mixins/button.pug
-
 doctype html
 include includes/_head
 body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
-  block navigation
-    include includes/navigation
-  block title
-    include includes/title
+  include includes/navigation
   // Container
   .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
     .mx-0(class='sm:mx-6')
       .w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
-        // About
-        block about
-          include includes/about
-        // /About
-
-    // Programming
-    #programming
-      +titletext
-        h1 Programmierung
-        i.pl-2.fas.fa-laptop-code
-      .flex.flex-wrap.justify-between
-        block network
-          include includes/frontend
-        block internet
-          include includes/backend
-    // /Programming
-
-    // Skills
-    #skills
-      +titletext
-        h1 Skills
-        i.pl-2.fas.fa-laptop-code
-      .flex.flex-wrap.justify-between
-        block network
-          include includes/network
-        block internet
-          include includes/internet
-        block support
-          include includes/support
-    // /Skills
-
-    // Github
-    //- #github
-    //-   +titletext
-    //-     h1 Sourcecode auf Github
-    //-     i.pl-2.fab.fa-github
-    //-   .flex.flew-wrap.justify-between
-    //-     block anouman
-    //-       include includes/anouman
-    //-     block teachersassistant
-    //-       include includes/teachersassistant
-    //-     block locateipaddress
-    //-       include includes/locateipaddress
-    // /Github
-    #fulltest
-      +titletext
-        h1 Playground Flexbox
-      .flex.flex-wrap.justify-between.mt-4
-        block fulltest
-          include includes/fulltest
-    #gallery
-      +titletext
-        h1 Gallery
-        i.pl-2.fas.fa-images
-      .flex.flex-wrap.justify-between.mt-4
-        block gallery
-          include includes/gallery
-    block footer
+        include includes/polymerplayground
       include includes/footer
 
-script(src='https://code.jquery.com/jquery-3.4.1.min.js')
-script(src='https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.js')
-script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
 script(src="bundle.js")
