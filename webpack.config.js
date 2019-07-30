@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-// const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBundleAnalyzer = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
@@ -40,10 +39,6 @@ module.exports = {
             name: 'images/[name].[ext]',
           },
         },
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader',
       },
     ],
   },

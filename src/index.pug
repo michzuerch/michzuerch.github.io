@@ -1,12 +1,12 @@
 doctype html
-include includes/_head
 body.bg-paper.antialiased.font-sans.leading-normal.tracking-normal
-  include includes/navigation
   // Container
-  .container.px-4.max-w-6xl.mx-auto.-mt-32(class='md:px-0')
-    .mx-0(class='sm:mx-6')
-      .w-full.text-xl.text-gray-800.leading-normal.rounded-t(class='md:text-2xl')
-        include includes/polymerplayground
-      include includes/footer
-
+  .container.w-full
+    .form
+      vaadin-text-field#firstName(label='First Name')
+      vaadin-text-field#lastName(label='Last Name')
+      vaadin-button#addButton  Add
+    vaadin-grid#grid
+      vaadin-grid-column(path='firstName', header='First name')
+      vaadin-grid-column(path='lastName', header='Last name')
 script(src="bundle.js")
