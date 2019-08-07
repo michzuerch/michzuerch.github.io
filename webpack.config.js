@@ -2,9 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 // const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackBundleAnalyzer = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
-const Visualizer = require('webpack-visualizer-plugin');
+// const WebpackBundleAnalyzer = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin;
+// const Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
@@ -41,10 +41,6 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader',
-      },
     ],
   },
   plugins: [
@@ -53,12 +49,6 @@ module.exports = {
       filename: './index.html',
       inject: false,
     }),
-    new webpack.ProgressPlugin(),
-    new WebpackBundleAnalyzer({
-      analyzerMode: 'static',
-      reportFilename: './report.html',
-      openAnalyzer: false,
-    }),
-    new Visualizer(),
+    new webpack.ProgressPlugin()
   ],
 };
