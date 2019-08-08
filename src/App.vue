@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app dark height="120" class="orange">
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Portfolio</span>
+        <span class="font-weight-light">Michael Zürcher</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn

@@ -80,6 +80,9 @@
           </a>
         </v-layout>
       </v-flex>
+      <v-flex mb-5>
+        <h2 class="headline font-weight-bold mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora ipsum deserunt exercitationem pariatur. Minima sunt ad laborum itaque quia impedit facilis dolores voluptates architecto quisquam! Dicta voluptatibus ipsa totam quis soluta labore molestiae repellat vero, vitae quod iste! Nemo repellendus impedit accusantium amet fuga minus iure fugiat nulla magni atque, molestias voluptate vel eius alias rerum inventore dignissimos cumque ab fugit? Repellendus adipisci atque totam quaerat odio recusandae provident minima amet accusantium cupiditate tempora mollitia inventore nostrum, deserunt maiores fugiat quis, voluptate obcaecati hic quas! In, quo delectus magnam iste dicta qui sunt sint esse assumenda suscipit laborum. Et exercitationem praesentium, quo aliquam a laudantium ad odit culpa laboriosam quas, atque enim accusantium tempora asperiores recusandae ipsam voluptas saepe!</h2>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
