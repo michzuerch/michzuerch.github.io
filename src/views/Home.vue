@@ -6,14 +6,13 @@
     <h1>Massive text size</h1>
     <h1 class="display-4">Bigger than before</h1>
     <h1 class="display-1">One</h1>
-    <v-btn class="pink white--text">Click here</v-btn>
-    <v-btn depressed color="pink">Click here</v-btn>
-    <v-btn flat color="pink">Click here</v-btn>
-    <v-btn depressed class="pink text--white">
-        <v-icon>mdi-android</v-icon>
+    <v-btn depressed class="pink white--text">
+        <v-icon left>mdi-android</v-icon>
+        <span>Android</span>
     </v-btn>
-    <v-btn text icon color="pink">
-        <v-icon>mdi-mouse</v-icon>
+    <v-btn depressed small class="pink white--text">
+        <v-icon left small>mdi-android</v-icon>
+        <span>Android</span>
     </v-btn>
 </div>
 </template>
