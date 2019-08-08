@@ -1,7 +1,7 @@
 <template>
 <div class="home">
     <h1>Homepage</h1>
-    <v-btn class="hidden-md-and-down">
+    <v-btn class="hidden-md-and-up">
       Hier klicken
     </v-btn>
 </div>
