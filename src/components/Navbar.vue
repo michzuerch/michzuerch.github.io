@@ -1,28 +1,38 @@
 <template>
 <nav>
-    <v-toolbar flat>
-        <v-toolbar-title class="text-uppercase grey-text">
-            <span class="font-weight-light">todo</span>
-            <span>Ninja</span>
-        </v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn text color="grey">
-            <span>Logout</span>
-        </v-btn>
-    </v-toolbar>
-    <v-navigation-drawer v-model="drawer" app class="indigo">
-        <p>Test</p>
-        
-    </v-navigation-drawer>
+ <v-card
+    color="grey lighten-4"
+    flat
+    height="200px"
+    tile
+  >
+    <v-toolbar prominent extended>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-</nav>
+      <v-toolbar-title>Title</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>favorite</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+    </v-toolbar>
+  </v-card></nav>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            drawer: true
+            drawer: false
         }
     }
 }
