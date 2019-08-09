@@ -2,6 +2,15 @@
 <v-app id="keep">
     <v-app-bar app clipped-left color="amber">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <span class="title ml-3 mr-5">
+            <v-img src="https://picsum.photos/id/11/500/300" 
+            lazy-src="https://picsum.photos/id/11/10/6" 
+            aspect-ratio="1" 
+            class="grey lighten-2" 
+            width="60"
+            height="60">
+            </v-img>
+        </span>
         <span class="title ml-3 mr-5">Michael Zürcher&nbsp;<span class="font-weight-light">Portfolio</span></span>
         <v-text-field solo-inverted flat hide-details label="Search" prepend-inner-icon="fa-search"></v-text-field>
         <v-spacer></v-spacer>
@@ -27,7 +36,7 @@
             </v-flex> -->
                 </v-layout>
                 <v-divider v-else-if="item.divider" :key="i" dark class="my-4"></v-divider>
-                <v-list-item v-else :key="i" @click="console.log('click');" router :to="item.route">
+                <v-list-item v-else :key="i" router :to="item.route">
                     <v-list-item-action>
                         <v-icon>{{ item.icon }}</v-icon>
                     </v-list-item-action>
