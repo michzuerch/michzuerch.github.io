@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Home from './views/About.vue'
 
 Vue.use(Router)
 
@@ -40,6 +40,11 @@ export default new Router({
       path: '/hardware',
       name: 'hardware',
       component: () => import('./views/Hardware.vue')
+    },
+    {
+      path: '/network',
+      name: 'network',
+      component: () => import('./views/Network.vue')
     },
     {
       path: '/support',
