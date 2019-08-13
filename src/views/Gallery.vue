@@ -11,7 +11,7 @@
                 </v-list-item-avatar>
                 <v-list-item-content>
                     <v-list-item-title>Michael Zürcher</v-list-item-title>
-                    <v-list-item-subtitle>Author</v-list-item-subtitle>
+                    <v-list-item-subtitle>Programmierer und IT-Experte</v-list-item-subtitle>
                 </v-list-item-content>
             </v-list-item>
         </v-list>

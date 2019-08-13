@@ -3,20 +3,28 @@
     <v-app-bar app clipped-left color="amber">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <span class="title ml-3 mr-5">
-            <v-img src="https://picsum.photos/id/11/500/300" 
-            lazy-src="https://picsum.photos/id/11/10/6" 
-            aspect-ratio="1" 
-            class="grey lighten-2" 
-            width="60"
-            height="60">
+            <v-img src="https://picsum.photos/id/11/500/300" lazy-src="https://picsum.photos/id/11/10/6" aspect-ratio="1" class="grey lighten-2" width="60" height="60">
             </v-img>
         </span>
         <span class="title ml-3 mr-5">Michael Zürcher&nbsp;<span class="font-weight-light">Portfolio</span></span>
-        <v-text-field solo-inverted flat hide-details label="Search" prepend-inner-icon="fa-search"></v-text-field>
+        <!-- <v-text-field solo-inverted flat hide-details label="Search" prepend-inner-icon="fa-search"></v-text-field> -->
         <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" app clipped color="grey lighten-4">
+        <v-row>
+            <v-col class="text-center">
+                <v-avatar size="100">
+                    <img src="img/Avatar2018.jpg" alt="avatar">
+                </v-avatar>
+            </v-col>
+        </v-row>
+        <v-row text-center>
+            <v-col>
+                <p class="title text-center">Michael Zürcher</p>
+                <p class="sub-title1 text-center">Programmierer und IT-Experte</p>
+            </v-col>
+        </v-row>
         <v-list dense class="grey lighten-4">
             <template v-for="(item, i) in items">
                 <v-layout v-if="item.heading" :key="i" align-center>
