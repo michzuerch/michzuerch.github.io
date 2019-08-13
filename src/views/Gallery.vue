@@ -2,13 +2,7 @@
 <v-container grid-list-md text-center>
     <v-layout>
         <v-carousel>
-            <v-carousel-item v-for="(color, i) in colors" :key="color">
-                <v-sheet :color="color" height="100%" tile>
-                    <v-layout align-center fill-height justify-center>
-                        <div class="display-3">Slide {{ i + 1 }}</div>
-                    </v-layout>
-                </v-sheet>
-            </v-carousel-item>
+            <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
         </v-carousel>
     </v-layout>
 </v-container>
@@ -18,12 +12,24 @@
 export default {
     data() {
         return {
-            colors: [
-                'primary',
-                'secondary',
-                'yellow darken-2',
-                'red',
-                'orange',
+            items: [{
+                    src: 'img/gallery/Portrait1-cut.jpg',
+                },
+                {
+                    src: 'img/gallery/Portrait2-cut.jpg',
+                },
+                {
+                    src: 'img/gallery/Portrait3-cut.jpg',
+                },
+                {
+                    src: 'img/gallery/Car1-cut.jpg',
+                },
+                {
+                    src: 'img/gallery/Car2-cut.jpg',
+                },
+                {
+                    src: 'img/gallery/Car3-cut.jpg',
+                },
             ],
         }
     },

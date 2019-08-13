@@ -1,7 +1,7 @@
 <template>
-<v-card class="mx-auto" max-width="400">
+<v-card>
     <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
-        <v-card-title class="align-end fill-height">Top 10 Australian beaches</v-card-title>
+        <v-card-title class="align-center fill-height">Top 10 Australian beaches</v-card-title>
     </v-img>
     <v-card-text>
         <span>Number 10</span><br>

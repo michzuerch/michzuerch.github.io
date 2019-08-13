@@ -25,15 +25,6 @@
                             {{ item.heading }}
                         </v-subheader>
                     </v-flex>
-                    <!-- <v-flex
-              xs6
-              class="text-right"
-            >
-              <v-btn
-                small
-                text
-              >edit</v-btn>
-            </v-flex> -->
                 </v-layout>
                 <v-divider v-else-if="item.divider" :key="i" dark class="my-4"></v-divider>
                 <v-list-item v-else :key="i" router :to="item.route">
