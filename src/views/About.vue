@@ -1,6 +1,6 @@
 <template>
 <v-container grid-list-md text-center>
-    <v-card class="pa3 ma3">
+    <!-- <v-card class="pa3 ma3">
         <v-layout row wrap>
             <v-flex xs12 md6>Card</v-flex>
         </v-layout>
@@ -19,8 +19,8 @@
                 <v-chip>i am a chip</v-chip>
             </div>
         </v-flex>
-    </v-layout>
-
+    </v-layout> -->
+    <AboutCard></AboutCard>
 </v-container>
 </template>
 
