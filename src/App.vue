@@ -1,6 +1,6 @@
 <template>
-<v-app id="keep">
-    <v-app-bar app clipped-left color="amber">
+<v-app id="michzuerch">
+    <v-app-bar app clipped-left color="blue">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <span class="title ml-3 mr-5">Michael Zürcher&nbsp;<span class="font-weight-light">Portfolio</span></span>
         <!-- <v-text-field solo-inverted flat hide-details label="Search" prepend-inner-icon="fa-search"></v-text-field> -->
@@ -11,7 +11,7 @@
         </span>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app clipped color="amber lighten-3">
+    <v-navigation-drawer v-model="drawer" app clipped color="blue lighten-3">
         <v-row>
             <v-col class="text-center">
                 <v-avatar size="100">
@@ -25,7 +25,7 @@
                 <p class="sub-title1 text-center">Programmierer und IT-Experte</p>
             </v-col>
         </v-row>
-        <v-list dense class="amber lighten-3">
+        <v-list dense class="lighten-3">
             <template v-for="(item, i) in items">
                 <v-layout v-if="item.heading" :key="i" align-center>
                     <v-flex xs6>
@@ -50,8 +50,13 @@
     </v-navigation-drawer>
 
     <v-content>
-        <router-view></router-view>
+        <v-container fluid>
+            <router-view></router-view>
+        </v-container>
     </v-content>
+    <v-footer app>
+        Footer
+    </v-footer>
 </v-app>
 </template>
 
@@ -62,8 +67,7 @@ export default {
     },
     data: () => ({
         drawer: null,
-        items: [
-            {
+        items: [{
                 divider: true
             },
             {
