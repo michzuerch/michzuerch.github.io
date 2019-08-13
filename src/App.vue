@@ -40,7 +40,7 @@
                         <v-icon>{{ item.icon }}</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>
+                        <v-list-item-title class="text-start">
                             {{ item.text }}
                         </v-list-item-title>
                     </v-list-item-content>
@@ -54,9 +54,9 @@
             <router-view></router-view>
         </v-container>
     </v-content>
-    <v-footer app>
+    <!-- <v-footer app>
         Footer
-    </v-footer>
+    </v-footer> -->
 </v-app>
 </template>
 
@@ -67,22 +67,14 @@ export default {
     },
     data: () => ({
         drawer: null,
-        items: [{
-                divider: true
-            },
+        items: [
             {
-                heading: 'About me...'
-            },
-            {
-                icon: 'fa-laptop',
+                icon: 'far fa-address-card',
                 text: 'Über mich',
                 route: 'about'
             },
             {
-                heading: 'Hardware, Support'
-            },
-            {
-                icon: 'fa-laptop',
+                icon: 'fas fa-network-wired',
                 text: 'Netzwerke',
                 route: 'network'
             },
@@ -90,15 +82,12 @@ export default {
                 divider: true
             },
             {
-                heading: 'Programmierung'
-            },
-            {
-                icon: 'fa-laptop',
+                icon: 'fas fa-cubes',
                 text: 'Frontend',
                 route: 'frontend'
             },
             {
-                icon: 'fa-laptop',
+                icon: 'fas fa-code',
                 text: 'Backend',
                 route: 'backend'
             },
@@ -106,10 +95,7 @@ export default {
                 divider: true
             },
             {
-                heading: 'Tools'
-            },
-            {
-                icon: 'fa-laptop',
+                icon: 'fas fa-tools',
                 text: 'Tools',
                 route: 'tools'
             },
@@ -117,12 +103,14 @@ export default {
                 divider: true
             },
             {
-                heading: 'Media'
+                icon: 'far fa-images',
+                text: 'Gallery',
+                route: 'gallery'
             },
             {
-                icon: 'fa-laptop',
-                text: 'Gallery',
-                route: 'Gallery'
+                icon: 'fas fa-id-card',
+                text: 'Kontakt',
+                route: 'contact'
             },
         ],
     }),

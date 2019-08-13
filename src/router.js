@@ -52,6 +52,11 @@ export default new Router({
       component: () => import('./views/Support.vue')
     },
     {
+      path: '/contact',
+      name: 'context',
+      component: () => import('./views/Contact.vue')
+    },
+    {
       path: '/tools',
       name: 'tools',
       component: () => import('./views/Tools.vue')

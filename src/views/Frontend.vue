@@ -15,10 +15,6 @@
             </p>
             <p class="text-start black--text">
                 <skill-bar barSize="small" skill="CSS" level="90" />
-                <skill-bar barSize="medium" skill="CSS" level="40" />
-                <skill-bar barSize="large" skill="CSS" level="20" />
-                <skill-bar barSize="small" skill="CSS" level="90" />
-                <skill-bar barSize="small" skill="CSS" level="90" />
             </p>
         </v-card-text>
     </v-card>
