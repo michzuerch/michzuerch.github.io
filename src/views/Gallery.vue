@@ -1,6 +1,6 @@
 <template>
 <v-container grid-list-md text-center>
-    <v-card elevation="24">
+    <v-card class="mx-auto" elevation="24">
         <v-carousel :cycle="cycle" :interval="interval">
             <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
         </v-carousel>

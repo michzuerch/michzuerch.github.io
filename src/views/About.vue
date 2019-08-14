@@ -1,5 +1,5 @@
 <template>
-<v-card elevation="24">
+<v-card class="mx-auto" elevation="24">
     <v-img class="white--text" height="260px" src="img/Background1lg.jpg">
         <v-card-title class="align-center fill-height">
             <v-container>

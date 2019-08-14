@@ -1,5 +1,5 @@
 <template>
-<v-card elevation="24">
+<v-card class="mx-auto" elevation="24">
     <v-card-title>So können Sie mich kontaktieren:</v-card-title>
     <v-card-text>
         <div class="text-center">

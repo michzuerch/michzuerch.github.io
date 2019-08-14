@@ -1,6 +1,6 @@
 <template>
 <v-container grid-list-md text-center>
-    <v-card class="mx-auto">
+    <v-card class="mx-auto" elevation="24">
         <v-img class="white--text" height="200px" src="img/programming.jpg">
             <v-card-title class="align-center fill-height">Frontend</v-card-title>
         </v-img>
