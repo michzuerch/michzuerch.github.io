@@ -5,20 +5,12 @@
             <v-container>
                 <v-row>
                     <v-col>
-                        <div @click="show=!show">
-                            <h1 class="display-2 font-weight-black title-shadow">Michael Zürcher</h1>
-                        </div>
-
-                        <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" mode="out-in">
-                            <div v-if="show">
-                                {{ message }}
-                            </div>
-                        </transition>
+                        <h1 class="animated zoomIn display-2 font-weight-black title-shadow">Michael Zürcher</h1>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
-                        <h2 class="headline font-weight-medium title-shadow">Programmierer und IT-Experte</h2>
+                        <h2 class="animated zoomIn headline font-weight-medium title-shadow">Programmierer und IT-Experte</h2>
                     </v-col>
                 </v-row>
             </v-container>
@@ -42,14 +34,7 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            message: "I am the message",
-            show: false,
-        }
-    }
-}
+export default {}
 </script>
 
 <style scoped>
