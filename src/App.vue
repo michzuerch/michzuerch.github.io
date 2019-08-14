@@ -12,19 +12,21 @@
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" app clipped color="blue lighten-3">
-        <v-row>
-            <v-col class="text-center">
-                <v-avatar size="100">
-                    <img src="img/Avatar2018.jpg" alt="avatar">
-                </v-avatar>
-            </v-col>
-        </v-row>
-        <v-row text-center>
-            <v-col>
-                <p class="title text-center">Michael Zürcher</p>
-                <p class="sub-title1 text-center">Programmierer und IT-Experte</p>
-            </v-col>
-        </v-row>
+        <div class="lighten-2">
+            <v-row>
+                <v-col class="text-center">
+                    <v-avatar size="100">
+                        <img src="img/Avatar2018.jpg" alt="avatar">
+                    </v-avatar>
+                </v-col>
+            </v-row>
+            <v-row text-center>
+                <v-col>
+                    <p class="title text-center">Michael Zürcher</p>
+                    <p class="sub-title1 text-center">Programmierer und IT-Experte</p>
+                </v-col>
+            </v-row>
+        </div>
         <v-list dense class="lighten-3">
             <template v-for="(item, i) in items">
                 <v-layout v-if="item.heading" :key="i" align-center>
@@ -36,15 +38,15 @@
                 </v-layout>
                 <v-divider v-else-if="item.divider" :key="i" dark class="my-4"></v-divider>
                 <v-list-item v-else :key="i" router :to="item.route">
-                    <v-list-item-action>
+                    <v-list-item-icon>
                         <v-icon>{{ item.icon }}</v-icon>
-                    </v-list-item-action>
+                    </v-list-item-icon>
+
                     <v-list-item-content>
-                        <v-list-item-title class="text-start">
-                            {{ item.text }}
-                        </v-list-item-title>
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+
             </template>
         </v-list>
     </v-navigation-drawer>
@@ -67,36 +69,35 @@ export default {
     },
     data: () => ({
         drawer: null,
-        items: [
-            {
-                icon: 'far fa-address-card',
-                text: 'Über mich',
+        items: [{
+                icon: 'far fa-id-card',
+                title: 'Über mich',
                 route: 'about'
             },
             {
-                icon: 'fas fa-network-wired',
-                text: 'Netzwerke',
+                icon: 'far fa-building',
+                title: 'Netzwerke',
                 route: 'network'
             },
             {
                 divider: true
             },
             {
-                icon: 'fas fa-cubes',
-                text: 'Frontend',
+                icon: 'far fa-window-restore',
+                title: 'Frontend',
                 route: 'frontend'
             },
             {
-                icon: 'fas fa-code',
-                text: 'Backend',
+                icon: 'far fa-file-code',
+                title: 'Backend',
                 route: 'backend'
             },
             {
                 divider: true
             },
             {
-                icon: 'fas fa-tools',
-                text: 'Tools',
+                icon: 'far fa-tool',
+                title: 'Tools',
                 route: 'tools'
             },
             {
@@ -104,12 +105,12 @@ export default {
             },
             {
                 icon: 'far fa-images',
-                text: 'Gallery',
+                title: 'Gallery',
                 route: 'gallery'
             },
             {
-                icon: 'fas fa-id-card',
-                text: 'Kontakt',
+                icon: 'far fa-address-card',
+                title: 'Kontakt',
                 route: 'contact'
             },
         ],
@@ -119,6 +120,7 @@ export default {
 
 <style>
 #keep .v-navigation-drawer__border {
-    display: none
+    display: none;
+    background-color: red;
 }
 </style>
