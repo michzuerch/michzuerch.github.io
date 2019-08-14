@@ -12,11 +12,11 @@
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" app clipped color="blue lighten-3">
-        <div class="lighten-2">
+        <v-card color="blue" class="lighten-3">
             <v-row>
                 <v-col class="text-center">
                     <v-avatar size="100">
-                        <img src="img/Avatar2018.jpg" alt="avatar">
+                        <img src="img/Avatar2019.jpg" alt="avatar">
                     </v-avatar>
                 </v-col>
             </v-row>
@@ -26,8 +26,8 @@
                     <p class="sub-title1 text-center">Programmierer und IT-Experte</p>
                 </v-col>
             </v-row>
-        </div>
-        <v-list dense class="lighten-3">
+        </v-card>
+        <v-list dense class="lighten-2">
             <template v-for="(item, i) in items">
                 <v-layout v-if="item.heading" :key="i" align-center>
                     <v-flex xs6>
@@ -70,12 +70,12 @@ export default {
     data: () => ({
         drawer: null,
         items: [{
-                icon: 'far fa-id-card',
+                icon: 'mdi-account',
                 title: 'Über mich',
                 route: 'about'
             },
             {
-                icon: 'far fa-building',
+                icon: 'mdi-server-network',
                 title: 'Netzwerke',
                 route: 'network'
             },
@@ -83,12 +83,12 @@ export default {
                 divider: true
             },
             {
-                icon: 'far fa-window-restore',
+                icon: 'mdi-codepen',
                 title: 'Frontend',
                 route: 'frontend'
             },
             {
-                icon: 'far fa-file-code',
+                icon: 'mdi-code-tags',
                 title: 'Backend',
                 route: 'backend'
             },
@@ -96,7 +96,7 @@ export default {
                 divider: true
             },
             {
-                icon: 'far fa-tool',
+                icon: 'mdi-wrench',
                 title: 'Tools',
                 route: 'tools'
             },
@@ -104,12 +104,12 @@ export default {
                 divider: true
             },
             {
-                icon: 'far fa-images',
+                icon: 'mdi-image-filter',
                 title: 'Gallery',
                 route: 'gallery'
             },
             {
-                icon: 'far fa-address-card',
+                icon: 'mdi-phone',
                 title: 'Kontakt',
                 route: 'contact'
             },
@@ -121,6 +121,5 @@ export default {
 <style>
 #keep .v-navigation-drawer__border {
     display: none;
-    background-color: red;
 }
 </style>
