@@ -1,5 +1,34 @@
-# Personal webpage Michael Zuercher
+# michzuerch.github.io
 
-Umstellung von Bulma auf Tailwind.
+## Project setup
+```
+yarn install
+```
 
-npm run production um das CSS-File zu erstellen.
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Install vue cli
+```
+yarn global add @vue/cli
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
