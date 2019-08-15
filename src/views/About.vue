@@ -1,6 +1,6 @@
 <template>
 <v-card class="mx-auto" elevation="24">
-    <v-img class="white--text" height="260px" src="img/Background1lg.jpg">
+    <v-img height="260px" src="img/Background1lg.jpg">
         <v-card-title class="align-center fill-height">
             <v-container>
                 <v-row>
@@ -16,7 +16,7 @@
             </v-container>
         </v-card-title>
     </v-img>
-    <v-card-text class="black--text">
+    <v-card-text>
         <h1 class="title text-start pb-3">Hallo mein Name ist Michael Zürcher...</h1>
         <p class="text-start">Als <strong>Java</strong>-Programmierer habe ich mehr als 10 Jahren Erfahrung mit der Entwicklung von Internet-L&ouml;sungen mit Java.
             Meistens mit <strong>Linux</strong> und <strong>Java EE</strong>, neuerdings auch mit <strong>Spring-Boot</strong>

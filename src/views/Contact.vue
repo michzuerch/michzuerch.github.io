@@ -4,13 +4,13 @@
     <v-card-text>
         <div class="text-center">
             <div>
-                <v-btn class="ma-2" href="tel:+491786608638">Mobilephone: +49 178 660 86 38
+                <v-btn class="ma-2" color="blue" href="tel:+491786608638">Mobilephone: +49 178 660 86 38
                     <v-icon right>mdi-phone</v-icon>
                 </v-btn>
-                <v-btn class="ma-2" href="mailto:michzuerch@gmail.com">Email: michzuerch@gmail.com
+                <v-btn class="ma-2" color="red" href="mailto:michzuerch@gmail.com">Email: michzuerch@gmail.com
                     <v-icon right>mdi-gmail</v-icon>
                 </v-btn>
-                <v-btn class="ma-2" href="skype:michzuerch?call">Skype: michzuerch
+                <v-btn class="ma-2" color="green" href="skype:michzuerch?call">Skype: michzuerch
                     <v-icon right>mdi-skype</v-icon>
                 </v-btn>
             </div>

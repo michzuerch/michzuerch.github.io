@@ -1,7 +1,7 @@
 <template>
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
-        <v-img class="white--text" height="200px" src="img/programming.jpg">
+        <v-img height="200px" src="img/programming.jpg">
             <v-card-title class="align-center fill-height">Backend</v-card-title>
         </v-img>
         <v-card-text>
