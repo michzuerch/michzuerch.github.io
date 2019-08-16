@@ -14,13 +14,13 @@
                 </ul>
             </p>
             <div class="text-start">
-
+                <h1 class="subtitle-2">Skills</h1>
                 <v-list dense>
                     <template v-for="(item, i) in skills">
                         <v-list-item :key="i">
                             <v-list-item-content>
-                                <v-list-item-title>{{ item.title }}</v-list-item-title>
-                                <skill-bar barSize="small" :skill="item.title" :level="item.level" :initLevel="item.initlevel" /> 
+                                <!-- <v-list-item-title>{{ item.title }}</v-list-item-title> -->
+                                <skill-bar barSize="small" :skill="item.title" :level="item.level" :initLevel="item.initlevel" />
                             </v-list-item-content>
                         </v-list-item>
                     </template>
@@ -48,6 +48,7 @@ export default {
         ],
     }),
 }
+
 </script>
 
 <style>
