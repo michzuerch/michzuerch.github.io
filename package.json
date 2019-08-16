@@ -7,7 +7,8 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "gh-pages": "gh-pages -b master -d dist"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d dist"
   },
   "dependencies": {
     "global": "^4.4.0",
