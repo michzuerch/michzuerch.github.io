@@ -2,7 +2,7 @@
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
         <v-img height="200px" src="img/programming.jpg">
-            <v-card-title class="align-center fill-height">Frontend</v-card-title>
+            <v-card-title class="align-center fill-height title-shadow">Frontend</v-card-title>
         </v-img>
         <v-card-text text-center>
             <h1 class="subtitle-1">Programmierung von Frontends mit Javascript/Vaadin</h1>
@@ -19,13 +19,11 @@
                     <template v-for="(item, i) in skills">
                         <v-list-item :key="i">
                             <v-list-item-content>
-                                <!-- <v-list-item-title>{{ item.title }}</v-list-item-title> -->
-                                <skill-bar barSize="small" :skill="item.title" :level="item.level" :initLevel="item.initlevel" />
+                                <skill-bar barSize="small" :skill="item.title" :level="item.level" />
                             </v-list-item-content>
                         </v-list-item>
                     </template>
                 </v-list>
-
             </div>
         </v-card-text>
     </v-card>
@@ -48,7 +46,6 @@ export default {
         ],
     }),
 }
-
 </script>
 
 <style>

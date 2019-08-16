@@ -6,7 +6,6 @@
             Michael Zürcher&nbsp;
             <span class="font-weight-light">Programmierer und IT-Experte</span>
         </span>
-        <!-- <v-text-field solo-inverted flat hide-details label="Search" prepend-inner-icon="fa-search"></v-text-field> -->
         <v-spacer></v-spacer>
         <span>
             <v-img src="img/button.svg" aspect-ratio="1" width="40" alt="button"></v-img>
@@ -45,9 +44,6 @@
             <router-view></router-view>
         </v-container>
     </v-content>
-    <!-- <v-footer app>
-        Footer
-    </v-footer>-->
 </v-app>
 </template>
 
@@ -58,6 +54,7 @@ export default {
     },
     data: () => ({
         drawer: null,
+        location: [],
         collapseOnScroll: true,
         items: [{
                 icon: "mdi-account",
@@ -104,7 +101,24 @@ export default {
                 route: "contact"
             }
         ]
-    })
+    }),
+    mounted() {
+        this.getLocation()
+    },
+    methods: {
+        async getLocation() {
+            fetch('https://extreme-ip-lookup.com/json')
+                .then(res => res.json())
+                .then(response => {
+                    this.location = response.country;
+                    console.log("New:", this.location)
+                })
+                .catch((data, status) => {
+                    console.log('Request failed:', data, status);
+
+                });
+        }
+    },
 };
 </script>
 

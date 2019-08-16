@@ -29,6 +29,12 @@
         <p class="text-start">Weiterhin arbeite ich nun vermehrt mit Virtualisierungstechniken:
             <strong> Docker, Openshift</strong> &nbsp;und&nbsp; <strong>Kubernetes</strong>.
         </p>
+        <div class="text-center">
+            <v-btn large rounded color="primary" href='https://docs.google.com/document/d/1i_CY7K3zurwM_MqIE1sVN10oH2jcFhQeHKpp1XJQKS0/edit?usp=sharing' target='_blank'>Download CV
+                <v-icon dark class="pl-3">mdi-cloud-download</v-icon>
+            </v-btn>
+
+        </div>
     </v-card-text>
 </v-card>
 </template>

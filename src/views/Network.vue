@@ -2,7 +2,7 @@
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
         <v-img height="200px" src="img/network.jpg">
-            <v-card-title class="align-center fill-height">Netzwerke</v-card-title>
+            <v-card-title class="align-center fill-height title-shadow">Netzwerke</v-card-title>
         </v-img>
         <v-card-text>
             <span>Netzwerke</span><br>
