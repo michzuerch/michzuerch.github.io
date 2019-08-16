@@ -13,15 +13,41 @@
                     <li>Javascript-Code für Vuee3</li>
                 </ul>
             </p>
-            <p class="text-start">
-                <skill-bar barSize="small" skill="CSS" level="90" />
-            </p>
+            <div class="text-start">
+
+                <v-list dense>
+                    <template v-for="(item, i) in skills">
+                        <v-list-item :key="i">
+                            <v-list-item-content>
+                                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                <skill-bar barSize="small" :skill="item.title" :level="item.level" :initLevel="item.initlevel" /> 
+                            </v-list-item-content>
+                        </v-list-item>
+                    </template>
+                </v-list>
+
+            </div>
         </v-card-text>
     </v-card>
 </v-container>
 </template>
 
 <script>
+export default {
+    data: () => ({
+        skills: [{
+                title: "Java",
+                initlevel: 0,
+                level: 75
+            },
+            {
+                title: "Vaadin",
+                initlevel: 50,
+                level: 89
+            }
+        ],
+    }),
+}
 </script>
 
 <style>
