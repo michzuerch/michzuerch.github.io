@@ -32,19 +32,21 @@
 
 <script>
 export default {
-    data: () => ({
-        skills: [{
-                title: "Java",
-                initlevel: 0,
-                level: 75
-            },
-            {
-                title: "Vaadin",
-                initlevel: 50,
-                level: 89
-            }
-        ],
-    }),
+    data() {
+        return {
+            skills: [{
+                    title: "Java",
+                    initlevel: 0,
+                    level: 75
+                },
+                {
+                    title: "Vaadin",
+                    initlevel: 50,
+                    level: 89
+                }
+            ],
+        }
+    },
 }
 </script>
 
