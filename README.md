@@ -1,4 +1,5 @@
 # michzuerch.github.io
+Get the [Source](https://github.com/michzuerch/michzuerch.github.io) on github.
 
 ## Project setup
 ```
@@ -25,9 +26,10 @@ yarn run test
 yarn run lint
 ```
 
-### Install vue cli
+### Install vue cli and yarn
 ```
-yarn global add @vue/cli
+npm install -g yarn
+npm install -g @vue/cli
 ```
 
 ### Customize configuration

@@ -1,14 +1,13 @@
 {
   "name": "michzuerch.github.io",
   "version": "1.0.0",
-  "homepage": "https://michzuerch.github.io",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "predeploy": "vue-cli-service build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist",
+    "predeploy": "vue-cli-service build"
   },
   "dependencies": {
     "global": "^4.4.0",
@@ -16,7 +15,8 @@
     "vue": "^2.6.10",
     "vue-router": "^3.1.2",
     "vue-skill-bar": "^1.0.1",
-    "vuetify": "^2.0.7"
+    "vuetify": "^2.0.7",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@mdi/font": "^4.0.96",
@@ -27,7 +27,7 @@
     "eslint": "^6.1.0",
     "eslint-plugin-vue": "^5.2.3",
     "gh-pages": "^2.1.1",
-    "sass": "^1.22.9",
+    "sass": "^1.22.10",
     "sass-loader": "^7.2.0",
     "vue-cli-plugin-vuetify": "^0.6.3",
     "vue-template-compiler": "^2.6.10",
@@ -54,5 +54,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "homepage": "https://michzuerch.github.io"
 }

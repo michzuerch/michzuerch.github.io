@@ -111,11 +111,10 @@ export default {
                 .then(res => res.json())
                 .then(response => {
                     this.location = response.country;
-                    console.log("New:", this.location)
+                    console.log("Country:", this.location)
                 })
                 .catch((data, status) => {
                     console.log('Request failed:', data, status);
-
                 });
         }
     },
