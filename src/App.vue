@@ -26,7 +26,7 @@
                     </v-flex>
                 </v-layout>
                 <v-divider v-else-if="item.divider" :key="i" class="my-4"></v-divider>
-                <v-list-item v-else :key="i" router :to="item.route">
+                <v-list-item v-else v-show='!(location=="Switzerland" && item.noSwitzerland)' :key="i" router :to="item.route">
                     <v-list-item-icon>
                         <v-icon>{{ item.icon }}</v-icon>
                     </v-list-item-icon>
@@ -59,12 +59,14 @@ export default {
         items: [{
                 icon: "mdi-account",
                 title: "Über mich",
-                route: "about"
+                route: "about",
+                noSwitzerland: false
             },
             {
                 icon: "mdi-server-network",
                 title: "Netzwerke",
-                route: "network"
+                route: "network",
+                noSwitzerland: false
             },
             {
                 divider: true
@@ -72,12 +74,14 @@ export default {
             {
                 icon: "mdi-codepen",
                 title: "Frontend",
-                route: "frontend"
+                route: "frontend",
+                noSwitzerland: false
             },
             {
                 icon: "mdi-code-tags",
                 title: "Backend",
-                route: "backend"
+                route: "backend",
+                noSwitzerland: false
             },
             {
                 divider: true
@@ -85,7 +89,14 @@ export default {
             {
                 icon: "mdi-wrench",
                 title: "Tools",
-                route: "tools"
+                route: "tools",
+                noSwitzerland: false
+            },
+            {
+                icon: "mdi-github-box",
+                title: "Codesamples",
+                route: "github",
+                noSwitzerland: false
             },
             {
                 divider: true
@@ -93,12 +104,14 @@ export default {
             {
                 icon: "mdi-image-filter",
                 title: "Gallery",
-                route: "gallery"
+                route: "gallery",
+                noSwitzerland: false
             },
             {
                 icon: "mdi-phone",
                 title: "Kontakt",
-                route: "contact"
+                route: "contact",
+                noSwitzerland: true
             }
         ]
     }),

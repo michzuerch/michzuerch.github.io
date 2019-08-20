@@ -32,6 +32,11 @@ export default new Router({
       component: () => import('./views/Frontend.vue')
     },
     {
+      path: '/github',
+      name: 'github',
+      component: () => import('./views/Githubprojects.vue')
+    },
+    {
       path: '/gallery',
       name: 'gallery',
       component: () => import('./views/Gallery.vue')
