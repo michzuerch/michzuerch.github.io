@@ -2,10 +2,10 @@
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
         <v-img height="200px" src="img/support.jpg">
-            <v-card-title class="align-center fill-height">Hardware</v-card-title>
+            <v-card-title class="align-center fill-height">Internet</v-card-title>
         </v-img>
         <v-card-text>
-            <span>Hardware</span><br>
+            <span>Internet</span><br>
             <span class="text--primary">
                 <span>Whitehaven Beach</span><br>
                 <span>Whitsunday Island, Whitsunday Islands</span>

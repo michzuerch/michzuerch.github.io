@@ -63,9 +63,24 @@ export default {
                 noSwitzerland: false
             },
             {
+                divider: true
+            },
+            {
                 icon: "mdi-server-network",
                 title: "Netzwerke",
                 route: "network",
+                noSwitzerland: false
+            },
+            {
+                icon: "mdi-laptop",
+                title: "Support",
+                route: "support",
+                noSwitzerland: false
+            },
+            {
+                icon: "mdi-web",
+                title: "Internet",
+                route: "internet",
                 noSwitzerland: false
             },
             {

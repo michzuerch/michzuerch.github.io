@@ -42,14 +42,14 @@ export default new Router({
       component: () => import('./views/Gallery.vue')
     },
     {
-      path: '/hardware',
-      name: 'hardware',
-      component: () => import('./views/Hardware.vue')
-    },
-    {
       path: '/network',
       name: 'network',
       component: () => import('./views/Network.vue')
+    },
+    {
+      path: '/internet',
+      name: 'internet',
+      component: () => import('./views/Internet.vue')
     },
     {
       path: '/support',
