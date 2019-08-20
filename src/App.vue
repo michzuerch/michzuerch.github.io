@@ -4,7 +4,7 @@
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <span class="title ml-3 mr-5">
             Michael Zürcher&nbsp;
-            <span class="font-weight-light">Programmierer und IT-Experte</span>
+            <!-- <span class="font-weight-light">Programmierer und IT-Experte</span> -->
         </span>
         <v-spacer></v-spacer>
         <span>
