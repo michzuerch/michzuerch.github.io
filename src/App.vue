@@ -1,6 +1,6 @@
 <template>
 <v-app id="michzuerch">
-    <v-app-bar app clipped-left :collapse-on-scroll="collapseOnScroll">
+    <v-app-bar app clipped-left>
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <span class="title ml-3 mr-5">
             Michael Zürcher&nbsp;

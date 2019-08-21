@@ -5,7 +5,7 @@
             <v-card-title class="align-center fill-height title-shadow">Frontend</v-card-title>
         </v-img>
         <v-card-text text-center>
-            <h1 class="subtitle-1">Programmierung von Frontends mit Javascript/Vaadin</h1>
+            <h1 class="subtitle-1 text--primary">Programmierung von Frontends mit Javascript/Vaadin</h1>
             <p class="text-start">Progralaksdfklöasdjfaslödfkj</p>
             <p class="text-start">
                 <ul>
@@ -36,12 +36,10 @@ export default {
         return {
             skills: [{
                     title: "Java",
-                    initlevel: 0,
                     level: 75
                 },
                 {
                     title: "Vaadin",
-                    initlevel: 50,
                     level: 89
                 }
             ],
