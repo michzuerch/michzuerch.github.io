@@ -5,7 +5,7 @@
             <v-card-title class="align-center fill-height title-shadow display-4">Frontend</v-card-title>
         </v-img>
         <v-card-text text-center>
-            <h1 class="subtitle-1 text--primary">Programmierung von Frontends mit Javascript/Vaadin</h1>
+            <h1 class="subtitle-1 text--primary text-start pb-2">Frontend Programmierung</h1>
             <p class="text-start">Progralaksdfklöasdjfaslödfkj</p>
             <p class="text-start">
                 <ul>

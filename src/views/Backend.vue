@@ -5,8 +5,8 @@
             <v-card-title class="align-center fill-height title-shadow display-4">Backend</v-card-title>
         </v-img>
         <v-card-text text-center>
-            <h1 class="subtitle-1 text--primary">Backend Programmierung</h1>
-            <p class="text-start">Progralaksdfklöasdjfaslödfkj</p>
+            <h1 class="subtitle-1 text--primary text-start pb-2">Backend Programmierung</h1>
+            <p class="text-start">Programmierung von Backend-Lösungen, REST-Services.</p>
             <p class="text-start">
                 <ul>
                     <li>Javacode für Vaadin</li>
