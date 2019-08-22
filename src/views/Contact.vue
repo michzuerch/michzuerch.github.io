@@ -15,22 +15,20 @@
                 </v-btn>
             </div>
         </div>
-<v-card class="mx-auto" elevation="24">
-    <v-card-title class="text--primary">
-        Postadresse
-    </v-card-title>
-    <v-card-text>
-        Grenzpaket / Fitness Store<br>
-        Michael Zürcher (93771)<br>
-        Hegaustrasse 6<br>
-        D-78224 Singen (Hohentwiel)<br>
+        <v-card elevation="24" color="grey darken-2" class="mt-3">
+            <v-card-title class="text--primary">
+                Postadresse
+            </v-card-title>
+            <v-card-text>
+                Grenzpaket / Fitness Store<br>
+                Michael Zürcher (93771)<br>
+                Hegaustrasse 6<br>
+                D-78224 Singen (Hohentwiel)<br>
+            </v-card-text>
+        </v-card>
+
     </v-card-text>
 </v-card>
-
-
-    </v-card-text>
-</v-card>
-
 </template>
 
 <script>

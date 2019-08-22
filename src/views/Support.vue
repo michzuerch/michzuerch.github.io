@@ -5,16 +5,18 @@
             <v-card-title class="align-center fill-height title-shadow display-4">Support und Hardware</v-card-title>
         </v-img>
         <v-card-text text-center>
-            <h1 class="subtitle-1 text--primary">Support und Hardware</h1>
-            <p class="text-start">Progralaksdfklöasdjfaslödfkj</p>
+            <h1 class="subtitle-1 text--primary text-start pb-2">Support und Hardware</h1>
+            <p class="text-start">Hilfe für Enduser bei Problemen mit Microsoft Office, Windows oder Linux.</p>
             <p class="text-start">
                 <ul>
-                    <li>Javacode für Vaadin</li>
-                    <li>Javascript-Code für Vuee3</li>
+                    <li>Administration von Windows Domaincontrollern</li>
+                    <li>Onlinesupport mit Teamviewer</li>
+                    <li>Umbau und Reparatur von PC-Hardware und Peripherie</li>
+                    <li>Umbau von Servern (RAID-Controller)</li>
                 </ul>
             </p>
-            <div class="text-start">
-                <h1 class="subtitle-2">Skills</h1>
+            <!-- <div>
+                <h1 class="subtitle-2 text--primary text-start pt-2">Skill-Level</h1>
                 <v-list dense>
                     <template v-for="(item, i) in skills">
                         <v-list-item :key="i">
@@ -24,7 +26,7 @@
                         </v-list-item>
                     </template>
                 </v-list>
-            </div>
+            </div> -->
         </v-card-text>
     </v-card>
 </v-container>
@@ -33,14 +35,15 @@
 export default {
     data() {
         return {
-            skills: [{
-                    title: "Firewall",
-                    level: 75
-                },
-                {
-                    title: "VPN",
-                    level: 89
-                }
+            skills: [
+                // {
+                //     title: "Firewall",
+                //     level: 75
+                // },
+                // {
+                //     title: "VPN",
+                //     level: 89
+                // }
             ],
         }
     },

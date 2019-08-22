@@ -13,17 +13,21 @@
                     <li>Javascript-Code für Vuee3</li>
                 </ul>
             </p>
-            <div class="text-start">
-                <h1 class="subtitle-2">Skills</h1>
-                <v-list dense>
-                    <template v-for="(item, i) in skills">
-                        <v-list-item :key="i">
-                            <v-list-item-content>
-                                <skill-bar barSize="small" :skill="item.title" :level="item.level" />
-                            </v-list-item-content>
-                        </v-list-item>
-                    </template>
-                </v-list>
+            <div>
+                <v-card elevation="24" color="grey darken-2">
+                    <v-card-title>Skill Level</v-card-title>
+                    <v-card-text>
+                        <v-list dense color="grey darken-2">
+                            <template v-for="(item, i) in skills">
+                                <v-list-item :key="i">
+                                    <v-list-item-content>
+                                        <skill-bar barSize="small" :skill="item.title" :level="item.level" />
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </template>
+                        </v-list>
+                    </v-card-text>
+                </v-card>
             </div>
         </v-card-text>
     </v-card>

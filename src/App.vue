@@ -127,6 +127,12 @@ export default {
                 title: "Kontakt",
                 route: "contact",
                 noSwitzerland: true
+            },
+            {
+                icon: "mdi-thumb-up",
+                title: "Credits",
+                route: "credits",
+                noSwitzerland: false
             }
         ]
     }),
