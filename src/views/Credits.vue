@@ -40,7 +40,6 @@
                 </v-flex>
             </v-layout> -->
         </v-container>
-
     </v-card-text>
 </v-card>
 </template>

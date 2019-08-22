@@ -6,11 +6,13 @@
         </v-img>
         <v-card-text text-center>
             <h1 class="subtitle-1 text--primary text-start pb-2">Frontend Programmierung</h1>
-            <p class="text-start">Progralaksdfklöasdjfaslödfkj</p>
+            <p class="text-start">Moderne Web-Interfaces mit Javascript Vue oder Vaadin 14.</p>
             <p class="text-start">
                 <ul>
-                    <li>Javacode für Vaadin</li>
-                    <li>Javascript-Code für Vuee3</li>
+                    <li>Vaadin 14</li>
+                    <li>Vue / Vuetify</li>
+                    <li>Bulma</li>
+                    <li>Tailwind CSS</li>
                 </ul>
             </p>
             <div>
@@ -39,13 +41,21 @@ export default {
     data() {
         return {
             skills: [{
-                    title: "Java",
+                    title: "Java / Vaadin",
+                    level: 95
+                },
+                {
+                    title: "Javascript",
+                    level: 35
+                },
+                {
+                    title: "Bulma",
                     level: 75
                 },
                 {
-                    title: "Vaadin",
-                    level: 89
-                }
+                    title: "Webpack",
+                    level: 45
+                },
             ],
         }
     },

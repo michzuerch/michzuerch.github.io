@@ -9,8 +9,15 @@
             <p class="text-start">Programmierung von Backend-Lösungen, REST-Services.</p>
             <p class="text-start">
                 <ul>
-                    <li>Javacode für Vaadin</li>
-                    <li>Javascript-Code für Vuee3</li>
+                    <li>Java 8/12</li>
+                    <li>Maven</li>
+                    <li>Vaadin 14</li>
+                    <li>JUnit 4 / TestNG</li>
+                    <li>Apache XML:FO</li>
+                    <li>Jasper Reports</li>
+                    <li>Spring Boot</li>
+                    <li>Spring Data</li>
+                    <li>J2EE Wildfly</li>
                 </ul>
             </p>
             <div>
@@ -38,13 +45,25 @@ export default {
     data() {
         return {
             skills: [{
-                    title: "Firewall",
+                    title: "Java",
+                    level: 100
+                },
+                {
+                    title: "J2EE 7/8",
+                    level: 100
+                },
+                {
+                    title: "Vaadin 14",
+                    level: 85
+                },
+                {
+                    title: "Spring-Boot",
                     level: 75
                 },
                 {
-                    title: "VPN",
-                    level: 89
-                }
+                    title: "Docker / Openshift",
+                    level: 50
+                },
             ],
         }
     },
