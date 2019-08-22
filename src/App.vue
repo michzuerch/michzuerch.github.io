@@ -28,11 +28,11 @@
                 <v-divider v-else-if="item.divider" :key="i" class="my-4"></v-divider>
                 <v-list-item v-else v-show='!(location=="Switzerland" && item.noSwitzerland)' :key="i" router :to="item.route">
                     <v-list-item-icon>
-                        <v-icon>{{ item.icon }}</v-icon>
+                        <v-icon class="title-shadow">{{ item.icon }}</v-icon>
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        <v-list-item-title class="title-shadow">{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </template>
@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style>
-#keep .v-navigation-drawer__border {
-    display: none;
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
 }
 </style>

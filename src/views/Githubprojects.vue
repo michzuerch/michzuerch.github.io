@@ -4,7 +4,7 @@
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2">
                 <v-img src="img/Anouman.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
-                    <v-card-title class="fill-height align-end">Anouman</v-card-title>
+                    <v-card-title class="fill-height align-end subtitle-1">Anouman</v-card-title>
                 </v-img>
                 <v-card-text>
                     <p class="text-start">Als <strong>Java</strong>-Programmierer habe ich mehr als 10 Jahren Erfahrung mit der Entwicklung von Internet-L&ouml;sungen mit Java.
@@ -22,7 +22,7 @@
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2">
                 <v-img src="img/LocateIPAddress.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
-                    <v-card-title class="fill-height align-end">LocateIPAddress</v-card-title>
+                    <v-card-title class="fill-height align-end subtitle-1">LocateIPAddress</v-card-title>
                 </v-img>
                 <v-card-text>
                     <p class="text-start">Als <strong>Java</strong>-Programmierer habe ich mehr als 10 Jahren Erfahrung mit der Entwicklung von Internet-L&ouml;sungen mit Java.
@@ -40,7 +40,7 @@
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2">
                 <v-img src="img/TeachersAssistant.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
-                    <v-card-title class="fill-height align-end">TeachersAssistant</v-card-title>
+                    <v-card-title class="fill-height align-end subtitle-1">TeachersAssistant</v-card-title>
                 </v-img>
                 <v-card-text>
                     <p class="text-start">Als <strong>Java</strong>-Programmierer habe ich mehr als 10 Jahren Erfahrung mit der Entwicklung von Internet-L&ouml;sungen mit Java.
@@ -58,3 +58,9 @@
     </v-layout>
 </v-container>
 </template>
+<style scoped>
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
+</style>
+

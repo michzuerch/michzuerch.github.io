@@ -2,7 +2,7 @@
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
         <v-img height="200px" src="img/programming.jpg">
-            <v-card-title class="align-center fill-height title-shadow">Frontend</v-card-title>
+            <v-card-title class="align-center fill-height title-shadow display-4">Frontend</v-card-title>
         </v-img>
         <v-card-text text-center>
             <h1 class="subtitle-1 text--primary">Programmierung von Frontends mit Javascript/Vaadin</h1>
@@ -48,6 +48,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
 </style>

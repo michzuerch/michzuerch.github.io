@@ -103,3 +103,9 @@
     </v-row>
 </v-container>
 </template>
+<style scoped>
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
+</style>
+

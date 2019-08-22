@@ -29,7 +29,7 @@
         <p class="text-start">Weiterhin arbeite ich nun vermehrt mit Virtualisierungstechniken:
             <strong> Docker, Openshift</strong> &nbsp;und&nbsp; <strong>Kubernetes</strong>.
         </p>
-        <div class="text-center">
+        <div class="text-center pt-5">
             <v-btn large rounded color="primary" href='https://docs.google.com/document/d/1i_CY7K3zurwM_MqIE1sVN10oH2jcFhQeHKpp1XJQKS0/edit?usp=sharing' target='_blank'>Download CV
                 <v-icon dark class="pl-3">mdi-cloud-download</v-icon>
             </v-btn>
@@ -45,6 +45,6 @@ export default {}
 
 <style scoped>
 .title-shadow {
-    text-shadow: 3px 3px 25px #000;
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
 }
 </style>

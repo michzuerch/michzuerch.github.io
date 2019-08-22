@@ -2,7 +2,7 @@
 <v-container grid-list-md text-center>
     <v-card class="mx-auto" elevation="24">
         <v-img height="200px" src="img/network.jpg">
-            <v-card-title class="align-center fill-height title-shadow">Netzwerke</v-card-title>
+            <v-card-title class="align-center fill-height title-shadow display-4">Netzwerke</v-card-title>
         </v-img>
         <v-card-text text-center>
             <h1 class="subtitle-1 text--primary">Installation und Fehlersuche</h1>
@@ -46,3 +46,9 @@ export default {
     },
 }
 </script>
+<style scoped>
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
+</style>
+

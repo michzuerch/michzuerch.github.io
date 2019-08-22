@@ -1,6 +1,6 @@
 <template>
 <v-card class="mx-auto" elevation="24">
-    <v-card-title>So können Sie mich kontaktieren:</v-card-title>
+    <v-card-title class="title title-shadow text--primary text-center">So können Sie mich kontaktieren:</v-card-title>
     <v-card-text>
         <div class="text-center">
             <div>
@@ -26,6 +26,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.title-shadow {
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
 </style>
