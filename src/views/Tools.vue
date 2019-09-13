@@ -1,127 +1,83 @@
 <template>
-<v-container grid-list-sm fluid>
-    <v-layout row wrap>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/docker.jpg" height="200"></v-img>
+<v-container fluid>
+    <v-layout row wrap justify-space-between>
+        <v-flex xs12 md4>
+            <v-card elevation="24" class="ma-2 fill-height">
+                <v-img src="img/tools/Java-Logo.svg" class="white--text" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                    <v-card-title class="fill-height align-end subtitle-1">Programmierung Java</v-card-title>
+                </v-img>
                 <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Docker</h2>
-                    <p class="font-weight-regular">Virtualisierung</p>
+                    <h2 class="text-start subtitle-2 mb-2">J2EE Applikation für Wildfly</h2>
+                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
+                    <p class="text-start">CRM, Adressen, Rechnungen, Artikelstamm, Buchhaltung, Reports.</p>
+                    <h3 class="subtitle-3 mb-1">Technologien</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Wildfly</li>
+                        <li>Vaadin</li>
+                        <li>Postgresql</li>
+                        <li>Apache FOP</li>
+                        <li>Jasperreports</li>
+                    </ul>
                 </v-card-text>
+                <v-card-actions>
+                        <v-btn small rounded color="primary" href='https://github.com/michzuerch/Anouman' target='_blank' class="text-none">Anouman
+                            <v-icon dark class="pl-3">mdi-github-box</v-icon>
+                        </v-btn>
+                </v-card-actions>
             </v-card>
         </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/openshift.jpg" height="200"></v-img>
+        <v-flex xs12 md4>
+            <v-card elevation="24" class="ma-2 fill-height">
+                <v-img src="img/tools/Javascript-Logo.svg" class="white--text" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                    <v-card-title class="fill-height align-end subtitle-1">Programmierung Javascript</v-card-title>
+                </v-img>
                 <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Openshift</h2>
-                    <p class="font-weight-regular">Virtualisierung</p>
+                    <h2 class="text-start subtitle-2 mb-2">Java-Applikation mit Spring-Boot</h2>
+                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
+                    <p class="text-start">Suchen in Locations nach IP-Adressen, Import von grossen Dateien.</p>
+                    <h3 class="subtitle-3 mb-1">Technologien</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring-Boot</li>
+                        <li>Vaadin</li>
+                        <li>MongoDB</li>
+                        <li>Docker</li>
+                    </ul>
                 </v-card-text>
+                <v-card-actions>
+                        <v-btn small rounded color="primary" href='https://github.com/michzuerch/LocateIPAddress' target='_blank' class="text-none">LocateIPAddress
+                            <v-icon dark class="pl-3">mdi-github-box</v-icon>
+                        </v-btn>
+                </v-card-actions>
             </v-card>
         </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/html5css3.jpg" height="200"></v-img>
+        <v-flex xs12 md4>
+            <v-card elevation="24" class="ma-2 fill-height">
+                <v-img src="img/TeachersAssistant.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                    <v-card-title class="fill-height align-end subtitle-1">TeachersAssistant</v-card-title>
+                </v-img>
                 <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">HTML5,CSS3,SASS,Tailwind,Bulma</h2>
-                    <p class="font-weight-regular">Webdesign</p>
+                    <h2 class="text-start subtitle-2 mb-2">J2EE Applikation für Wildfly</h2>
+                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
+                    <p class="text-start">Verwalten von Schulungsräumen, Lehrern, Schülern, Stundenplänen.</p>
+                    <h3 class="subtitle-3 mb-1">Technologien</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Vaadin</li>
+                        <li>Spring-Boot</li>
+                        <li>Apache FOP</li>
+                        <li>Jasperreports</li>
+                    </ul>
                 </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/vue.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Vue,Vuetify</h2>
-                    <p class="font-weight-regular">Frontend Programmierung</p>
-                </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/java.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Java 12</h2>
-                    <p class="font-weight-regular">Java Programmierung</p>
-                </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/intellij.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">IntelliJ</h2>
-                    <p class="font-weight-regular">Java IDE</p>
-                </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/maven.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Maven</h2>
-                    <p class="font-weight-regular">Java Buildtool</p>
-                </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/spring-boot.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Spring-Boot</h2>
-                    <p class="font-weight-regular">Java Framework</p>
-                </v-card-text>
-            </v-card>
-        </v-flex>
-        <v-flex xs4>
-            <v-card flat tile>
-                <v-img src="img/tools/javascript.jpg" height="200"></v-img>
-                <v-card-text>
-                    <h2 class="subtitle-2 font-weight-bold">Javascript,ECMAScript</h2>
-                    <p class="font-weight-regular">Frontend Programmierung</p>
-                </v-card-text>
+                <v-card-actions>
+                    <v-btn small rounded color="primary" href='https://github.com/michzuerch/TeachersAssistant' target='_blank' class="text-none">TeachersAssistant
+                        <v-icon dark class="pl-3">mdi-github-box</v-icon>
+                    </v-btn>
+                </v-card-actions>
             </v-card>
         </v-flex>
     </v-layout>
-
- <v-card
-    max-width="344"
-    class="mx-auto"
-  >
-    <v-row
-      class="py-4 pl-4"
-    >
-      <v-col class="shrink">
-        <v-img
-          height="200"
-          width="200"
-          src="img/tools/java.jpg"
-        ></v-img>
-      </v-col>
-      <v-col class="text-center">
-        <v-container class="pa-0">
-          <v-row>
-            <v-col>
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-            </v-col>
-            <v-col>
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-            </v-col>
-            <v-col>
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
-    </v-row>
-  </v-card>
-
 </v-container>
 </template>
 
