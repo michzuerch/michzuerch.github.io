@@ -3,78 +3,51 @@
     <v-layout row wrap justify-space-between>
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2 fill-height">
-                <v-img src="img/tools/Java-Logo.svg" class="white--text" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                <v-img src="img/tools/Java-Logo.svg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                     <v-card-title class="fill-height align-end subtitle-1">Programmierung Java</v-card-title>
                 </v-img>
                 <v-card-text>
-                    <h2 class="text-start subtitle-2 mb-2">J2EE Applikation für Wildfly</h2>
-                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
-                    <p class="text-start">CRM, Adressen, Rechnungen, Artikelstamm, Buchhaltung, Reports.</p>
-                    <h3 class="subtitle-3 mb-1">Technologien</h3>
                     <ul>
                         <li>Java</li>
+                        <li>IntelliJ</li>
                         <li>Wildfly</li>
                         <li>Vaadin</li>
-                        <li>Postgresql</li>
+                        <li>Maven</li>
                         <li>Apache FOP</li>
                         <li>Jasperreports</li>
                     </ul>
                 </v-card-text>
-                <v-card-actions>
-                        <v-btn small rounded color="primary" href='https://github.com/michzuerch/Anouman' target='_blank' class="text-none">Anouman
-                            <v-icon dark class="pl-3">mdi-github-box</v-icon>
-                        </v-btn>
-                </v-card-actions>
             </v-card>
         </v-flex>
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2 fill-height">
-                <v-img src="img/tools/Javascript-Logo.svg" class="white--text" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                <v-img src="img/tools/JavaScript-Logo.svg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                     <v-card-title class="fill-height align-end subtitle-1">Programmierung Javascript</v-card-title>
                 </v-img>
                 <v-card-text>
-                    <h2 class="text-start subtitle-2 mb-2">Java-Applikation mit Spring-Boot</h2>
-                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
-                    <p class="text-start">Suchen in Locations nach IP-Adressen, Import von grossen Dateien.</p>
-                    <h3 class="subtitle-3 mb-1">Technologien</h3>
                     <ul>
-                        <li>Java</li>
-                        <li>Spring-Boot</li>
-                        <li>Vaadin</li>
-                        <li>MongoDB</li>
-                        <li>Docker</li>
+                        <li>ECMAScript 3, Typescript</li>
+                        <li>HTML 5, CSS 3</li>
+                        <li>Tailwind, Bulma</li>
+                        <li>Vue, Vuetify</li>
+                        <li>npm, yarn, webpack</li>
                     </ul>
                 </v-card-text>
-                <v-card-actions>
-                        <v-btn small rounded color="primary" href='https://github.com/michzuerch/LocateIPAddress' target='_blank' class="text-none">LocateIPAddress
-                            <v-icon dark class="pl-3">mdi-github-box</v-icon>
-                        </v-btn>
-                </v-card-actions>
             </v-card>
         </v-flex>
         <v-flex xs12 md4>
             <v-card elevation="24" class="ma-2 fill-height">
-                <v-img src="img/TeachersAssistant.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
-                    <v-card-title class="fill-height align-end subtitle-1">TeachersAssistant</v-card-title>
+                <v-img src="img/tools/clouds.jpg" class="white--text" height="200px" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                    <v-card-title class="fill-height align-end subtitle-1">Virtualisierung / Cloud</v-card-title>
                 </v-img>
                 <v-card-text>
-                    <h2 class="text-start subtitle-2 mb-2">J2EE Applikation für Wildfly</h2>
-                    <h3 class="subtitle-3 mb-1">Funktionsumfang</h3>
-                    <p class="text-start">Verwalten von Schulungsräumen, Lehrern, Schülern, Stundenplänen.</p>
-                    <h3 class="subtitle-3 mb-1">Technologien</h3>
                     <ul>
-                        <li>Java</li>
-                        <li>Vaadin</li>
-                        <li>Spring-Boot</li>
-                        <li>Apache FOP</li>
-                        <li>Jasperreports</li>
+                        <li>Linux</li>
+                        <li>Docker</li>
+                        <li>Postgresql, Mongodb</li>
+                        <li>Openshift</li>
                     </ul>
                 </v-card-text>
-                <v-card-actions>
-                    <v-btn small rounded color="primary" href='https://github.com/michzuerch/TeachersAssistant' target='_blank' class="text-none">TeachersAssistant
-                        <v-icon dark class="pl-3">mdi-github-box</v-icon>
-                    </v-btn>
-                </v-card-actions>
             </v-card>
         </v-flex>
     </v-layout>
