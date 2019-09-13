@@ -145,10 +145,14 @@ export default {
                 .then(res => res.json())
                 .then(response => {
                     this.location = response.country;
-                    console.log("Country:", this.location)
+                    /* eslint-disable no-console */
+                    console.log("Country:", this.location);
+                    /* eslint-enable no-console */
                 })
                 .catch((data, status) => {
+                    /* eslint-disable no-console */
                     console.log('Request failed:', data, status);
+                    /* eslint-enable no-console */
                 });
         }
     },
