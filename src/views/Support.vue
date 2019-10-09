@@ -33,20 +33,20 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            skills: [
-                // {
-                //     title: "Firewall",
-                //     level: 75
-                // },
-                // {
-                //     title: "VPN",
-                //     level: 89
-                // }
-            ],
-        }
-    },
+  data () {
+    return {
+      skills: [
+        // {
+        //     title: "Firewall",
+        //     level: 75
+        // },
+        // {
+        //     title: "VPN",
+        //     level: 89
+        // }
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
@@ -54,4 +54,3 @@ export default {
     text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
 }
 </style>
-

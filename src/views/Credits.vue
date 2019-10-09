@@ -26,7 +26,6 @@
                         </div>
                 </v-flex>
 
-
             </v-layout>
             <!-- <v-layout row justify-space-around>
                 <v-flex md3>

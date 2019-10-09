@@ -38,27 +38,27 @@
 
 <script>
 export default {
-    data() {
-        return {
-            skills: [{
-                    title: "Java / Vaadin",
-                    level: 95
-                },
-                {
-                    title: "Javascript",
-                    level: 35
-                },
-                {
-                    title: "Bulma",
-                    level: 75
-                },
-                {
-                    title: "Webpack",
-                    level: 45
-                },
-            ],
-        }
-    },
+  data () {
+    return {
+      skills: [{
+        title: 'Java / Vaadin',
+        level: 95
+      },
+      {
+        title: 'Javascript',
+        level: 35
+      },
+      {
+        title: 'Bulma',
+        level: 75
+      },
+      {
+        title: 'Webpack',
+        level: 45
+      }
+      ]
+    }
+  }
 }
 </script>
 

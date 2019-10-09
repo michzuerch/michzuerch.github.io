@@ -42,31 +42,31 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            skills: [{
-                    title: "Java",
-                    level: 100
-                },
-                {
-                    title: "J2EE 7/8",
-                    level: 100
-                },
-                {
-                    title: "Vaadin 14",
-                    level: 85
-                },
-                {
-                    title: "Spring-Boot",
-                    level: 75
-                },
-                {
-                    title: "Docker / Openshift",
-                    level: 50
-                },
-            ],
-        }
-    },
+  data () {
+    return {
+      skills: [{
+        title: 'Java',
+        level: 100
+      },
+      {
+        title: 'J2EE 7/8',
+        level: 100
+      },
+      {
+        title: 'Vaadin 14',
+        level: 85
+      },
+      {
+        title: 'Spring-Boot',
+        level: 75
+      },
+      {
+        title: 'Docker / Openshift',
+        level: 50
+      }
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
@@ -74,4 +74,3 @@ export default {
     text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
 }
 </style>
-

@@ -21,31 +21,31 @@
 
 <script>
 export default {
-    data() {
-        return {
-            cycle: true,
-            interval: 10000,
-            items: [{
-                    src: 'img/gallery/Portrait1-cut.jpg',
-                },
-                {
-                    src: 'img/gallery/Portrait2-cut.jpg',
-                },
-                {
-                    src: 'img/gallery/Portrait3-cut.jpg',
-                },
-                {
-                    src: 'img/gallery/Car1-cut.jpg',
-                },
-                {
-                    src: 'img/gallery/Car2-cut.jpg',
-                },
-                {
-                    src: 'img/gallery/Car3-cut.jpg',
-                },
-            ],
-        }
-    },
+  data () {
+    return {
+      cycle: true,
+      interval: 10000,
+      items: [{
+        src: 'img/gallery/Portrait1-cut.jpg'
+      },
+      {
+        src: 'img/gallery/Portrait2-cut.jpg'
+      },
+      {
+        src: 'img/gallery/Portrait3-cut.jpg'
+      },
+      {
+        src: 'img/gallery/Car1-cut.jpg'
+      },
+      {
+        src: 'img/gallery/Car2-cut.jpg'
+      },
+      {
+        src: 'img/gallery/Car3-cut.jpg'
+      }
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
