@@ -38,23 +38,23 @@
 
 <script>
 export default {
-    data() {
-        return {
-            skills: [{
-                    title: "LAN, Router, Switches",
-                    level: 100
-                },
-                {
-                    title: "Fileserver, NAS, Windows-Domains",
-                    level: 100
-                },
-                {
-                    title: "Firewall, VPN (IPSec/PPTP)",
-                    level: 95
-                }
-            ],
-        }
-    },
+  data () {
+    return {
+      skills: [{
+        title: 'LAN, Router, Switches',
+        level: 100
+      },
+      {
+        title: 'Fileserver, NAS, Windows-Domains',
+        level: 100
+      },
+      {
+        title: 'Firewall, VPN (IPSec/PPTP)',
+        level: 95
+      }
+      ]
+    }
+  }
 }
 </script>
 

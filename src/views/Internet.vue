@@ -40,31 +40,31 @@
 
 <script>
 export default {
-    data() {
-        return {
-            skills: [{
-                    title: "Java EE 7/8",
-                    level: 100
-                },
-                {
-                    title: "Webdesign (HTML/CSS3)",
-                    level: 90
-                },
-                {
-                    title: "Hosting Websites / Email / CMS Joomla, Wordpress",
-                    level: 80
-                },
-                {
-                    title: "DNS, Zonefiles",
-                    level: 90
-                },
-                {
-                    title: "SSL Let´s Encrypt",
-                    level: 80
-                },
-            ],
-        }
-    },
+  data () {
+    return {
+      skills: [{
+        title: 'Java EE 7/8',
+        level: 100
+      },
+      {
+        title: 'Webdesign (HTML/CSS3)',
+        level: 90
+      },
+      {
+        title: 'Hosting Websites / Email / CMS Joomla, Wordpress',
+        level: 80
+      },
+      {
+        title: 'DNS, Zonefiles',
+        level: 90
+      },
+      {
+        title: 'SSL Let´s Encrypt',
+        level: 80
+      }
+      ]
+    }
+  }
 }
 </script>
 
