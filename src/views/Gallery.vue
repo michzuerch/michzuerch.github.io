@@ -1,22 +1,37 @@
 <template>
-<v-container grid-list-md text-center>
-    <v-card class="mx-auto" elevation="24">
-        <v-carousel :cycle="cycle" :interval="interval">
-            <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
-        </v-carousel>
-        <v-list two-line>
-            <v-list-item>
-                <v-list-item-avatar>
-                    <v-img src="img/Avatar2018.jpg"></v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                    <v-list-item-title>Michael Zürcher</v-list-item-title>
-                    <v-list-item-subtitle>Programmierer und IT-Experte</v-list-item-subtitle>
-                </v-list-item-content>
-            </v-list-item>
-        </v-list>
+  <v-container
+    grid-list-md
+    text-center
+  >
+    <v-card
+      class="mx-auto"
+      elevation="24"
+    >
+      <v-carousel
+        :cycle="cycle"
+        :interval="interval"
+      >
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        />
+      </v-carousel>
+      <v-list two-line>
+        <v-list-item>
+          <v-list-item-avatar>
+            <v-img src="img/Avatar2018.jpg" />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>Michael Zürcher</v-list-item-title>
+            <v-list-item-subtitle>Programmierer und IT-Experte</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
     </v-card>
-</v-container>
+  </v-container>
 </template>
 
 <script>

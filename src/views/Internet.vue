@@ -1,41 +1,66 @@
 <template>
-<v-container grid-list-md text-center>
-    <v-card class="mx-auto" elevation="24">
-        <v-img height="200px" src="img/internet.jpg">
-            <v-card-title class="align-center fill-height title-shadow display-4">Internet</v-card-title>
-        </v-img>
-        <v-card-text text-center>
-            <h1 class="subtitle-1 text--primary text-start pb-2">Hosting und Email</h1>
-            <p class="text-start">Erfahrung beim Hosting von Internetseiten, Email-Domain und Applikationsservern (J2EE).</p>
-            <p class="text-start">
-                <ul>
-                    <li>Java J2EE Applikationsserver (JBoss, Wildfly, Geronimo)</li>
-                    <li>Webserver, Apache, Nginx</li>
-                    <li>Email, SMTP, IMAP, POP, S/MIME, GPG</li>
-                    <li>DNS (Zonefiles), Registrierung</li>
-                    <li>CMS, Joomla, Wordpress</li>
-                    <li>SSL/TLS Let´s Encrypt</li>
-                </ul>
-            </p>
-            <div>
-                <v-card elevation="24" color="grey darken-2">
-                    <v-card-title>Skill Level</v-card-title>
-                    <v-card-text>
-                        <v-list dense color="grey darken-2">
-                            <template v-for="(item, i) in skills">
-                                <v-list-item :key="i">
-                                    <v-list-item-content>
-                                        <skill-bar barSize="small" :skill="item.title" :level="item.level" />
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </template>
-                        </v-list>
-                    </v-card-text>
-                </v-card>
-            </div>
-        </v-card-text>
+  <v-container
+    grid-list-md
+    text-center
+  >
+    <v-card
+      class="mx-auto"
+      elevation="24"
+    >
+      <v-img
+        height="200px"
+        src="img/internet.jpg"
+      >
+        <v-card-title class="align-center fill-height title-shadow display-4">
+          Internet
+        </v-card-title>
+      </v-img>
+      <v-card-text text-center>
+        <h1 class="subtitle-1 text--primary text-start pb-2">
+          Hosting und Email
+        </h1>
+        <p class="text-start">
+          Erfahrung beim Hosting von Internetseiten, Email-Domain und Applikationsservern (J2EE).
+        </p>
+        <p class="text-start">
+          <ul>
+            <li>Java J2EE Applikationsserver (JBoss, Wildfly, Geronimo)</li>
+            <li>Webserver, Apache, Nginx</li>
+            <li>Email, SMTP, IMAP, POP, S/MIME, GPG</li>
+            <li>DNS (Zonefiles), Registrierung</li>
+            <li>CMS, Joomla, Wordpress</li>
+            <li>SSL/TLS Let´s Encrypt</li>
+          </ul>
+        </p>
+        <div>
+          <v-card
+            elevation="24"
+            color="grey darken-2"
+          >
+            <v-card-title>Skill Level</v-card-title>
+            <v-card-text>
+              <v-list
+                dense
+                color="grey darken-2"
+              >
+                <template v-for="(item, i) in skills">
+                  <v-list-item :key="i">
+                    <v-list-item-content>
+                      <skill-bar
+                        bar-size="small"
+                        :skill="item.title"
+                        :level="item.level"
+                      />
+                    </v-list-item-content>
+                  </v-list-item>
+                </template>
+              </v-list>
+            </v-card-text>
+          </v-card>
+        </div>
+      </v-card-text>
     </v-card>
-</v-container>
+  </v-container>
 </template>
 
 <script>
