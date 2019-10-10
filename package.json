@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "ui": "vue ui",
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -b master -d dist",
     "predeploy": "vue-cli-service build"
