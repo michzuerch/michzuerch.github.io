@@ -3784,10 +3784,15 @@ core-js@^2.4.0, core-js@^2.5.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   integrity sha512-I39t74+4t+zau64EN1fE5v2W31Adtc/REhzWN+gWRRXg6WH5qAsZm62DHpQ1+Yhe4047T55jvzz7MUqF/dBBlA==
 
-core-js@^3.0.1, core-js@^3.1.2, core-js@^3.3.2:
+core-js@^3.0.1, core-js@^3.1.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.2.tgz#cd42da1d7b0bb33ef11326be3a721934277ceb42"
   integrity sha512-S1FfZpeBchkhyoY76YAdFzKS4zz9aOK7EeFaNA2aJlyXyA+sgqz6xdxmLPGXEAf0nF44MVN1kSjrA9Kt3ATDQg==
+
+core-js@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.3.tgz#b7048d3c6c1a52b5fe55a729c1d4ccdffe0891bb"
+  integrity sha512-0xmD4vUJRY8nfLyV9zcpC17FtSie5STXzw+HyYw2t8IIvmDnbq7RJUULECCo+NstpJtwK9kx8S+898iyqgeUow==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -11343,10 +11348,10 @@ vue-cli-plugin-apollo@^0.21.1:
     subscriptions-transport-ws "^0.9.16"
     ts-node "^8.4.1"
 
-vue-cli-plugin-vuetify@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vue-cli-plugin-vuetify/-/vue-cli-plugin-vuetify-1.1.0.tgz#0487bddbb733c774d783638c6443ff4f0453faca"
-  integrity sha512-PPgcIrqeDrta05AXufd7lWEm4eCs9fFgKYhUuRSgODV6s7zDFl5EyLWDg8sKeNgLmgHBk5NujJ99nyVIrXJp7A==
+vue-cli-plugin-vuetify@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-vuetify/-/vue-cli-plugin-vuetify-1.1.1.tgz#603b4b0bcafbbd1319672e32e65bb5674c5e78aa"
+  integrity sha512-Sd1bQhMPKjFUKtAqsbndxu+fOSmCrSXF7pa4bIToFszP6Otu3HcwICzdGfNOyXOCX4/qqvNfSOdYapbNEVG+Uw==
   dependencies:
     semver "^6.0.0"
     shelljs "^0.8.3"
