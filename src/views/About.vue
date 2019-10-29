@@ -44,6 +44,7 @@
         Weiterhin arbeite ich nun vermehrt mit Virtualisierungstechniken:
         <strong> Docker, Openshift</strong> &nbsp;und&nbsp; <strong>Kubernetes</strong>.
       </p>
+      <!--
       <div class="text-center pt-5">
         <v-btn
           large
@@ -61,34 +62,12 @@
           </v-icon>
         </v-btn>
       </div>
+      -->
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-export default {
-  mounted () {
-    this.getLocation()
-  },
-  methods: {
-    async getLocation () {
-      fetch('https://extreme-ip-lookup.com/json')
-        .then(res => res.json())
-        .then(response => {
-          this.location = response.country
-          /* eslint-disable no-console */
-          console.log('Country:', this.location)
-          /* eslint-enable no-console */
-        })
-        .catch((data, status) => {
-          /* eslint-disable no-console */
-          console.log('Request failed:', data, status)
-          /* eslint-enable no-console */
-        })
-    }
-  }
-
-}
 </script>
 
 <style scoped>
