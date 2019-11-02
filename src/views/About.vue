@@ -5,8 +5,7 @@
   >
     <v-img
       height="260px"
-      src="img/Background1lg.jpg"
-    >
+      :src="backgroundJs">
       <v-card-title class="align-center fill-height">
         <v-container>
           <v-row>
@@ -68,6 +67,14 @@
 </template>
 
 <script>
+export default {
+  name: 'About',
+  data () {
+    return {
+      backgroundJs: require('../assets/Background.jpg') // eslint-disable-line no-undef
+    }
+  }
+}
 </script>
 
 <style scoped>
