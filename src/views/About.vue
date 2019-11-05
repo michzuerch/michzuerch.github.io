@@ -5,7 +5,8 @@
   >
     <v-img
       height="260px"
-      :src="backgroundJs">
+      :src="backgroundJs"
+    >
       <v-card-title class="align-center fill-height">
         <v-container>
           <v-row>
