@@ -11,7 +11,7 @@
         height="200px"
         src="img/frontend.jpg"
       >
-        <v-card-title class="align-center fill-height title-shadow display-4">
+        <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Frontend
         </v-card-title>
       </v-img>

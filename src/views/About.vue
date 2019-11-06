@@ -11,14 +11,14 @@
         <v-container>
           <v-row>
             <v-col>
-              <h1 class="animated zoomIn display-2 font-weight-black title-shadow">
+              <h1 class="animated zoomIn title font-weight-bold title-shadow">
                 Michael Zürcher
               </h1>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              <h2 class="animated zoomIn headline font-weight-medium title-shadow">
+              <h2 class="animated zoomIn subtitle-1 font-weight-medium title-shadow">
                 Programmierer und IT-Experte
               </h2>
             </v-col>

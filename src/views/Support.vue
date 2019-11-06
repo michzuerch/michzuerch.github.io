@@ -11,7 +11,7 @@
         height="200px"
         src="img/support.jpg"
       >
-        <v-card-title class="align-center fill-height title-shadow display-4">
+        <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Support und Hardware
         </v-card-title>
       </v-img>
