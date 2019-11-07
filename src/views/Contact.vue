@@ -50,10 +50,10 @@
           Postadresse
         </v-card-title>
         <v-card-text>
-          Grenzpaket / Fitness Store<br>
-          Michael Zürcher (93771)<br>
-          Hegaustrasse 6<br>
-          D-78224 Singen (Hohentwiel)<br>
+          Athleticsfood Grenzpaket<br>
+          Michael Zürcher (124144)<br>
+          Freiheitstr. 49<br>
+          D-78224 Singen<br>
         </v-card-text>
       </v-card>
     </v-card-text>
