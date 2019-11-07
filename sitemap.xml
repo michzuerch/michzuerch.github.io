@@ -5,7 +5,6 @@
         <lastmod>2019-11-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
-        <!--
         <image:image>
             <image:loc>http://michzuerch.github.io/gallery/PortraitBl.jpg</image:loc>
             <image:title>Michael Zuercher Portrait Blue</image:title>
@@ -26,6 +25,9 @@
             <image:title>Wolf Portrait</image:title>
             <image:caption>Wolf</image:caption>
         </image:image>
-    -->
+    </url>
+    <url>
+        <loc>https://michzuerch.github.io/network</loc>
+        <lastmod>2019-11-07</lastmod>
     </url>
 </urlset>
