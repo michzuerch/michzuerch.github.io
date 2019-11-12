@@ -7,7 +7,7 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
-- init: nvm install node && nvm use node && npm install -g @vue/cli && npm install -g npm-check-updates && npm update -g && yarn install
+- init: nvm install node && nvm use node
 #  command: echo 'start script'
 
 vscode:
