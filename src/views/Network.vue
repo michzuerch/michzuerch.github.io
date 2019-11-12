@@ -9,7 +9,7 @@
     >
       <v-img
         height="200px"
-        src="img/network.jpg"
+        :src="background"
       >
         <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Netzwerke
@@ -65,6 +65,7 @@
 export default {
   data () {
     return {
+      background: require('../assets/network.jpg'), // eslint-disable-line no-undef
       skills: [{
         title: 'LAN, Router, Switches',
         level: 100

@@ -9,7 +9,7 @@
     >
       <v-img
         height="200px"
-        src="img/frontend.jpg"
+        :src="background"
       >
         <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Frontend
@@ -65,6 +65,7 @@
 export default {
   data () {
     return {
+      background: require('../assets/frontend.jpg'), // eslint-disable-line no-undef
       skills: [{
         title: 'Java / Vaadin',
         level: 95

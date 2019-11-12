@@ -30,7 +30,7 @@
       >
         <v-avatar size="100">
           <img
-            src="img/Avatar2019.jpg"
+            src="img/Avatar2018.jpg"
             alt="avatar"
           >
         </v-avatar>

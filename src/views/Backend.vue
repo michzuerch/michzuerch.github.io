@@ -9,7 +9,7 @@
     >
       <v-img
         height="200px"
-        src="img/backend.jpg"
+        :src="background"
       >
         <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Backend
@@ -69,6 +69,7 @@
 export default {
   data () {
     return {
+      background: require('../assets/backend.jpg'), // eslint-disable-line no-undef
       skills: [{
         title: 'Java',
         level: 100
@@ -88,8 +89,7 @@ export default {
       {
         title: 'Docker / Openshift',
         level: 50
-      }
-      ]
+      }]
     }
   }
 }

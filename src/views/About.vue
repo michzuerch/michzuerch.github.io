@@ -5,7 +5,7 @@
   >
     <v-img
       height="260px"
-      :src="backgroundJs"
+      :src="background"
     >
       <v-card-title class="align-center fill-height">
         <v-container>
@@ -44,7 +44,6 @@
         Weiterhin arbeite ich nun vermehrt mit Virtualisierungstechniken:
         <strong> Docker, Openshift</strong> &nbsp;und&nbsp; <strong>Kubernetes</strong>.
       </p>
-      <!--
       <div class="text-center pt-5">
         <v-btn
           large
@@ -62,7 +61,6 @@
           </v-icon>
         </v-btn>
       </div>
-      -->
     </v-card-text>
   </v-card>
 </template>
@@ -72,7 +70,7 @@ export default {
   name: 'About',
   data () {
     return {
-      backgroundJs: require('../assets/Background.jpg') // eslint-disable-line no-undef
+      background: require('../assets/about.jpg') // eslint-disable-line no-undef
     }
   }
 }

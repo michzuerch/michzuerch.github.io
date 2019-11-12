@@ -9,7 +9,7 @@
     >
       <v-img
         height="200px"
-        src="img/support.jpg"
+        :src="background"
       >
         <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
           Support und Hardware
@@ -50,16 +50,19 @@
 export default {
   data () {
     return {
-      skills: [
-        // {
-        //     title: "Firewall",
-        //     level: 75
-        // },
-        // {
-        //     title: "VPN",
-        //     level: 89
-        // }
-      ]
+      background: require('../assets/support.jpg'), // eslint-disable-line no-undef
+      skills: [{
+        title: 'Windows 10 / Office',
+        level: 90
+      },
+      {
+        title: 'Windows Server / Exchange Server',
+        level: 90
+      },
+      {
+        title: 'Linux',
+        level: 100
+      }]
     }
   }
 }
