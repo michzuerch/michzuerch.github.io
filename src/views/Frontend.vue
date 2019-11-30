@@ -62,6 +62,10 @@
 </template>
 
 <script>
+import JQuery from 'jquery'
+window.$ = JQuery
+$ = JQuery
+
 export default {
   data () {
     return {
@@ -86,10 +90,42 @@ export default {
     }
   }
 }
+$(window).scroll(function () {
+  var hT = $('#skill-bar-wrapper').offset().top
+  var hH = $('#skill-bar-wrapper').outerHeight()
+  var wH = $(window).height()
+  var wS = $(this).scrollTop()
+  if (wS > (hT + hH - 1.4 * wH)) {
+    jQuery(document).ready(function () {
+      jQuery('.skillbar-container').each(function () {
+        jQuery(this).find('.skills').animate({
+          width: jQuery(this).attr('data-percent')
+        }, 5000) // 5 seconds
+      })
+    })
+  }
+})
 </script>
 
 <style scoped>
 .title-shadow {
     text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
+
+.skillbar-container {
+  position:relative;
+  display:block;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #666463;
+  background-color: rgba(255,255,255,.1);
+  height:35px;
+  height:5px;
+}
+
+.skills {
+  height:35px;
+  height:5px;
+  width:0px;
 }
 </style>
