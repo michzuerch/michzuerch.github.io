@@ -62,11 +62,10 @@
 </template>
 
 <script>
-import JQuery from 'jquery'
-window.$ = JQuery
-$ = JQuery
+import $ from 'jquery'
 
 export default {
+  name: 'Frontend',
   data () {
     return {
       background: require('../assets/frontend.jpg'), // eslint-disable-line no-undef
@@ -88,23 +87,26 @@ export default {
       }
       ]
     }
-  }
-}
-$(window).scroll(function () {
-  var hT = $('#skill-bar-wrapper').offset().top
-  var hH = $('#skill-bar-wrapper').outerHeight()
-  var wH = $(window).height()
-  var wS = $(this).scrollTop()
-  if (wS > (hT + hH - 1.4 * wH)) {
-    jQuery(document).ready(function () {
-      jQuery('.skillbar-container').each(function () {
-        jQuery(this).find('.skills').animate({
-          width: jQuery(this).attr('data-percent')
-        }, 5000) // 5 seconds
-      })
+  },
+  mounted () {
+    $('#test').datepicker()
+    $(window).scroll(function () {
+      var hT = $('#skill-bar-wrapper').offset().top
+      var hH = $('#skill-bar-wrapper').outerHeight()
+      var wH = $(window).height()
+      var wS = $(this).scrollTop()
+      if (wS > (hT + hH - 1.4 * wH)) {
+        $(document).ready(function () {
+          $('.skillbar-container').each(function () {
+            $(this).find('.skills').animate({
+              width: $(this).attr('data-percent')
+            }, 5000) // 5 seconds
+          })
+        })
+      }
     })
   }
-})
+}
 </script>
 
 <style scoped>
