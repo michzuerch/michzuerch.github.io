@@ -58,6 +58,100 @@
         </div>
       </v-card-text>
     </v-card>
+    <section class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="skill-bar-wrapper">
+            <h1>Skills</h1>
+            <div class="text-left">
+              <!-- C++ -->
+              C++<span style="float:right;">95%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="95%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Fortran -->
+              Fortran<span style="float:right;">65%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="65%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Java -->
+              Java<span style="float:right;">35%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="35%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Cmake -->
+              Cmake<span style="float:right;">75%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="75%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- HTML -->
+              HTML<span style="float:right;">85%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="85%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- JavaScript -->
+              JavaScript<span style="float:right;">45%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="45%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- jQuery -->
+              jQuery<span style="float:right;">50%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="50%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </v-container>
 </template>
 
@@ -89,7 +183,6 @@ export default {
     }
   },
   mounted () {
-    $('#test').datepicker()
     $(window).scroll(function () {
       var hT = $('#skill-bar-wrapper').offset().top
       var hH = $('#skill-bar-wrapper').outerHeight()
