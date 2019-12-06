@@ -20,42 +20,8 @@
           Frontend Programmierung
         </h1>
         <p class="text-start">
-          Moderne Web-Interfaces mit Javascript Vue oder Vaadin 14.
+          Moderne Web-Interfaces mit Javascript Vue oder Vaadin 14. Webdesign mit CSS3 und den aktuellen Frameworks Tailwind und Bulma.
         </p>
-        <p class="text-start">
-          <ul>
-            <li>Vaadin 14</li>
-            <li>Vue / Vuetify</li>
-            <li>Bulma</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </p>
-        <div>
-          <v-card
-            elevation="24"
-            color="grey darken-2"
-          >
-            <v-card-title>Skill Level</v-card-title>
-            <v-card-text>
-              <v-list
-                dense
-                color="grey darken-2"
-              >
-                <template v-for="(item, i) in skills">
-                  <v-list-item :key="i">
-                    <v-list-item-content>
-                      <skill-bar
-                        bar-size="small"
-                        :skill="item.title"
-                        :level="item.level"
-                      />
-                    </v-list-item-content>
-                  </v-list-item>
-                </template>
-              </v-list>
-            </v-card-text>
-          </v-card>
-        </div>
       </v-card-text>
     </v-card>
     <section class="container content-section text-center">
@@ -64,8 +30,8 @@
           <div id="skill-bar-wrapper">
             <h1>Skills</h1>
             <div class="text-left">
-              <!-- C++ -->
-              C++<span style="float:right;">95%</span>
+              <!-- Java / Vaadin 14 -->
+              Java / Vaadin 14<span style="float:right;">95%</span>
               <div
                 class="skillbar-container clearfix"
                 data-percent="95%"
@@ -76,56 +42,8 @@
                 />
               </div>
 
-              <!-- Fortran -->
-              Fortran<span style="float:right;">65%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="65%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-
-              <!-- Java -->
-              Java<span style="float:right;">35%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="35%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-
-              <!-- Cmake -->
-              Cmake<span style="float:right;">75%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="75%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-
-              <!-- HTML -->
-              HTML<span style="float:right;">85%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="85%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-
-              <!-- JavaScript -->
-              JavaScript<span style="float:right;">45%</span>
+              <!-- JavaScript / Vuetify -->
+              JavaScript / Vue / Vuetify<span style="float:right;">45%</span>
               <div
                 class="skillbar-container clearfix"
                 data-percent="45%"
@@ -136,11 +54,35 @@
                 />
               </div>
 
-              <!-- jQuery -->
-              jQuery<span style="float:right;">50%</span>
+              <!-- HTML / CSS3 -->
+              HTML / CSS3<span style="float:right;">85%</span>
               <div
                 class="skillbar-container clearfix"
-                data-percent="50%"
+                data-percent="85%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Bulma -->
+              Bulma<span style="float:right;">75%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="75%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Tailwind -->
+              Tailwind<span style="float:right;">55%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="55%"
               >
                 <div
                   class="skills"
@@ -162,24 +104,7 @@ export default {
   name: 'Frontend',
   data () {
     return {
-      background: require('../assets/frontend.jpg'), // eslint-disable-line no-undef
-      skills: [{
-        title: 'Java / Vaadin',
-        level: 95
-      },
-      {
-        title: 'Javascript',
-        level: 35
-      },
-      {
-        title: 'Bulma',
-        level: 75
-      },
-      {
-        title: 'Webpack',
-        level: 45
-      }
-      ]
+      background: require('../assets/frontend.jpg') // eslint-disable-line no-undef
     }
   },
   mounted () {

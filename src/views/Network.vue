@@ -30,56 +30,95 @@
             <li>Fileserver, NAS</li>
           </ul>
         </p>
-        <div>
-          <v-card
-            elevation="24"
-            color="grey darken-2"
-          >
-            <v-card-title>Skill Level</v-card-title>
-            <v-card-text>
-              <v-list
-                dense
-                color="grey darken-2"
-              >
-                <template v-for="(item, i) in skills">
-                  <v-list-item :key="i">
-                    <v-list-item-content>
-                      <skill-bar
-                        bar-size="small"
-                        :skill="item.title"
-                        :level="item.level"
-                      />
-                    </v-list-item-content>
-                  </v-list-item>
-                </template>
-              </v-list>
-            </v-card-text>
-          </v-card>
-        </div>
       </v-card-text>
     </v-card>
+    <section class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="skill-bar-wrapper">
+            <h1>Skills</h1>
+            <div class="text-left">
+              <!-- LAN -->
+              LAN, Router, Switches<span style="float:right;">100%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="100%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Windows Server -->
+              Windows Domain, Exchange<span style="float:right;">90%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="90%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Fileserver -->
+              Fileserver, NAS<span style="float:right;">90%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="90%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+
+              <!-- Firewall -->
+              Firewall, VPN, Loadbalancer<span style="float:right;">85%</span>
+              <div
+                class="skillbar-container clearfix"
+                data-percent="85%"
+              >
+                <div
+                  class="skills"
+                  style="background: white;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </v-container>
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
+  name: 'Backend',
   data () {
     return {
-      background: require('../assets/network.jpg'), // eslint-disable-line no-undef
-      skills: [{
-        title: 'LAN, Router, Switches',
-        level: 100
-      },
-      {
-        title: 'Fileserver, NAS, Windows-Domains',
-        level: 100
-      },
-      {
-        title: 'Firewall, VPN (IPSec/PPTP)',
-        level: 95
-      }
-      ]
+      background: require('../assets/backend.jpg') // eslint-disable-line no-undef
     }
+  },
+  mounted () {
+    $(window).scroll(function () {
+      var hT = $('#skill-bar-wrapper').offset().top
+      var hH = $('#skill-bar-wrapper').outerHeight()
+      var wH = $(window).height()
+      var wS = $(this).scrollTop()
+      if (wS > (hT + hH - 1.4 * wH)) {
+        $(document).ready(function () {
+          $('.skillbar-container').each(function () {
+            $(this).find('.skills').animate({
+              width: $(this).attr('data-percent')
+            }, 5000) // 5 seconds
+          })
+        })
+      }
+    })
   }
 }
 </script>
@@ -87,5 +126,22 @@ export default {
 <style scoped>
 .title-shadow {
     text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.66);
+}
+
+.skillbar-container {
+  position:relative;
+  display:block;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #666463;
+  background-color: rgba(255,255,255,.1);
+  height:35px;
+  height:5px;
+}
+
+.skills {
+  height:35px;
+  height:5px;
+  width:0px;
 }
 </style>

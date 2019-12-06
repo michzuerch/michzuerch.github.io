@@ -12263,13 +12263,6 @@ vue-sfc-descriptor-to-string@^1.0.0:
   dependencies:
     indent-string "^3.2.0"
 
-vue-skill-bar@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-skill-bar/-/vue-skill-bar-1.0.1.tgz#a962cbb88a5ded980037e06e31079e4445652ff7"
-  integrity sha512-fRUQAzuTscw/NGIw8aQRfHYwbnyUutRhq6mevvWa9/QJKu+0UDEJHdVWbudmNec/EfNyZx1O0DmPZJdeo734cw==
-  dependencies:
-    vue "^2.5.22"
-
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -12291,7 +12284,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.5.22, vue@^2.6.10:
+vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
