@@ -104,20 +104,12 @@ export default {
     }
   },
   mounted () {
-    $(window).scroll(function () {
-      var hT = $('#skill-bar-wrapper').offset().top
-      var hH = $('#skill-bar-wrapper').outerHeight()
-      var wH = $(window).height()
-      var wS = $(this).scrollTop()
-      if (wS > (hT + hH - 1.4 * wH)) {
-        $(document).ready(function () {
-          $('.skillbar-container').each(function () {
-            $(this).find('.skills').animate({
-              width: $(this).attr('data-percent')
-            }, 5000) // 5 seconds
-          })
-        })
-      }
+    $(document).ready(function () {
+      $('.skillbar-container').each(function () {
+        $(this).find('.skills').animate({
+          width: $(this).attr('data-percent')
+        }, 5000) // 5 seconds
+      })
     })
   }
 }
