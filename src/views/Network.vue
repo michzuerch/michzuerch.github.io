@@ -30,66 +30,68 @@
             <li>Fileserver, NAS</li>
           </ul>
         </p>
-      </v-card-text>
-    </v-card>
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div id="skill-bar-wrapper">
-            <h1>Skills</h1>
-            <div class="text-left">
-              <!-- LAN -->
-              LAN, Router, Switches<span style="float:right;">100%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="100%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+        <div class="container content-section text-center">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div id="skill-bar-wrapper">
+                <div class="subtitle-2 text--primary text-start">
+                  Skill level
+                </div>
+                <div class="text-left">
+                  <!-- LAN -->
+                  LAN, Router, Switches<span style="float:right;">100%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="100%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Windows Server -->
-              Windows Domain, Exchange<span style="float:right;">90%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="90%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Windows Server -->
+                  Windows Domain, Exchange<span style="float:right;">90%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="90%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Fileserver -->
-              Fileserver, NAS<span style="float:right;">90%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="90%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Fileserver -->
+                  Fileserver, NAS<span style="float:right;">90%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="90%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Firewall -->
-              Firewall, VPN, Loadbalancer<span style="float:right;">85%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="85%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
+                  <!-- Firewall -->
+                  Firewall, VPN, Loadbalancer<span style="float:right;">85%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="85%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 

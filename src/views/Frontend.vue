@@ -22,78 +22,80 @@
         <p class="text-start">
           Moderne Web-Interfaces mit Javascript Vue oder Vaadin 14. Webdesign mit CSS3 und den aktuellen Frameworks Tailwind und Bulma.
         </p>
-      </v-card-text>
-    </v-card>
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div id="skill-bar-wrapper">
-            <h1>Skills</h1>
-            <div class="text-left">
-              <!-- Java / Vaadin 14 -->
-              Java / Vaadin 14<span style="float:right;">95%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="95%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+        <div class="container content-section text-center">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div id="skill-bar-wrapper">
+                <div class="subtitle-2 text--primary text-start">
+                  Skill level
+                </div>
+                <div class="text-left">
+                  <!-- Java / Vaadin 14 -->
+                  Java / Vaadin 14<span style="float:right;">95%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="95%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- JavaScript / Vuetify -->
-              JavaScript / Vue / Vuetify<span style="float:right;">45%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="45%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- JavaScript / Vuetify -->
+                  JavaScript / Vue / Vuetify<span style="float:right;">45%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="45%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- HTML / CSS3 -->
-              HTML / CSS3<span style="float:right;">85%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="85%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- HTML / CSS3 -->
+                  HTML / CSS3<span style="float:right;">85%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="85%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Bulma -->
-              Bulma<span style="float:right;">75%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="75%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Bulma -->
+                  Bulma<span style="float:right;">75%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="75%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Tailwind -->
-              Tailwind<span style="float:right;">55%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="55%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
+                  <!-- Tailwind -->
+                  Tailwind<span style="float:right;">55%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="55%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 

@@ -28,110 +28,112 @@
         <p class="text-start">
           Buildsystem Maven.
         </p>
-      </v-card-text>
-    </v-card>
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div id="skill-bar-wrapper">
-            <h1>Skills</h1>
-            <div class="text-left">
-              <!-- Java 13 -->
-              Java 13<span style="float:right;">100%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="100%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+        <div class="container content-section text-center">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div id="skill-bar-wrapper">
+                <div class="subtitle-2 text--primary text-start">
+                  Skill level
+                </div>
+                <div class="text-left">
+                  <!-- Java 13 -->
+                  Java 13<span style="float:right;">100%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="100%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- J2EE -->
-              J2EE (Wildfly)<span style="float:right;">100%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="100%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- J2EE -->
+                  J2EE (Wildfly)<span style="float:right;">100%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="100%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Maven -->
-              Maven<span style="float:right;">100%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="100%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Maven -->
+                  Maven<span style="float:right;">100%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="100%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Vaadin -->
-              Vaadin 14<span style="float:right;">95%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="95%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Vaadin -->
+                  Vaadin 14<span style="float:right;">95%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="95%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Unittesting -->
-              JUnit 4 / TestNG<span style="float:right;">75%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="75%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Unittesting -->
+                  JUnit 4 / TestNG<span style="float:right;">75%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="75%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Apache XML:FO Reporting -->
-              Apache XML:FO Reporting<span style="float:right;">85%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="85%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-              Jasper Reports<span style="float:right;">95%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="95%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
-              Spring Boot 2.2.2 / Spring Data<span style="float:right;">95%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="95%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
+                  <!-- Apache XML:FO Reporting -->
+                  Apache XML:FO Reporting<span style="float:right;">85%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="85%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                  Jasper Reports<span style="float:right;">95%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="95%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                  Spring Boot 2.2.2 / Spring Data<span style="float:right;">95%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="95%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 <script>

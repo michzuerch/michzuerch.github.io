@@ -32,54 +32,56 @@
             <li>SSL/TLS Let´s Encrypt</li>
           </ul>
         </p>
-      </v-card-text>
-    </v-card>
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div id="skill-bar-wrapper">
-            <h1>Skills</h1>
-            <div class="text-left">
-              <!-- Webhosting -->
-              Webhosting<span style="float:right;">100%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="100%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+        <div class="container content-section text-center">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div id="skill-bar-wrapper">
+                <div class="subtitle-2 text--primary text-start">
+                  Skill level
+                </div>
+                <div class="text-left">
+                  <!-- Webhosting -->
+                  Webhosting<span style="float:right;">100%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="100%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Email -->
-              Email<span style="float:right;">90%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="90%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
-              </div>
+                  <!-- Email -->
+                  Email<span style="float:right;">90%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="90%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
 
-              <!-- Fileserver -->
-              CMS Joomla, Wordpress<span style="float:right;">60%</span>
-              <div
-                class="skillbar-container clearfix"
-                data-percent="60%"
-              >
-                <div
-                  class="skills"
-                  style="background: white;"
-                />
+                  <!-- Fileserver -->
+                  CMS Joomla, Wordpress<span style="float:right;">60%</span>
+                  <div
+                    class="skillbar-container clearfix"
+                    data-percent="60%"
+                  >
+                    <div
+                      class="skills"
+                      style="background: white;"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 
