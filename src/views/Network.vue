@@ -15,14 +15,14 @@
           Netzwerke
         </v-card-title>
       </v-img>
-      <v-card-text text-center>
+      <v-card-text text-start>
         <h1 class="subtitle-1 text--primary text-start pb-2">
           Installation und Fehlersuche
         </h1>
-        <p class="text-start">
+        <p>
           Konzeption , Wartung und Fehlersuche
         </p>
-        <p class="text-start">
+        <p>
           <ul>
             <li>LAN</li>
             <li>Router, Switches</li>

@@ -15,17 +15,17 @@
           Backend
         </v-card-title>
       </v-img>
-      <v-card-text text-center>
+      <v-card-text text-start>
         <h1 class="subtitle-1 text--primary text-start pb-2">
           Backend Programmierung
         </h1>
-        <p class="text-start">
+        <p>
           Programmierung von Backend-Lösungen, REST-Services.
         </p>
-        <p class="text-start">
+        <p>
           Unittesting mit JUnit 4 und TestNG. Versionkontolle mit Git.
         </p>
-        <p class="text-start">
+        <p>
           Buildsystem Maven.
         </p>
         <div class="container content-section text-center">

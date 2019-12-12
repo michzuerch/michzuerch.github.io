@@ -15,14 +15,14 @@
           Internet
         </v-card-title>
       </v-img>
-      <v-card-text text-center>
+      <v-card-text text-start>
         <h1 class="subtitle-1 text--primary text-start pb-2">
           Hosting und Email
         </h1>
-        <p class="text-start">
+        <p>
           Erfahrung beim Hosting von Internetseiten, Email-Domain und Applikationsservern (J2EE).
         </p>
-        <p class="text-start">
+        <p>
           <ul>
             <li>Java J2EE Applikationsserver (JBoss, Wildfly, Geronimo)</li>
             <li>Webserver, Apache, Nginx</li>

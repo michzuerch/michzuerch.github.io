@@ -15,11 +15,11 @@
           Frontend
         </v-card-title>
       </v-img>
-      <v-card-text text-center>
+      <v-card-text text-start>
         <h1 class="subtitle-1 text--primary text-start pb-2">
           Frontend Programmierung
         </h1>
-        <p class="text-start">
+        <p>
           Moderne Web-Interfaces mit Javascript Vue oder Vaadin 14. Webdesign mit CSS3 und den aktuellen Frameworks Tailwind und Bulma.
         </p>
         <div class="container content-section text-center">
