@@ -1,7 +1,8 @@
 <template>
   <v-container
     grid-list-md
-    text-center
+    grid-list-lg
+    grid-list-xl
   >
     <v-card
       class="mx-auto"
@@ -11,7 +12,7 @@
         height="200px"
         :src="background"
       >
-        <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
+        <v-card-title class="fill-height title-shadow headline font-weight-bold">
           Netzwerke
         </v-card-title>
       </v-img>
@@ -30,7 +31,7 @@
             <li>Fileserver, NAS</li>
           </ul>
         </p>
-        <div class="container content-section text-center">
+        <div class="container content-section">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <div id="skill-bar-wrapper">

@@ -4,7 +4,6 @@
     elevation="24"
   >
     <v-img
-      height="260px"
       :src="background"
     >
       <v-card-title class="align-center fill-height">

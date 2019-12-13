@@ -1,7 +1,8 @@
 <template>
   <v-container
     grid-list-md
-    text-center
+    grid-list-lg
+    grid-list-xl
   >
     <v-card
       class="mx-auto"
@@ -39,7 +40,7 @@ export default {
   data () {
     return {
       cycle: true,
-      interval: 10000,
+      interval: 3000,
       items: [{
         src: 'img/gallery/Portrait1-cut.jpg'
       },

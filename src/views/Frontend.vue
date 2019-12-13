@@ -1,7 +1,8 @@
 <template>
   <v-container
     grid-list-md
-    text-center
+    grid-list-lg
+    grid-list-xl
   >
     <v-card
       class="mx-auto"
@@ -11,7 +12,7 @@
         height="200px"
         :src="background"
       >
-        <v-card-title class="align-center fill-height title-shadow headline font-weight-bold">
+        <v-card-title class="fill-height title-shadow headline font-weight-bold">
           Frontend
         </v-card-title>
       </v-img>
