@@ -5,6 +5,7 @@
   >
     <v-img
       :src="background"
+      :aspect-ratio="16/9"
     >
       <v-card-title class="align-center fill-height">
         <v-container>
@@ -43,7 +44,10 @@
         Weiterhin arbeite ich nun vermehrt mit Virtualisierungstechniken:
         <strong> Docker, Openshift</strong> &nbsp;und&nbsp; <strong>Kubernetes</strong>.
       </p>
-      <div class="text-center pt-5">
+      <div
+        class="text-center pt-5"
+        v-if="false"
+      >
         <v-btn
           large
           rounded
