@@ -5,7 +5,6 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "ui": "vue ui",
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -b master -d dist",
     "predeploy": "vue-cli-service build"
@@ -23,6 +22,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
     "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-router": "^4.1.1",
+    "@vue/cli-plugin-vuex": "^4.1.1",
     "@vue/cli-service": "^4.1.1",
     "@vue/eslint-config-standard": "^5.0.1",
     "babel-eslint": "^10.0.3",
