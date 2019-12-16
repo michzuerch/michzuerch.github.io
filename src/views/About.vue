@@ -6,8 +6,7 @@
     <v-img
       :src="background"
       :aspect-ratio="16/9"
-      max-width="500"
-      max-height="300"
+      max-height="500"
     >
       <v-card-title class="align-center fill-height">
         <v-container>
