@@ -47,7 +47,7 @@
       </p>
       <div
         class="text-center pt-5"
-        v-if="false"
+        v-if="true"
       >
         <v-btn
           large
