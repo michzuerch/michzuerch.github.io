@@ -1,83 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://michzuerch.github.io/</loc>
-        <lastmod>2012-01-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2020-01-01</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <image:image>
-            <image:loc>http://michzuerch.github.io/gallery/PortraitBl.jpg</image:loc>
-            <image:title>Michael Zuercher Portrait Blue</image:title>
-            <image:caption>Michael Zuercher</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>http://michzuerch.github.io/gallery/PortraitBl2.jpg</image:loc>
-            <image:title>Michael Zuercher Portrait Blue 2</image:title>
-            <image:caption>Michael Zuercher</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>http://michzuerch.github.io/gallery/PortraitY1.jpg</image:loc>
-            <image:title>Michael Zuercher Portrait Yellow</image:title>
-            <image:caption>Michael Zuercher</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>http://michzuerch.github.io/gallery/Wolf-cut.jpg</image:loc>
-            <image:title>Wolf Portrait</image:title>
-            <image:caption>Wolf</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/network</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/support</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/internet</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/frontend</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/backend</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/tools</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/github</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/gallery</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://michzuerch.github.io/contact</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
     </url>
 </urlset>
