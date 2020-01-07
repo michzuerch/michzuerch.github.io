@@ -14,7 +14,7 @@
             color="blue"
             href="tel:+491786608638"
           >
-            Mobilephone: &#109;&#105;&#099;&#104;&#122;&#117;&#101;&#114;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+            Mobilephone: +49 178 660 86 38
             <v-icon right>
               mdi-phone
             </v-icon>
@@ -24,7 +24,7 @@
             color="red"
             href="mailto:michzuerch@gmail.com"
           >
-            Email: michzuerch@gmail.com
+            Email: &#109;&#105;&#099;&#104;&#122;&#117;&#101;&#114;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             <v-icon right>
               mdi-gmail
             </v-icon>
