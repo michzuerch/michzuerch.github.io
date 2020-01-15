@@ -50,9 +50,9 @@
           Postadresse
         </v-card-title>
         <v-card-text>
-          Athleticsfood Grenzpaket<br>
-          Michael Zürcher (124144)<br>
-          Freiheitstr. 49<br>
+          Michael Zuercher<br>
+          c/o Mandy Klein<br>
+          Georg Fischer Str. 17<br>
           D-78224 Singen<br>
         </v-card-text>
       </v-card>
