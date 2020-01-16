@@ -1,21 +1,80 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import About from '@/views/About'
+import Backend from '@/views/Backend'
+import Contact from '@/views/Contact'
+import Credits from '@/views/Credits'
+import Frontend from '@/views/Frontend'
+import Gallery from '@/views/Gallery'
+import Githubprojects from '@/views/Githubprojects'
+import Internet from '@/views/Internet'
+import Network from '@/views/Network'
+import Support from '@/views/Support'
+import Tools from '@/views/Tools'
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'About',
+    component: About
   },
   {
     path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'About',
+    component: About
+  },
+  {
+    path: '/backend',
+    name: 'Backend',
+    component: Backend
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/credits',
+    name: 'Credits',
+    component: Credits
+  },
+  {
+    path: '/frontend',
+    name: 'Frontend',
+    component: Frontend
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery
+  },
+  {
+    path: '/githubprojects',
+    name: 'Githubprojects',
+    component: Githubprojects
+  },
+  {
+    path: '/internet',
+    name: 'Internet',
+    component: Internet
+  },
+  {
+    path: '/network',
+    name: 'Network',
+    component: Network
+  },
+  {
+    path: '/support',
+    name: 'Support',
+    component: Support
+  },
+  {
+    path: '/tools',
+    name: 'Tools',
+    component: Tools
   }
 ]
 

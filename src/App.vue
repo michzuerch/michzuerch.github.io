@@ -85,114 +85,109 @@
 </template>
 
 <script>
-/* eslint-disable */
-  export default {
-    props: {},
-    data: () => ({
-      drawer: null,
-      location: [],
-      collapseOnScroll: true,
-      items: [{
-          icon: 'mdi-account',
-          title: 'Über mich',
-          route: '/',
-          noSwitzerland: false
-        },
-        {
-          divider: true
-        },
-        {
-          icon: 'mdi-server-network',
-          title: 'Netzwerke',
-          route: 'network',
-          noSwitzerland: false
-        },
-        {
-          icon: 'mdi-laptop',
-          title: 'Support',
-          route: 'support',
-          noSwitzerland: false
-        },
-        {
-          icon: 'mdi-web',
-          title: 'Internet',
-          route: 'internet',
-          noSwitzerland: false
-        },
-        {
-          divider: true
-        },
-        {
-          icon: 'mdi-codepen',
-          title: 'Frontend',
-          route: 'frontend',
-          noSwitzerland: false
-        },
-        {
-          icon: 'mdi-code-tags',
-          title: 'Backend',
-          route: 'backend',
-          noSwitzerland: false
-        },
-        {
-          divider: true
-        },
-        {
-          icon: 'mdi-wrench',
-          title: 'Tools',
-          route: 'tools',
-          noSwitzerland: false
-        },
-        {
-          icon: 'mdi-github-box',
-          title: 'Codesamples',
-          route: 'github',
-          noSwitzerland: false
-        },
-        {
-          divider: true
-        },
-        {
-          icon: 'mdi-image-filter',
-          title: 'Gallery',
-          route: 'gallery',
-          noSwitzerland: false
-        },
-        {
-          icon: 'mdi-phone',
-          title: 'Kontakt',
-          route: 'contact',
-          noSwitzerland: true
-        },
-        {
-          icon: 'mdi-thumb-up',
-          title: 'Credits',
-          route: 'credits',
-          noSwitzerland: false
-        }
-      ]
-    }),
-    mounted() {
-      this.getLocation()
+export default {
+  props: {},
+  data: () => ({
+    drawer: null,
+    location: [],
+    collapseOnScroll: true,
+    items: [{
+      icon: 'mdi-account',
+      title: 'Über mich',
+      route: 'about',
+      noSwitzerland: false
     },
-    methods: {
-      async getLocation() {
-        fetch('https://extreme-ip-lookup.com/json')
-          .then(res => res.json())
-          .then(response => {
-            this.location = response.country
-            /* eslint-disable no-console */
-            console.log('Country:', this.location)
-            /* eslint-enable no-console */
-          })
-          .catch((data, status) => {
-            /* eslint-disable no-console */
-            console.log('Request failed:', data, status)
-            /* eslint-enable no-console */
-          })
-      }
+    {
+      divider: true
+    },
+    {
+      icon: 'mdi-server-network',
+      title: 'Netzwerke',
+      route: 'network',
+      noSwitzerland: false
+    },
+    {
+      icon: 'mdi-laptop',
+      title: 'Support',
+      route: 'support',
+      noSwitzerland: false
+    },
+    {
+      icon: 'mdi-web',
+      title: 'Internet',
+      route: 'internet',
+      noSwitzerland: false
+    },
+    {
+      divider: true
+    },
+    {
+      icon: 'mdi-codepen',
+      title: 'Frontend',
+      route: 'frontend',
+      noSwitzerland: false
+    },
+    {
+      icon: 'mdi-code-tags',
+      title: 'Backend',
+      route: 'backend',
+      noSwitzerland: false
+    },
+    {
+      divider: true
+    },
+    {
+      icon: 'mdi-wrench',
+      title: 'Tools',
+      route: 'tools',
+      noSwitzerland: false
+    },
+    {
+      icon: 'mdi-github-box',
+      title: 'Codesamples',
+      route: 'github',
+      noSwitzerland: false
+    },
+    {
+      divider: true
+    },
+    {
+      icon: 'mdi-image-filter',
+      title: 'Gallery',
+      route: 'gallery',
+      noSwitzerland: false
+    },
+    {
+      icon: 'mdi-phone',
+      title: 'Kontakt',
+      route: 'contact',
+      noSwitzerland: true
+    },
+    {
+      icon: 'mdi-thumb-up',
+      title: 'Credits',
+      route: 'credits',
+      noSwitzerland: false
+    }
+    ]
+  }),
+  mounted () {
+    this.getLocation()
+  },
+  methods: {
+    async getLocation () {
+      fetch('https://extreme-ip-lookup.com/json')
+        .then(res => res.json())
+        .then(response => {
+          this.location = response.country
+          console.log('Country:', this.location)
+        })
+        .catch((data, status) => {
+          console.log('Request failed:', data, status)
+        })
     }
   }
+}
 </script>
 
 <style lang="scss">
