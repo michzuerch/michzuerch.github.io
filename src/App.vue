@@ -94,7 +94,7 @@ export default {
     items: [{
       icon: 'mdi-account',
       title: 'Über mich',
-      route: 'about',
+      route: 'About',
       noSwitzerland: false
     },
     {
@@ -103,19 +103,19 @@ export default {
     {
       icon: 'mdi-server-network',
       title: 'Netzwerke',
-      route: 'network',
+      route: 'Network',
       noSwitzerland: false
     },
     {
       icon: 'mdi-laptop',
       title: 'Support',
-      route: 'support',
+      route: 'Support',
       noSwitzerland: false
     },
     {
       icon: 'mdi-web',
       title: 'Internet',
-      route: 'internet',
+      route: 'Internet',
       noSwitzerland: false
     },
     {
@@ -124,13 +124,13 @@ export default {
     {
       icon: 'mdi-codepen',
       title: 'Frontend',
-      route: 'frontend',
+      route: 'Frontend',
       noSwitzerland: false
     },
     {
       icon: 'mdi-code-tags',
       title: 'Backend',
-      route: 'backend',
+      route: 'Backend',
       noSwitzerland: false
     },
     {
@@ -139,13 +139,13 @@ export default {
     {
       icon: 'mdi-wrench',
       title: 'Tools',
-      route: 'tools',
+      route: 'Tools',
       noSwitzerland: false
     },
     {
       icon: 'mdi-github-box',
-      title: 'Codesamples',
-      route: 'github',
+      title: 'Github Samples',
+      route: 'Githubprojects',
       noSwitzerland: false
     },
     {
@@ -154,19 +154,19 @@ export default {
     {
       icon: 'mdi-image-filter',
       title: 'Gallery',
-      route: 'gallery',
+      route: 'Gallery',
       noSwitzerland: false
     },
     {
       icon: 'mdi-phone',
       title: 'Kontakt',
-      route: 'contact',
+      route: 'Contact',
       noSwitzerland: true
     },
     {
       icon: 'mdi-thumb-up',
       title: 'Credits',
-      route: 'credits',
+      route: 'Credits',
       noSwitzerland: false
     }
     ]
