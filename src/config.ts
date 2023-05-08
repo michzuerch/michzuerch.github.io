@@ -10,9 +10,8 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Privater Automarkt Radolfzell',
-  description:
-    'Homepage Privater Automarkt in Radolfzell, corporate/marketing/blog.',
+  title: 'Michael Zuercher',
+  description: 'Homepage Michael Zuercher, Rust, Typescript, Astro, Fullstack',
   author: {
     name: 'Michael Zuercher',
     twitter: '@michzuerch',
@@ -21,24 +20,24 @@ export const SiteMetadata = {
     summary: 'Webdesign.',
   },
   org: {
-    name: 'Privater Automarkt',
-    twitter: '@billigcar',
-    url: 'https://www.billig-car.de',
-    email: 'info@billig-car.de',
-    summary: 'Autohandel',
+    name: 'Michael Zuercher',
+    twitter: '@michzuerch',
+    url: 'https://michzuerch.github.io',
+    email: 'michzuerch@gmail.com',
+    summary: 'Fullstack',
   },
   location: 'Herrenlandstrasse 39, Radolfzell',
   latlng: [47.74297128003603, 8.954879380531835] as [number, number],
-  repository: 'https://github.com/michzuerch/PrivaterAutomarkt9',
+  repository: 'https://github.com/michzuerch/michzuerch.github.io',
   social: [
     {
       name: 'Email',
-      link: 'mailto:info@billig-car.de',
+      link: 'mailto:michzuerch@gmail.com`',
       icon: 'envelope',
     },
     {
       name: 'Telefon',
-      link: '+49 - (0)7732-942407',
+      link: '+49 - 178 660 86 38',
       icon: 'telephone',
     },
     {
@@ -58,12 +57,12 @@ export const SiteMetadata = {
     },
     {
       name: 'Twitter',
-      link: 'https://twitter.com/hellothamcom',
+      link: 'https://twitter.com/michzuerch',
       icon: 'twitter',
     },
     {
       name: 'Github',
-      link: 'https://github.com/michzuerch/PrivaterAutomarkt9',
+      link: 'https://github.com/michzuerch/michzuerch.github.io',
       icon: 'github',
     },
   ],
@@ -140,8 +139,7 @@ export function authorDetail(author: string | undefined) {
 
 export const PAGE_SIZE = 6
 
-export const GITHUB_EDIT_URL = `https://github.com/michzuerch/PrivaterAutomarkt9`
-
+export const GITHUB_EDIT_URL = `https://github.com/michzuerch/michzuerch.github.io`
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export type Sidebar = Record<string, { text: string; link: string }[]>
