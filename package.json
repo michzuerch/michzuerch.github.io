@@ -56,7 +56,7 @@
     "playwright": "^1.33.0",
     "prettier": "^2.8.8",
     "prettier-plugin-astro": "^0.8.1",
-    "prettier-plugin-tailwindcss": "^0.2.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "reading-time": "^1.5.0",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
@@ -75,6 +75,6 @@
     "lunr": "^2.3.9",
     "photoswipe": "^5.3.7",
     "photoswipe-dynamic-caption-plugin": "^1.2.7",
-    "swiper": "^9.3.1"
+    "swiper": "^9.3.2"
   }
 }
