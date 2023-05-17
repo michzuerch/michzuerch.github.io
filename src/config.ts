@@ -27,7 +27,7 @@ export const SiteMetadata = {
     summary: 'Fullstack',
   },
   location: 'Herrenlandstrasse 39, Radolfzell',
-  latlng: [47.74297128003603, 8.954879380531835] as [number, number],
+  latlng: [50, 11] as [number, number],
   repository: 'https://github.com/michzuerch/michzuerch.github.io',
   social: [
     {
@@ -42,17 +42,17 @@ export const SiteMetadata = {
     },
     {
       name: 'LinkedIn',
-      link: 'https://www.linkedin.com/hellothamcom',
+      link: 'https://www.linkedin.com/michzuerch',
       icon: 'linkedin',
     },
     {
       name: 'Facebook',
-      link: 'https://www.facebook.com/hellothamcom',
+      link: 'https://www.facebook.com/michzuerch',
       icon: 'facebook',
     },
     {
       name: 'Instagram',
-      link: 'https://www.instagram.com/hellothamcom',
+      link: 'https://www.instagram.com/michzuerch',
       icon: 'instagram',
     },
     {
@@ -78,8 +78,8 @@ export const DefaultImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },
-  { name: 'Ueber uns', href: 'about' },
-  { name: 'Kontact', href: 'contact' },
+  { name: 'Showroom', href: 'showroom' },
+  { name: 'Contact', href: 'contact' },
   { name: 'Blog', href: 'blog' },
   // { name: 'Docs', href: 'doc/introduction' },
 ]
