@@ -30,9 +30,9 @@ export default defineConfig({
     alpinejs(),
     robotsTxt(),
   ],
-  experimental: {
-    integrations: true,
-  },
+  // experimental: {
+  //   integrations: true,
+  // },
   markdown: {
     extendDefaultPlugins: true,
     remarkPlugins: [
