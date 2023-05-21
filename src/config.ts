@@ -26,7 +26,7 @@ export const SiteMetadata = {
     email: 'michzuerch@gmail.com',
     summary: 'Fullstack',
   },
-  location: 'Herrenlandstrasse 39, Radolfzell',
+  location: '',
   latlng: [50, 11] as [number, number],
   repository: 'https://github.com/michzuerch/michzuerch.github.io',
   social: [
@@ -69,7 +69,7 @@ export const SiteMetadata = {
   buildTime: new Date(),
 }
 
-export const Logo = '../images/svg/astro/logo.svg'
+export const Logo = '../images/svg/astro/Logo.svg'
 export const LogoImage = '../images/astro/logo.png'
 export const HeroImage = '../images/fotos/Hero.jpg'
 export const FeaturedSVG = '../images/svg/undraw/undraw_design_inspiration.svg'
@@ -78,7 +78,7 @@ export const DefaultImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },
-  { name: 'Showroom', href: 'showroom' },
+  { name: 'Portfolio', href: 'portfolio' },
   { name: 'Contact', href: 'contact' },
   { name: 'Blog', href: 'blog' },
   // { name: 'Docs', href: 'doc/introduction' },
