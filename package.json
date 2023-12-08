@@ -18,21 +18,21 @@
   ],
   "displayName": "Homepage Michael Zuercher",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "clean": "rimraf dist .astro node_modules",
+    "dev": "./node_modules/.bin/astro dev",
+    "start": "./node_modules/.bin/astro dev",
+    "build": "./node_modules/.bin/astro build",
+    "clean": "./node_modules/.bin/rimraf dist .astro node_modules",
     "build:clean": "sudo rm -rf ./playwright-report/mobile-* && sudo rm -rf ./playwright-report/desktop-*",
-    "build:docker": "docker build -t privaterautomarkt8-playwright:latest .",
-    "test:docker": "docker run --name privaterautomarkt8-playwright --rm -v $(pwd)/playwright-report:/app/playwright-report -p 9323:9323 --network host privaterautomarkt8-playwright:latest",
+    "build:docker": "podman build -t privaterautomarkt8-playwright:latest .",
+    "test:docker": "podman run --name privaterautomarkt8-playwright --rm -v $(pwd)/playwright-report:/app/playwright-report -p 9323:9323 --network host privaterautomarkt8-playwright:latest",
     "test": "LOCAL_TEST=1 npx playwright test",
     "test:snapshots": "LOCAL_TEST=1 npx playwright test --update-snapshots",
     "test:lighthouse": "npx lighthouse http://localhost:3000/ --output html --output-path lighthouse-result.html view",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier -w .",
-    "lint:eslint": "eslint . --ext .js,.ts,.astro",
-    "subfont": "subfont -ir --no-fallbacks --silent --root dist"
+    "preview": "./node_modules/.bin/astro preview",
+    "astro": "./node_modules/.bin/astro",
+    "format": "./node_modules/.bin/prettier -w .",
+    "lint:eslint": "./node_modules/.bin/eslint . --ext .js,.ts,.astro",
+    "subfont": "./node_modules/.bin/subfont -ir --no-fallbacks --silent --root dist"
   },
   "devDependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",
@@ -60,10 +60,10 @@
     "reading-time": "^1.5.0",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
+    "rimraf": "^5.0.1",
     "schema-dts": "^1.1.2",
     "tailwindcss": "^3.3.2",
-    "unist-util-visit": "^4.1.2",
-    "rimraf": "^5.0.1"
+    "unist-util-visit": "^4.1.2"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.3",
