@@ -1,33 +1,20 @@
 ---
-import { getCollection } from 'astro:content'
-import type { Frontmatter } from '../config'
-import { SiteMetadata } from '../config'
-import Base from '../layouts/base.astro'
-import Hero from '../components/hero.astro'
-import Features from '../components/features.astro'
-import FindOutMore from '../components/findoutmore.astro'
-import LatestArticles from '../components/latestarticles.astro'
-import CTA from '../components/cta.astro'
-
-const frontmatter: Frontmatter = {
-  title: SiteMetadata.title,
-  description: SiteMetadata.description,
-  coverSVG: '../images/svg/undraw/undraw_design_inspiration.svg',
-  socialImage: '../images/undraw/undraw_design_inspiration.png',
-  publishDate: SiteMetadata.buildTime,
-}
-
-const posts = await getCollection('blog')
-const latestPosts = posts
-  .sort((a, b) => +b.data.publishDate - +a.data.publishDate)
-  .filter(p => !p.data.draft)
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/sections/Hero.astro'
+import Services from '../components/sections/Services.astro'
+import AboutUs from '../components/sections/AboutUs.astro'
+import Features from '../components/sections/Features.astro'
+import CTA from '../components/sections/CTA.astro'
+import Brands from '../components/sections/Brands.astro'
 ---
 
-<Base frontmatter={frontmatter}>
-  <Hero />
-  <Features />
-  <FindOutMore />
-  <LatestArticles posts={latestPosts} />
-  <CTA />
-  <div class="bg-white p-24 dark:bg-black md:p-12"></div>
-</Base>
+<Layout title="Welcome to AgenceX">
+  <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+    <Hero />
+    <Brands />
+    <Services />
+    <AboutUs />
+    <Features />
+    <CTA />
+  </main>
+</Layout>
