@@ -26,9 +26,9 @@
     "build:clean": "sudo rm -rf ./playwright-report/mobile-* && sudo rm -rf ./playwright-report/desktop-*",
     "build:docker": "podman build -t michzuerch-github-playwright:latest .",
     "test:docker": "podman run --name michzuerch-github-playwright --rm -v $(pwd)/playwright-report:/app/playwright-report -p 9323:9323 --network host privaterautomarkt8-playwright:latest",
-    "test": "LOCAL_TEST=1 npx playwright test",
-    "test:snapshots": "LOCAL_TEST=1 npx playwright test --update-snapshots",
-    "test:lighthouse": "npx lighthouse http://localhost:3000/ --output html --output-path lighthouse-result.html view",
+    "test": "LOCAL_TEST=1 bunx playwright test",
+    "test:snapshots": "LOCAL_TEST=1 bunx playwright test --update-snapshots",
+    "test:lighthouse": "bunx lighthouse http://localhost:3000/ --output html --output-path lighthouse-result.html view",
     "preview": "./node_modules/.bin/astro preview",
     "astro": "./node_modules/.bin/astro",
     "format": "./node_modules/.bin/prettier -w .",
@@ -38,19 +38,27 @@
     "upgrade": "./node_modules/.bin/npm-check-updates -u"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^0.3.2",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.0.9",
+    "@iconify-json/material-symbols": "^1.1.69",
+    "@iconify-json/mdi": "^1.1.64",
+    "@types/alpinejs": "^3.13.6",
+    "alpinejs": "^3.13.3",
+    "astro": "^4.1.1",
     "astro-icon": "^1.0.2",
-    "tailwindcss": "^3.4.0"
+    "figlet": "^1.7.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@types/figlet": "^1.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "bun-types": "^0.7.0",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.31.0",
     "npm-check-updates": "^16.14.12",
     "playwright": "^1.40.1",
     "prettier": "3.1.1",
     "prettier-plugin-astro": "^0.12.3",
-    "prettier-plugin-tailwindcss": "^0.5.10"
+    "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }
