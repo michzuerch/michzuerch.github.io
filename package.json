@@ -40,17 +40,17 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "0.4.0",
-    "@astrojs/check": "^0.5.6",
+    "@astrojs/check": "^0.5.7",
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/material-symbols": "^1.1.74",
     "@iconify-json/mdi": "^1.1.64",
-    "@types/alpinejs": "^3.13.6",
-    "alpinejs": "^3.13.5",
-    "astro": "^4.4.11",
+    "@types/alpinejs": "^3.13.7",
+    "alpinejs": "^3.13.7",
+    "astro": "^4.5.0",
     "astro-icon": "^1.1.0",
     "figlet": "^1.7.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "devDependencies": {
     "@playwright/test": "^1.42.1",
@@ -63,7 +63,7 @@
     "playwright": "^1.42.1",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier-plugin-tailwindcss": "^0.5.12"
   },
   "bun-create": {
     "preinstall": "echo 'Installing...'",
