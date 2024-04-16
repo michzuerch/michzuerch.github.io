@@ -1,7 +1,7 @@
 {
   "name": "@michzuerch/michzuerch.github.io",
   "description": "Homepage Michael Zuercher",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "homepage": "https://github.com/michzuerch/michzuerch.github.io#readme",
   "author": {
@@ -17,7 +17,7 @@
     "Rust"
   ],
   "displayName": "Homepage Michael Zuercher, type module",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
