@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const url = 'http://localhost:3000'
+const url = 'http://localhost:4321'
 
 test.describe('Basics', () => {
   test('Page title is correct', async ({ page }) => {
