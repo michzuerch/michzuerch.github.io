@@ -1,228 +1,295 @@
-# Homepage Privater Automarkt Radolfzell
+# 🚀 AstroWind
 
-## Tech stack
+<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
+     alt="AstroWind Lighthouse Score" width="100" height="358">
 
-[![Astro](https://img.shields.io/badge/Astro-333333.svg?logo=astro)](https://astro.build)
-[![TypeScript](https://img.shields.io/badge/TypeScript-333333.svg?logo=typescript)](http://www.typescriptlang.org/)
-[![Prettier](https://img.shields.io/badge/Prettier-333333.svg?logo=prettier)](https://prettier.io)
-[![EditorConfig](https://img.shields.io/badge/EditorConfig-333333.svg?logo=editorconfig)](https://editorconfig.org)
-[![ESLint](https://img.shields.io/badge/ESLint-3A33D1?logo=eslint)](https://eslint.org)
+🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
 
-### Status
+**AstroWind** is a free and open-source template to make your website using **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
 
-[![Playwright Tests](https://github.com/michzuerch/PrivaterAutomarkt7/actions/workflows/playwright.yml/badge.svg)](https://github.com/michzuerch/PrivaterAutomarkt7/actions/workflows/playwright.yml)
-[![Deploy to GitHub Pages](https://img.shields.io/github/workflow/status/michzuerch/PrivaterAutomarkt5/DeployGhPages)](https://michzuerch.github.io/PrivaterAutomarkt5)
-[![W3C Validation GitHub Pages](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fmichzuerch.github.io%2FPrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Website up check](https://img.shields.io/website?url=https%3A%2F%2Fmichzuerch.github.io%2FPrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Security policy](https://img.shields.io/security-headers?url=https%3A%2F%2Fmichzuerch.github.io%2FPrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
+- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
+- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
+- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
+- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
+- ✅ Generation of **project sitemap** based on your routes.
+- ✅ **Open Graph tags** for social media sharing.
+- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
 
-### Version
+<br>
 
-[![Version package.json](https://img.shields.io/github/package-json/v/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![License](https://img.shields.io/github/license/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
+<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.png" alt="AstroWind Theme Screenshot">
 
-### GitHub
+[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
+[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
+[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
+[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
+[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
 
-[![Playwright Tests](https://github.com/michzuerch/PrivaterAutomarkt7/actions/workflows/playwright.yml/badge.svg?branch=deploy)](https://github.com/michzuerch/PrivaterAutomarkt7/actions/workflows/playwright.yml)
-[![GitHub last commit](https://img.shields.io/github/last-commit/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Commits per month](https://img.shields.io/github/commit-activity/m/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Releases on GitHub](https://img.shields.io/github/v/release/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Size on GitHub](https://img.shields.io/github/languages/code-size/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Files on GitHub](https://img.shields.io/github/directory-file-count/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Issues on GitHub](https://img.shields.io/github/issues/michzuerch/PrivaterAutomarkt7)](https://michzuerch.github.io/PrivaterAutomarkt7)
-[![Stars on GitHub](https://img.shields.io/github/stars/michzuerch/PrivaterAutomarkt7?style=social)](https://michzuerch.github.io/PrivaterAutomarkt7)
+<br>
 
-```bash
-npm run build
+<details open>
+<summary>Table of Contents</summary>
+
+- [Demo](#demo)
+- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
+- [Getting started](#getting-started)
+  - [Project structure](#project-structure)
+  - [Commands](#commands)
+  - [Configuration](#configuration)
+  - [Deploy](#deploy)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Related Projects](#related-projects)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+
+</details>
+
+<br>
+
+## Demo
+
+📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+
+<br>
+
+## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
+
+We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
+
+[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
+
+<br>
+
+## Getting started
+
+**AstroWind** tries to give you quick access to creating a website using [Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
+
+Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
+
+In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
+
+### Project structure
+
+Inside **AstroWind** template, you'll see the following folders and files:
+
 ```
-
-## Development environments
-
-### Stackblitz
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/michzuerch/PrivaterAutomarkt7/tree/development)
-
-### Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/michzuerch/PrivaterAutomarkt7)
-
-(Repository already exists for michzuerch)
-
-### Testing width Docker
-
-There is a **Dockerfile** to run your playwright tests on docker.
-To build the image run:
-
-```bash
-docker build -t playwright-docker .
-```
-
-To run the tests:
-
-```bash
-docker run -it playwright-docker:latest npm run test
-```
-
-### Notes for navigation
-
-Get the source on [GitHub](https://github.com/michzuerch/PrivaterAutomarkt7).
-
-47.74315477543156, 8.954879998216272
-
-47.74297128003603, 8.954879380531835
-https://www.google.com/maps/search/?api=1&query=47.74297128003603%2C8.954879380531835
-
-# hello-astro
-
-Hello Astro is a full featured [Astro](https://astro.build) multi-purpose starter theme written in Typescript and TailwindCSS. It supports Markdown and MDX based pages and blog posts.
-
-![Light](https://github.com/hellotham/hello-astro/raw/main/screenshot-light.png)
-
-![Dark](https://github.com/hellotham/hello-astro/raw/main/screenshot-dark.png)
-
-Hello Astro can used for any/all of the following:
-
-- corporate/marketing site
-- blog
-- documentation site
-- portfolio site supporting photo galleries
-
-Uses the following integrations:
-
-- @astrojs/mdx
-- @astrojs/image
-- @astrojs/sitemap
-- @astrojs/rss
-- @astrojs/tailwind
-- @astrojs/alpinejs
-- astro-icon
-- astro-seo
-- astro-robots-txt
-
-In addition, SVG and PNG illustrations sourced from [Undraw](https://undraw.co)
-
-This project initially started as a bare bones port of [hello-gatsby-starter](https://github.com/hellotham/hello-gatsby-starter), but now contains more features (light/dark modes, category pages, search, diagrams, math and more!)
-
-## Features
-
-- Full-featured blog with frontmatter (title, description, author, date, image, tags)
-- High performance low overhead with minimal Javascript (AlpineJS)
-- Full text client based search of blog pages via lunrjs (search index only loaded on first invocation of search on a page)
-- Index page and individual pages for authors, categories and tags, including pagination
-- Support for RSS feed, sitemap and robots.txt
-- SVG design (unDraw, Hero Patterns, Iconify)
-- Support for code syntax highlighting
-- Full SEO support including Open Graph, Twitter Cards and Schema.org via JSON-LD
-- Full support for Light and dark UI modes, as well as following system preferences, in accordance to TailwindCSS recommendation
-- Customised 404 error page
-- Display math equations using KaTeX via remark-math/rehype-katex (enclosed in `$`...`$` or `$$`...`$$`)
-- Display Mermaid, Markmap, PlantUML diagrams (authored as a code block with language `mermaid`, `markmap` and `plantuml`)
-- Display map at geo coordinates and zoom level using `Map` component (need to also include `extra: ['map']` is frontmatter to load CSS/JS assets for page)
-- Calculates and show reading time for blog posts
-- CSS/JS assets of external libraries loaded only when needed on a per page and per package basis - no unnecessary bloat
-- Photo gallery and lightbox using PhotoSwipe (including display of EXIF tags)
-- Carousel component using Swiper
-- Documentation pages (modelled after astro docs starter but using Tailwind)
-
-## External Packages
-
-The start uses the following external packages:
-
-- [Astro](https://astro.build/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
-- [Iconify](https://iconify.design/)
-- [Hero Patterns](https://heropatterns.com/)
-- [unDraw](https://undraw.co/) for illustrations
-- [MDX](https://mdxjs.com/) and [Markdown](https://www.markdownguide.org/)
-- [Schema.org](https://schema.org/) and [JSON for Linking Data](https://json-ld.org/), type-checked using [schema-dts](https://github.com/google/schema-dts)
-- [Open Graph](https://ogp.me/) used by [Facebook](https://developers.facebook.com/docs/sharing/webmasters/#markup)
-- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
-- [AlpineJS](https://alpinejs.dev)
-- Local full text search using [Lunr](https://lunrjs.com)
-- Math equations using [KaTeX](https://katex.org) via [remark-math and rehype-katex](https://github.com/remarkjs/remark-math)
-- Diagrams using [Mermaid](https://mermaid-js.github.io/mermaid/#/), [Markmap](https://markmap.js.org) and [PlantUML](https://plantuml.com)
-- Open Street Map using [Leaflet](https://leafletjs.com/)
-- [reading-time](https://github.com/ngryman/reading-time)
-- [PhotoSwipe](https://photoswipe.com)
-- [exifr](https://mutiny.cz/exifr/)
-- [Swiper](https://swiperjs.com/)
-
-It follows the [JAMstack architecture](https://jamstack.org) by automatically building a static version from the Git repository. The demo is deployed on Github Pages.
-
-## 🚀 Project Structure
-
-Inside this starter, you'll see the following folders and files:
-
-```text
 /
 ├── public/
-│   └── favicon.ico
+│   ├── _headers
+│   └── robots.txt
 ├── src/
+│   ├── assets/
+│   │   ├── favicons/
+│   │   ├── images/
+│   │   └── styles/
+│   │       └── tailwind.css
 │   ├── components/
-│   │   └── header.astro
-│   ├── content/
 │   │   ├── blog/
-│   │   |   └── 2022-08-01-post.md
-│   │   └── doc/
-│   │       └── documentation-page.md
-│   ├── images/
-│   │   ├── image.png
-│   │   └── gallery/
-│   │       └── gallery-name/
-│   │           └── image.jpg
+│   │   ├── common/
+│   │   ├── ui/
+│   │   ├── widgets/
+│   │   │   ├── Header.astro
+│   │   │   └── ...
+│   │   ├── CustomStyles.astro
+│   │   ├── Favicons.astro
+│   │   └── Logo.astro
+│   ├── content/
+│   │   ├── post/
+│   │   │   ├── post-slug-1.md
+│   │   │   ├── post-slug-2.mdx
+│   │   │   └── ...
+│   │   └-- config.ts
 │   ├── layouts/
-│   │   ├── base.astro
-│   │   ├── blog.astro
-│   │   └── doc.astro
+│   │   ├── Layout.astro
+│   │   ├── MarkdownLayout.astro
+│   │   └── PageLayout.astro
 │   ├── pages/
+│   │   ├── [...blog]/
+│   │   │   ├── [category]/
+│   │   │   ├── [tag]/
+│   │   │   ├── [...page].astro
+│   │   │   └── index.astro
 │   │   ├── index.astro
-│   │   └── contact.astro
-│   └── config.ts
-└── package.json
+│   │   ├── 404.astro
+│   │   ├-- rss.xml.ts
+│   │   └── ...
+│   ├── utils/
+│   ├── config.yaml
+│   └── navigation.js
+├── package.json
+├── astro.config.ts
+└── ...
 ```
 
-Astro looks for `.astro`, `.md` or `.mdx` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-`src/components/` is where we put any Astro components and similarly `src/layouts/` for layouts.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Images can be placed in `src/images/`.
+Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
 
-Blog and documentation content are created as collections of Markdown or MDX files in `src/content`.
+[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
 
-Any static assets, eg. images, can be placed in the `public/` directory.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
 
-## 🧞 Commands
+<br>
+
+### Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `yarn`              | Installs dependencies                              |
-| `yarn dev`          | Starts local dev server at `localhost:3000`        |
-| `yarn build`        | Build your production site to `./dist/`            |
-| `yarn preview`      | Preview your build locally, before deploying       |
-| `yarn format`       | Pretty print the source code                       |
-| `yarn lint`         | Check the source code for errors                   |
-| `yarn astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `yarn astro --help` | Get help using the Astro CLI                       |
+| Command               | Action                                             |
+| :-------------------- | :------------------------------------------------- |
+| `npm install`         | Installs dependencies                              |
+| `npm run dev`         | Starts local dev server at `localhost:3000`        |
+| `npm run build`       | Build your production site to `./dist/`            |
+| `npm run preview`     | Preview your build locally, before deploying       |
+| `npm run format`      | Format codes with Prettier                         |
+| `npm run lint:eslint` | Run Eslint                                         |
+| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
 
-## Release History
+<br>
 
-- 1.0.0: Initial Release
-- 1.0.1: Moved social images to src, improved coverImage processing
-- 1.0.2: Upgrade packages to latest
-- 1.1.0: Update to astro v2.x, now works with node 18 and 19
-- 2.0.0: New version supporting Astro collections! Also clarified that this is a
-  multipurpose theme. Search can now include both Markdown and MDX pages!
-- 2.0.1: Updated screenshots, and improved landing page.
-- 2.1.0: updated to latest packages, fixed dev links, backported features from
-  personal blog, including Next/Prev links, photo gallery support in Markdown,
-  and improved pagination control.
-- 2.2.0: Fixed lint errors, reimplemented map, lightbox and carousel to use
-  leaflet, photoswipe and swiper packages instead of relying on external CDN.
-- 2.2.1: Update to astro 2.0.10, fixed asset loading issue with base
-- 2.3.0: Removed layout from blog and doc content
-- 2.4.0:`@astrojs/images` now support `svg` so no need for special handling
-- 2.4.1: Use rendered frontmatter for blog and doc posts, fixes issue with diagrams not rendering.
-- 2.4.2: Updated packages
+### Configuration
+
+Basic configuration file: `./src/config.yaml`
+
+```yaml
+site:
+  name: 'Example'
+  site: 'https://example.com'
+  base: '/' # Change this if you need to deploy to Github Pages, for example
+  trailingSlash: false # Generate permalinks with or without "/" at the end
+
+  googleSiteVerificationId: false # Or some value,
+
+# Default SEO metadata
+metadata:
+  title:
+    default: 'Example'
+    template: '%s — Example'
+  description: 'This is the default meta description of Example website'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 'Example'
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+  twitter:
+    handle: '@twitter_user'
+    site: '@twitter_user'
+    cardType: summary_large_image
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true # If the blog will be enabled
+    postsPerPage: 6 # Number of posts per page
+
+    post:
+      isEnabled: true
+      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: true
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: true
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
+    relatedPostsCount: 4 # Number of related posts to display
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+```
+
+<br>
+
+#### Customize Design
+
+To customize Font families, Colors or more Elements refer to the following files:
+
+- `src/components/CustomStyles.astro`
+- `src/assets/styles/tailwind.css`
+
+### Deploy
+
+#### Deploy to production (manual)
+
+You can create an optimized production build with:
+
+```shell
+npm run build
+```
+
+Now, your website is ready to be deployed. All generated files are located at
+`dist` folder, which you can deploy the folder to any hosting service you
+prefer.
+
+#### Deploy to Netlify
+
+Clone this repository on your own GitHub account and deploy it to Netlify:
+
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
+
+#### Deploy to Vercel
+
+Clone this repository on your own GitHub account and deploy to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
+
+<br>
+
+## Frequently Asked Questions
+
+- Why?
+-
+-
+
+<br>
+
+## Related projects
+
+- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
+- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
+
+## Contributing
+
+If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
+That would be very useful for all of us and we would be happy to listen and take action.
+
+## Acknowledgements
+
+Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+
+## License
+
+**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.

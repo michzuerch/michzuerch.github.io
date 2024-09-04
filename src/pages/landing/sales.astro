@@ -1,12 +1,12 @@
 ---
-import Layout from '~/layouts/LandingLayout.astro'
+import Layout from '~/layouts/LandingLayout.astro';
 
-import Hero2 from '~/components/widgets/Hero2.astro'
-import CallToAction from '~/components/widgets/CallToAction.astro'
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Sales Landing Page Demo',
-}
+};
 ---
 
 <Layout metadata={metadata}>
@@ -17,12 +17,7 @@ const metadata = {
     title="Long-form Sales: Sell with a Story: The Long-form Way!"
     subtitle="Dive deep into crafting a Landing Page that narrates, persuades, and converts."
     actions={[
-      {
-        variant: 'primary',
-        text: 'Call to Action',
-        href: '#',
-        icon: 'tabler:square-rounded-arrow-right',
-      },
+      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#' },
     ]}
     image={{
