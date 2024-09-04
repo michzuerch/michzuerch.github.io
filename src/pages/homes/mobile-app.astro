@@ -1,28 +1,28 @@
 ---
-import Layout from '~/layouts/PageLayout.astro'
+import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro'
+import Header from '~/components/widgets/Header.astro';
 
-import Hero2 from '~/components/widgets/Hero2.astro'
-import CallToAction from '~/components/widgets/CallToAction.astro'
-import Features3 from '~/components/widgets/Features3.astro'
-import Content from '~/components/widgets/Content.astro'
-import Testimonials from '~/components/widgets/Testimonials.astro'
-import FAQs from '~/components/widgets/FAQs.astro'
-import Stats from '~/components/widgets/Stats.astro'
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
 
-import Button from '~/components/ui/Button.astro'
-import Image from '~/components/common/Image.astro'
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
 
-const appStoreImg = '~/assets/images/app-store.png'
-const appStoreDownloadLink = 'https://github.com/onwidget/astrowind'
+const appStoreImg = '~/assets/images/app-store.png';
+const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
 
-const googlePlayImg = '~/assets/images/google-play.png'
-const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind'
+const googlePlayImg = '~/assets/images/google-play.png';
+const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
 
 const metadata = {
   title: 'Mobile App Homepage',
-}
+};
 ---
 
 <Layout metadata={metadata}>
@@ -56,14 +56,14 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br
-      /> professional websites <span class="hidden xl:inline">made easy</span>
+      <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br /> professional websites <span
+        class="hidden xl:inline">made easy</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Unlock boundless creativity at your fingertips: your gateway to
-        innovative design.
+        Unlock boundless creativity at your fingertips: your gateway to innovative design.
       </span>
       Download now and embark on a journey to elevate your projects like never before.
     </Fragment>
@@ -101,8 +101,7 @@ const metadata = {
       },
       {
         title: 'Browse templates',
-        description:
-          'Explore our diverse collection of website templates, categorized for easy navigation.',
+        description: 'Explore our diverse collection of website templates, categorized for easy navigation.',
         icon: 'tabler:square-number-3',
       },
       {
@@ -142,8 +141,7 @@ const metadata = {
       },
       {
         title: 'Preview Mode',
-        description:
-          'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
+        description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
         icon: 'tabler:carousel-horizontal',
       },
     ]}
@@ -153,11 +151,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3
-        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
-      >
-        Main Features
-      </h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
     </Fragment>
   </Content>
 
@@ -168,8 +162,7 @@ const metadata = {
     items={[
       {
         title: 'Offline Access',
-        description:
-          'Offer the option for users to download purchased templates for offline use.',
+        description: 'Offer the option for users to download purchased templates for offline use.',
         icon: 'tabler:wifi-off',
       },
       {
@@ -180,8 +173,7 @@ const metadata = {
       },
       {
         title: 'Regular Updates',
-        description:
-          'Continuously add new templates and features to keep the app fresh and engaging for users.',
+        description: 'Continuously add new templates and features to keep the app fresh and engaging for users.',
         icon: 'tabler:refresh',
       },
       {
@@ -196,11 +188,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3
-        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
-      >
-        Other features
-      </h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
     </Fragment>
   </Content>
 
